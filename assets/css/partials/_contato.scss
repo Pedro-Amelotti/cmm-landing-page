@@ -1,0 +1,148 @@
+// Seção de contato
+.contato {
+  background: #f7ecec;
+  padding: 120px 0;
+
+  .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contato-left {
+    .section-tag {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #b66b6b;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      font-size: 42px;
+      font-weight: 700;
+      margin: 12px 0 10px;
+      color: #2b2b2b;
+    }
+
+    .section-description {
+      font-size: 17px;
+      color: #6b5f59;
+      margin-bottom: 30px;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 18px;
+      margin-bottom: 26px;
+
+      .icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background: #fde7e7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 22px;
+        }
+      }
+
+      strong {
+        color: #2b2b2b;
+      }
+
+      div {
+        color: #6b5f59;
+      }
+    }
+
+    .social {
+      margin-top: 20px;
+      display: flex;
+      gap: 14px;
+
+      a {
+        width: 44px;
+        height: 44px;
+        background: #fff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        img {
+          width: 22px;
+        }
+      }
+    }
+  }
+
+  .contato-form {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 22px;
+      color: #2b2b2b;
+      font-weight: 700;
+    }
+
+    label {
+      font-size: 15px;
+      font-weight: 600;
+      color: #2b2b2b;
+      display: block;
+      margin: 14px 0 6px;
+    }
+
+    input,
+    textarea {
+      width: 92%;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #f0e4df;
+      background: #fdf8f6;
+      font-size: 15px;
+      resize: none;
+      outline: none;
+      transition: border 0.25s;
+
+      &:focus {
+        border-color: #d63a3a;
+      }
+    }
+
+    .btn-red {
+      margin-top: 22px;
+      width: 100%;
+      background: #d63a3a;
+      color: #fff;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background: #b92b2b;
+      }
+    }
+  }
+}

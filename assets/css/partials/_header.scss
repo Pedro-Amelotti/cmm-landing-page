@@ -1,0 +1,114 @@
+// Header e navegação principal
+.header {
+  width: 100%;
+  background: #fdf9f4;
+  padding: 18px 0;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+
+  .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #2b2b2b;
+    }
+
+    .circulo {
+      width: 36px;
+      height: 36px;
+      background: red;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #svg {
+        width: 50%;
+        height: 50%;
+        fill: white;
+      }
+    }
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      font-size: 16px;
+      color: #6b5f59;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.25s;
+
+      &:hover {
+        color: #d94444;
+      }
+    }
+  }
+
+  .btn-donate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #d63a3a;
+    padding: 12px 26px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0px 4px 12px rgba(214, 58, 58, 0.35);
+    transition: 0.3s;
+
+    img {
+      width: 20px;
+    }
+
+    &:hover {
+      background: #be2f2f;
+      box-shadow: 0px 4px 14px rgba(214, 58, 58, 0.45);
+    }
+  }
+
+  .btn-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+
+    span {
+      width: 28px;
+      height: 3px;
+      border-radius: 3px;
+      background: #4a4a4a;
+      transition: 0.3s;
+    }
+  }
+}

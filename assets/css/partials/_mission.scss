@@ -1,0 +1,92 @@
+// Seção "Nossa Missão"
+.mission {
+  background: #fbf5f2;
+  padding: 50px 0 120px;
+  text-align: center;
+
+  .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .section-tag {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #b66b6b;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    margin: 20px 0 16px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2b2b2b;
+  }
+
+  .section-description {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    font-size: 18px;
+    line-height: 1.65;
+    color: #6b5f59;
+  }
+
+  .mission-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .card {
+    background: #ffffff;
+    padding: 36px 28px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transform: scale(1);
+    transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: #fde7e7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      img {
+        width: 24px;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      color: #2b2b2b;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #6b5f59;
+    }
+  }
+}

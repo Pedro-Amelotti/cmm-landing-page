@@ -1,0 +1,68 @@
+// Seção de impacto (números)
+.impact {
+  background: #f7ecec;
+  padding: 140px 0 80px;
+  text-align: center;
+
+  .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .section-tag {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #b66b6b;
+  }
+
+  .section-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #2b2b2b;
+    margin: 16px 0 40px;
+  }
+
+  .impact-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-bottom: 20px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .stat {
+    background: #ffffff;
+    padding: 40px 0;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.35s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+
+    .stat-number {
+      display: block;
+      font-size: 44px;
+      font-weight: 700;
+      color: #d63a3a;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      display: block;
+      font-size: 16px;
+      color: #6b5f59;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+// Seção "Como Ajudar"
+.help {
+  background: #fdf9f4;
+  padding: 120px 0;
+
+  .container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  .section-tag {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #b66b6b;
+    font-weight: 600;
+  }
+
+  .section-title {
+    margin: 14px 0 10px;
+    font-size: 38px;
+    font-weight: 700;
+    color: #2b2b2b;
+  }
+
+  .section-description {
+    max-width: 650px;
+    margin: 0 auto 60px;
+    font-size: 17px;
+    color: #6b5f59;
+    line-height: 1.6;
+  }
+
+  .help-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .help-card {
+    background: #fff;
+    padding: 36px 30px;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.35s ease;
+    position: relative;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: #fde7e7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 18px;
+
+      img {
+        width: 24px;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #2b2b2b;
+    }
+
+    p {
+      color: #6b5f59;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+  }
+
+  .help-card.destaque {
+    background: linear-gradient(135deg, #d73737, #b62323);
+    color: #fff;
+
+    .icon {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    h3 {
+      color: #fff;
+    }
+
+    p {
+      color: #fceaea;
+    }
+  }
+
+  .btn-white,
+  .btn-red {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .btn-white {
+    background: #fff;
+    color: #c73636;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background: #ffefef;
+    }
+  }
+
+  .btn-red {
+    background: #d63a3a;
+    color: #fff;
+
+    &:hover {
+      background: #b92b2b;
+    }
+  }
+}
