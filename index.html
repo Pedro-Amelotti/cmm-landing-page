@@ -5,7 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon.png"
+    />
+
+    <!-- Primary Meta Tags -->
+  <meta name="title" content="Casa Menina Mulher — Transformando vidas com amor" />
+  <meta
+    name="description"
+    content="A Casa Menina Mulher acolhe, protege e oferece oportunidades para meninas em situação de vulnerabilidade. Conheça nosso trabalho e saiba como ajudar."
+  />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://casameninamulher.org.br/" />
+  <meta
+    property="og:title"
+    content="Casa Menina Mulher — Transformando vidas com amor"
+  />
+  <meta
+    property="og:description"
+    content="Há mais de uma década acolhemos meninas, oferecendo cuidado, educação e dignidade. Contribua para transformar vidas."
+  />
+  <meta
+    property="og:image"
+    content="https://casameninamulher.org.br/assets/img/og-image.jpg"
+  />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://casameninamulher.org.br/" />
+  <meta
+    property="twitter:title"
+    content="Casa Menina Mulher — Transformando vidas com amor"
+  />
+  <meta
+    property="twitter:description"
+    content="Conheça o trabalho da Casa Menina Mulher e saiba como ajudar a transformar vidas através do acolhimento e da educação."
+  />
+  <meta
+    property="twitter:image"
+    content="https://casameninamulher.org.br/assets/img/banner.webp"
+  />
 </head>
+
 <body>
   <!-- Header -->
   <header class="header">
@@ -69,7 +115,7 @@
         </a>
 
         <a href="#sobre" class="btn-outline">
-          Conheça Nossa História
+          Conheça Nosso Trabalho
           <span class="arrow">&rarr;</span>
         </a>
       </div>
@@ -221,7 +267,7 @@
     </div>
   </section>
 
-  <!-- Contato -->
+  <!-- Contato + Endereço -->
   <section class="contato" id="contato">
     <div class="container">
       <div class="contato-left">
@@ -434,7 +480,7 @@
     function iniciarCarrossel() {
       if (cardStep <= 0) return;
       clearInterval(autoPlayInterval);
-      autoPlayInterval = setInterval(() => moverCarrossel(1), 3000);
+      autoPlayInterval = setInterval(() => moverCarrossel(1), 5000);
     }
 
     track.addEventListener("mouseenter", () => clearInterval(autoPlayInterval));
