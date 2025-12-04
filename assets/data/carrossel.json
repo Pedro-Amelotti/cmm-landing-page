@@ -1,17 +1,17 @@
 [
-    {
-        "titulo": "Oficina de Arteterapia",
-        "descricao": "É a técnica aplicada convida cada adolescente a olhar além da forma aparente e descobrir o que surge por trás da imagem. É um exercício de criatividade e autoestima, onde cada menina reconhece suas próprias capacidades de transformar o simples em algo belo e cheio de significado. A atividade foi conduzida pela facilitadora Leila Palmeira.",
-        "imagem": "assets/img/carrossel/carrossel1.jpg"
-    },
-    {
-        "titulo": "Oficina de Arte Educação",
-        "descricao": "A Oficina de Arte Educação trabalha com massa e tintas coloridas, criando um momento lúdico por meio da Pintura Criativa. A proposta, além de pedagógica, fortalece a conexão positiva no desenvolvimento das crianças, estimulando imaginação e expressão. A atividade foi conduzida pela facilitadora Tereza Santoianni.",
-        "imagem": "assets/img/carrossel/carrossel2.jpg"
-    },
-    {
-        "titulo": "Oficina de Robótica",
-        "descricao": "Na Oficina de Robótica, as adolescentes da Casa Menina Mulher iniciaram o aprendizado sobre Lógica Computacional utilizando tabuleiros de papelão e tampas de garrafas PET, criando uma base concreta antes de aplicar os conceitos em uma plataforma digital. A atividade foi conduzida pelo professor Américo Barros.",
-        "imagem": "assets/img/carrossel/carrossel3.jpg"
-    }
+  {
+    "titulo": "Oficina de Arteterapia",
+    "descricao": "Na técnica aplicada, cada adolescente é convidada a olhar além da forma aparente e descobrir o que surge por trás da imagem. É um exercício de criatividade e autoestima, onde cada menina reconhece suas próprias capacidades de transformar o simples em algo belo e cheio de significado. A atividade foi conduzida pela facilitadora Leila Palmeira.",
+    "imagem": "assets/img/carrossel/carrossel1.jpg"
+  },
+  {
+    "titulo": "Oficina de Arte Educação",
+    "descricao": "A Oficina de Arte Educação trabalha com massa e tintas coloridas, criando um momento lúdico por meio da Pintura Criativa. A proposta, além de pedagógica, fortalece a conexão positiva no desenvolvimento das crianças, estimulando imaginação e expressão. A atividade foi conduzida pela facilitadora Tereza Santoianni.",
+    "imagem": "assets/img/carrossel/carrossel2.jpg"
+  },
+  {
+    "titulo": "Oficina de Robótica",
+    "descricao": "Na Oficina de Robótica, as adolescentes da Casa Menina Mulher iniciaram o aprendizado sobre Lógica Computacional utilizando tabuleiros de papelão e tampas de garrafas PET, criando uma base concreta antes de aplicar os conceitos em uma plataforma digital. A atividade foi conduzida pelo professor Américo Barros.",
+    "imagem": "assets/img/carrossel/carrossel3.jpg"
+  }
 ]
