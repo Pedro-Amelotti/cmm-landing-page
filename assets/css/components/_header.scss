@@ -34,22 +34,6 @@
       font-weight: 600;
       color: #2b2b2b;
     }
-
-    .circulo {
-      width: 36px;
-      height: 36px;
-      background: red;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      #svg {
-        width: 50%;
-        height: 50%;
-        fill: white;
-      }
-    }
   }
 
   .nav ul {
