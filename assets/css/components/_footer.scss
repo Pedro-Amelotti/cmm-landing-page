@@ -66,6 +66,9 @@
     border: none;
     border-radius: 12px;
   }
+  @media (max-width: 900px){
+    width: auto;
+  }
 }
 
   /* MENU */
