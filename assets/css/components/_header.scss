@@ -83,16 +83,126 @@
   .btn-mobile {
     display: none;
     flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
+    gap: 6px;
+    background: #fff;
+    border: 1px solid #efe4de;
+    padding: 10px 9px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.25s ease;
 
     span {
-      width: 28px;
+      width: 26px;
       height: 3px;
-      border-radius: 3px;
+      border-radius: 6px;
       background: #4a4a4a;
-      transition: 0.3s;
+      display: block;
+      transition: transform 0.25s ease, opacity 0.2s ease, width 0.2s ease;
+    }
+
+    &.open {
+      span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+        width: 22px;
+      }
+
+      span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.18);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 1500;
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 82px;
+    right: 16px;
+    width: min(320px, calc(100% - 32px));
+    background: #fdf9f4;
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+    border: 1px solid #f0e5df;
+    max-height: 70vh;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.28s ease, transform 0.28s ease;
+    z-index: 2100;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      li a {
+        font-size: 16px;
+        color: #6b5f59;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: #d94444;
+        }
+      }
+    }
+
+    &.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .container {
+      gap: 18px;
+    }
+
+    .nav {
+      display: none;
+    }
+
+    .btn-donate {
+      padding: 10px 18px;
+      font-size: 15px;
+    }
+
+    .brand .title {
+      font-size: 20px;
+    }
+
+    .btn-mobile {
+      display: flex;
+    }
+
+    .mobile-menu {
+      display: block;
     }
   }
 }

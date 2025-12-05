@@ -77,12 +77,23 @@
         Doe Agora
       </a>
 
-      <button class="btn-mobile" id="btn-mobile">
+      <button class="btn-mobile" id="btn-mobile" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
     </div>
+
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <nav class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#impacto">Nosso Impacto</a></li>
+        <li><a href="#help">Como Ajudar</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Hero -->
@@ -402,6 +413,58 @@
 
 
   <!-- Scripts -->
+  <script>
+    const btnMobile = document.getElementById("btn-mobile");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuOverlay = document.getElementById("menu-overlay");
+    const mobileLinks = mobileMenu?.querySelectorAll("a") || [];
+
+    function closeMobileMenu() {
+      mobileMenu?.classList.remove("active");
+      menuOverlay?.classList.remove("active");
+      btnMobile?.classList.remove("open");
+      btnMobile?.setAttribute("aria-expanded", "false");
+    }
+
+    function toggleMobileMenu() {
+      if (!btnMobile || !mobileMenu || !menuOverlay) return;
+      const isOpening = !mobileMenu.classList.contains("active");
+      if (isOpening) {
+        mobileMenu.classList.add("active");
+        menuOverlay.classList.add("active");
+        btnMobile.classList.add("open");
+        btnMobile.setAttribute("aria-expanded", "true");
+      } else {
+        closeMobileMenu();
+      }
+    }
+
+    btnMobile?.addEventListener("click", (event) => {
+      event.stopPropagation();
+      toggleMobileMenu();
+    });
+
+    mobileMenu?.addEventListener("click", (event) => event.stopPropagation());
+
+    menuOverlay?.addEventListener("click", closeMobileMenu);
+
+    mobileLinks?.forEach((link) => link.addEventListener("click", closeMobileMenu));
+
+    document.addEventListener("click", (event) => {
+      if (!mobileMenu?.classList.contains("active")) return;
+      if (mobileMenu.contains(event.target) || btnMobile?.contains(event.target)) return;
+      closeMobileMenu();
+    });
+
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (mobileMenu?.classList.contains("active")) closeMobileMenu();
+      },
+      { passive: true }
+    );
+  </script>
+
   <script>
     function animateCounter(element, finalValue, duration = 1200) {
       const numericValue = parseInt(finalValue.replace(/\D/g, ""), 10);
