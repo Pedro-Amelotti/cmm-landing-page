@@ -65,15 +65,18 @@
 
       <nav class="nav">
         <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#impacto">Nosso Impacto</a></li>
-          <li><a href="#help">Como Ajudar</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#" class="scroll-link" data-target="sobre">Sobre</a></li>
+          <li><a href="#" class="scroll-link" data-target="impacto">Nosso Impacto</a></li>
+          <li><a href="#" class="scroll-link" data-target="help">Como Ajudar</a></li>
+          <li><a href="#" class="scroll-link" data-target="contato">Contato</a></li>
         </ul>
       </nav>
 
-      <a href="#help" class="btn-donate">
-        <img src="./assets/img/icon-heart.svg" alt="Coração tracejado">
+      <a 
+        href="#" 
+        class="btn-donate scroll-link" 
+        data-target="help">
+          <img src="./assets/img/icon-heart.svg" alt="Coração tracejado">
         Doe Agora
       </a>
 
@@ -88,11 +91,11 @@
 
     <nav class="mobile-menu" id="mobile-menu">
       <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#impacto">Nosso Impacto</a></li>
-        <li><a href="#help">Como Ajudar</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+          <li><a href="#" class="scroll-link" data-target="sobre">Sobre</a></li>
+          <li><a href="#" class="scroll-link" data-target="impacto">Nosso Impacto</a></li>
+          <li><a href="#" class="scroll-link" data-target="help">Como Ajudar</a></li>
+          <li><a href="#" class="scroll-link" data-target="contato">Contato</a></li>
+        </ul>
     </nav>
   </header>
 
@@ -120,14 +123,20 @@
       </p>
 
       <div class="hero-buttons">
-        <a href="#help" class="btn-primary">
-          <img src="assets/img/icon-heart.svg" alt="">
-          Faça uma Doação
+        <a 
+          href="#" 
+          class="btn-primary scroll-link"
+          data-target="help">
+            <img src="assets/img/icon-heart.svg" alt="">
+            Faça uma Doação
         </a>
 
-        <a href="#sobre" class="btn-outline">
-          Conheça Nosso Trabalho
-          <span class="arrow">&rarr;</span>
+        <a 
+          href="#" 
+          class="btn-outline scroll-link"
+          data-target="sobre">
+            Conheça Nosso Trabalho
+            <span class="arrow">&rarr;</span>
         </a>
       </div>
     </div>
@@ -250,7 +259,12 @@
             Compartilhe seu tempo e habilidades. Precisamos de educadores,
             psicólogos, cuidadores e mais.
           </p>
-          <a href="#contato" class="btn-red">Quero Ajudar</a>
+          <a 
+            href="#" 
+            class="btn-red scroll-link"
+            data-target="contato">
+            Quero Ajudar
+          </a>
         </div>
 
         <div class="help-card">
@@ -272,7 +286,13 @@
           <p>
             Empresas e instituições podem se tornar parceiras e organizar eventos beneficentes.
           </p>
-          <a href="#contato" class="btn-red">Seja Parceiro</a>
+          <a 
+            href="#" 
+            class="btn-red scroll-link"
+            data-target="contato">
+            Seja Parceiro
+          </a>
+        </div>
         </div>
       </div>
     </div>
@@ -391,10 +411,10 @@
 
       <!-- COLUNA 2 — MENU -->
       <nav class="footer-col footer-nav">
-        <a href="#sobre">Sobre</a>
-        <a href="#impacto">Impacto</a>
-        <a href="#help">Como Ajudar</a>
-        <a href="#contato">Contato</a>
+        <li><a href="#" class="scroll-link" data-target="sobre">Sobre</a></li>
+        <li><a href="#" class="scroll-link" data-target="impacto">Nosso Impacto</a></li>
+        <li><a href="#" class="scroll-link" data-target="help">Como Ajudar</a></li>
+        <li><a href="#" class="scroll-link" data-target="contato">Contato</a></li>
 
         <div class="footer-social">
           <a href="https://www.instagram.com/casa_menina_mulher55/" target="_blank" aria-label="Instagram">
@@ -408,8 +428,18 @@
 
       <!-- COLUNA 3 — BOTÕES CTA -->
       <div class="footer-col footer-actions">
-        <a href="#help" class="footer-btn-primary">Doe Agora</a>
-        <a href="#help" class="footer-btn-secondary">Quero Ajudar</a>
+        <a 
+          href="#" 
+          class="footer-btn-primary scroll-link"
+          data-target="help">
+          Doe Agora
+        </a>
+        <a 
+          href="#" 
+          class="footer-btn-secondary scroll-link"
+          data-target="help">
+          Quero Ajudar
+        </a>
       </div>
 
     </div>
@@ -662,6 +692,19 @@
 
     document.querySelector(".prev").addEventListener("click", () => moverCarrossel(-1));
     document.querySelector(".next").addEventListener("click", () => moverCarrossel(1));
+
+    document.querySelectorAll(".scroll-link").forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault(); // impede o # na URL
+      
+        const targetId = this.getAttribute("data-target");
+        const target = document.getElementById(targetId);
+      
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
   </script>
 </body>
 </html>
