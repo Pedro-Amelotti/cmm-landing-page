@@ -13,7 +13,7 @@ Landing page estática para a ONG Casa Menina Mulher, com destaque para formas d
 ## Requisitos
 - Node.js + npm (para compilar o SCSS com `sass`) ou extensão Live SASS no VS Code
 
-## Desenvolvimento
+## Desenvolvimento (pode pular esse passo se estiver usando live sass)
 1) Instale as dependências do Sass (usa o Sass embutido via `npx`, não precisa instalar global):
 ```bash
 npx sass assets/css/style.scss assets/css/style.css --style=compressed --source-map
