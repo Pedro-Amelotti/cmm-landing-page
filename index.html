@@ -356,11 +356,11 @@
 
       <form
         class="contato-form"
-        action="https://formsubmit.co/colocar_email_CMM"
+        action="https://formsubmit.co/#colocar da casa"
         method="POST"
       >
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://seusite.com/sucesso.html">
+        <input type="hidden" name="_next" value="https://seusite.com/sucesso.html"> <!-- criar um modal para isso -->
 
         <h3>Envie uma mensagem</h3>
 
@@ -585,113 +585,131 @@
   </script>
 
   <script>
-    const track = document.getElementById("carrossel-track");
-    let autoPlayInterval;
-    let cardWidth = 0;
-    let cardStep = 0;
-    let hasLoop = false;
+    (() => {
+      const track = document.getElementById("carrossel-track");
+      const prevBtn = document.querySelector(".prev");
+      const nextBtn = document.querySelector(".next");
+      if (!track || !prevBtn || !nextBtn) return;
 
-    fetch("assets/data/carrossel.json")
-      .then((res) => res.json())
-      .then((data) => {
-        data.forEach((item) => {
-          const card = criarCard(item);
-          track.appendChild(card);
+      let autoPlayInterval;
+      let cardStep = 0;
+      let hasLoop = false;
+      let gap = 0;
+      let cardsData = [];
+
+      fetch("assets/data/carrossel.json")
+        .then((res) => res.json())
+        .then((data) => {
+          cardsData = data;
+          montarBase();
+          medir();
+          configurarLoop();
+          iniciarSePreciso();
+          prevBtn.addEventListener("click", () => moverCarrossel(-1));
+          nextBtn.addEventListener("click", () => moverCarrossel(1));
+          track.addEventListener("mouseenter", pararAutoPlay);
+          track.addEventListener("mouseleave", iniciarSePreciso);
+          window.addEventListener("resize", () => {
+            medir();
+            configurarLoop();
+            iniciarSePreciso();
+          });
+        })
+        .catch(() => {
+          track.innerHTML = "<p class=\"error-carrossel\">Não foi possível carregar as imagens.</p>";
         });
 
+      function criarCard(item, isClone = false) {
+        const card = document.createElement("div");
+        card.className = "card";
+        if (isClone) card.dataset.clone = "true";
+        card.innerHTML = `
+          <img src="${item.imagem}" alt="${item.titulo}">
+          <div class="card-content">
+            <h3>${item.titulo}</h3>
+            <p>${item.descricao}</p>
+          </div>
+        `;
+        return card;
+      }
+
+      function montarBase() {
+        track.innerHTML = "";
+        cardsData.forEach((item) => track.appendChild(criarCard(item)));
+      }
+
+      function removerClones() {
+        track.querySelectorAll("[data-clone]").forEach((clone) => clone.remove());
+      }
+
+      function medir() {
         const styles = getComputedStyle(track);
-        const gap = parseFloat(styles.columnGap || styles.gap || "0");
-        const firstCard = track.querySelector(".card");
-        if (!firstCard) return;
+        gap = parseFloat(styles.columnGap || styles.gap || "0") || 0;
+        const firstRealCard = track.querySelector(".card:not([data-clone])");
+        cardStep = firstRealCard ? firstRealCard.getBoundingClientRect().width + gap : 0;
+      }
 
-        cardWidth = firstCard.getBoundingClientRect().width;
-        cardStep = cardWidth + gap;
+      function configurarLoop() {
+        if (cardStep <= 0 || !cardsData.length) return;
+        removerClones();
 
-        const realWidth = cardStep * data.length;
-        const hiddenSpace = realWidth - track.clientWidth;
-        hasLoop = hiddenSpace >= cardStep;
+        const totalLarguraReal = cardStep * cardsData.length;
+        const precisaLoop = totalLarguraReal - track.clientWidth >= cardStep;
+        hasLoop = precisaLoop;
 
         if (hasLoop) {
-          const firstClone = criarCard(data[0]);
-          const lastClone = criarCard(data[data.length - 1]);
-
-          firstClone.classList.add("clone");
-          lastClone.classList.add("clone");
-
-          track.insertBefore(lastClone, track.firstChild);
-          track.appendChild(firstClone);
-
+          const primeiroClone = criarCard(cardsData[0], true);
+          const ultimoClone = criarCard(cardsData[cardsData.length - 1], true);
+          track.insertBefore(ultimoClone, track.firstChild);
+          track.appendChild(primeiroClone);
           track.scrollLeft = cardStep;
           track.addEventListener("scroll", verificarLoop);
         } else {
-          const maxScroll = Math.max(track.scrollWidth - track.clientWidth, 0);
-          cardStep = maxScroll > 0 ? Math.min(cardStep, maxScroll) : 0;
+          track.removeEventListener("scroll", verificarLoop);
+          track.scrollLeft = 0;
+        }
+      }
+
+      function verificarLoop() {
+        if (!hasLoop) return;
+        const cloneEnd = track.scrollWidth - track.clientWidth;
+
+        if (track.scrollLeft <= 1) {
+          track.style.scrollBehavior = "auto";
+          track.scrollLeft = track.scrollWidth - 2 * cardStep;
+          requestAnimationFrame(() => (track.style.scrollBehavior = "smooth"));
         }
 
-        if (track.scrollWidth > track.clientWidth && cardStep > 0) {
-          iniciarCarrossel();
+        if (track.scrollLeft >= cloneEnd - 1) {
+          track.style.scrollBehavior = "auto";
+          track.scrollLeft = cardStep;
+          requestAnimationFrame(() => (track.style.scrollBehavior = "smooth"));
         }
-      });
-
-    function criarCard(item) {
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-        <img src="${item.imagem}" alt="${item.titulo}">
-        <div class="card-content">
-          <h3>${item.titulo}</h3>
-          <p>${item.descricao}</p>
-        </div>
-      `;
-      return card;
-    }
-
-    function verificarLoop() {
-      if (!hasLoop) return;
-
-      const cloneStart = 0;
-      const cloneEnd = track.scrollWidth - track.clientWidth;
-
-      if (track.scrollLeft <= cloneStart + 1) {
-        track.style.scrollBehavior = "auto";
-        track.scrollLeft = track.scrollWidth - 2 * cardStep;
-        setTimeout(() => (track.style.scrollBehavior = "smooth"), 50);
       }
 
-      if (track.scrollLeft >= cloneEnd - 1) {
-        track.style.scrollBehavior = "auto";
-        track.scrollLeft = cardStep;
-        setTimeout(() => (track.style.scrollBehavior = "smooth"), 50);
+      function moverCarrossel(direction = 1) {
+        if (cardStep <= 0) return;
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        const target = track.scrollLeft + direction * cardStep;
+
+        if (hasLoop) {
+          track.scrollTo({ left: target, behavior: "smooth" });
+        } else {
+          const clamped = Math.max(0, Math.min(target, maxScroll));
+          track.scrollTo({ left: clamped, behavior: "smooth" });
+        }
       }
-    }
 
-    function moverCarrossel(direction = 1) {
-      if (cardStep <= 0) return;
-
-      const maxScroll = track.scrollWidth - track.clientWidth;
-      const target = track.scrollLeft + direction * cardStep;
-
-      if (hasLoop) {
-        track.scrollTo({ left: target, behavior: "smooth" });
-      } else {
-        const clamped = Math.max(0, Math.min(target, maxScroll));
-        track.scrollTo({ left: clamped, behavior: "smooth" });
+      function iniciarSePreciso() {
+        pararAutoPlay();
+        const temEspaco = track.scrollWidth > track.clientWidth && cardStep > 0;
+        if (temEspaco) autoPlayInterval = setInterval(() => moverCarrossel(1), 5000);
       }
-    }
 
-    function iniciarCarrossel() {
-      if (cardStep <= 0) return;
-      clearInterval(autoPlayInterval);
-      autoPlayInterval = setInterval(() => moverCarrossel(1), 5000);
-    }
-
-    track.addEventListener("mouseenter", () => clearInterval(autoPlayInterval));
-    track.addEventListener("mouseleave", () => {
-      if (track.scrollWidth > track.clientWidth && cardStep > 0) iniciarCarrossel();
-    });
-
-    document.querySelector(".prev").addEventListener("click", () => moverCarrossel(-1));
-    document.querySelector(".next").addEventListener("click", () => moverCarrossel(1));
+      function pararAutoPlay() {
+        if (autoPlayInterval) clearInterval(autoPlayInterval);
+      }
+    })();
 
     document.querySelectorAll(".scroll-link").forEach(link => {
       link.addEventListener("click", function (e) {

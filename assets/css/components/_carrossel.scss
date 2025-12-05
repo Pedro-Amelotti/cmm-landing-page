@@ -55,6 +55,14 @@
     width: 80%;
   }
 
+  // para mensagem de erro caso o carrossel não carregue
+  .error-carrossel {
+    color: #b62323;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+  }
+
   .card {
     min-width: 360px;
     background: #fff;
