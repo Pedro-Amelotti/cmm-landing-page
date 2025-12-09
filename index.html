@@ -94,6 +94,7 @@
           <li><a href="#" class="scroll-link" data-target="sobre">Sobre</a></li>
           <li><a href="#" class="scroll-link" data-target="impacto">Nosso Impacto</a></li>
           <li><a href="#" class="scroll-link" data-target="help">Como Ajudar</a></li>
+          <li><a href="#" class="scroll-link" data-target="colaboradores">Nossos Colaboradores</a></li>
           <li><a href="#" class="scroll-link" data-target="contato">Contato</a></li>
         </ul>
     </nav>
@@ -307,6 +308,71 @@
     </div>
   </div>
 
+    <section class="colaboradores" id="colaboradores">
+    <div class="container">
+        <h2 class="titulo">Nossos Colaboradores</h2>
+        <p class="subtitulo">
+          Conheça as pessoas dedicadas que fazem a diferença todos os dias em nossa missão.
+        </p>
+
+        <div class="colab-wrapper">
+            <button class="colab-btn prev" id="colab-prev" aria-label="Voltar colaboradores">&lsaquo;</button>
+            <div class="colab-track" id="colab-track">
+                <div class="colab-card">
+                    <div class="avatar">
+                      <img src="assets/img/colaboradores/maria-silva.jpg" alt="Foto de Maria Silva">
+                    </div>
+                    <h3>Maria Silva</h3>
+                    <p>Diretora Executiva</p>
+                </div>
+
+                <div class="colab-card">
+                    <div class="avatar">
+                      <img src="assets/img/colaboradores/colab1.webp" alt="Foto de Maria Santos">
+                    </div>
+                    <h3>Maria Santos</h3>
+                    <p>Coordenadora de Projetos</p>
+                </div>
+
+                <div class="colab-card">
+                    <div class="avatar">
+                      <img src="assets/img/colaboradores/colab2.webp" alt="Foto de Ana Oliveira">
+                    </div>
+                    <h3>Ana Oliveira</h3>
+                    <p>Assistente Social</p>
+                </div>
+
+                <div class="colab-card">
+                    <div class="avatar">
+                      <img src="assets/img/colaboradores/carolina-lima.jpg" alt="Foto de Carolina Lima">
+                    </div>
+                    <h3>Carolina Lima</h3>
+                    <p>Psicóloga</p>
+                </div>
+
+                <div class="colab-card">
+                    <div class="avatar">
+                      <img src="assets/img/colaboradores/colab3.webp" alt="Foto de Mariana Fukuyama">
+                    </div>
+                    <h3>Mariana Fukuyama</h3>
+                    <p>Gestora Administrativa</p>
+                </div>
+
+                <div class="colab-card">
+                    <div class="avatar">
+                      <img src="assets/img/colaboradores/colab4.webp" alt="Foto de Sofia Costa">
+                    </div>
+                    <h3>Sofia Costa</h3>
+                    <p>Educadora</p>
+                </div>
+            </div>
+            <button class="colab-btn next" id="colab-next" aria-label="Avan?ar colaboradores">&rsaquo;</button>
+        </div>
+    </div>
+</section>
+
+
+
   <!-- Contato + Endereço -->
   <section class="contato" id="contato">
     <div class="container">
@@ -420,9 +486,9 @@
           <a href="https://www.instagram.com/casa_menina_mulher55/" target="_blank" aria-label="Instagram">
             <img src="assets/img/icon-instagram.svg" alt="Instagram">
           </a>
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <!-- <a href="https://facebook.com" target="_blank" aria-label="Facebook">
             <img src="assets/img/icon-facebook.svg" alt="Facebook">
-          </a>
+          </a> -->
         </div>
       </nav>
 
@@ -446,283 +512,16 @@
 
     <!-- Direitos autorais -->
     <div class="footer-copy">
-      © 2025 CMM. Todos os direitos reservados.
+      © 2025 Casa Menina Mulher — CNPJ XX.XXX.XXX/0001-XX. <br />Todos os direitos reservados.
     </div>
   </footer>
 
-
   <!-- Scripts -->
-  <script>
-    const modalOverlay = document.getElementById("modal-overlay");
-    const modalCard = document.querySelector(".modal-card");
-    const modalContent = document.getElementById("modal-content");
-    const modalClose = document.getElementById("modal-close");
-    const modalButtons = document.querySelectorAll(".btn-open-modal");
-
-    async function openModal(filePath) {
-      if (!modalOverlay || !modalContent) return;
-      modalContent.innerHTML = '<p class="modal-loading">Carregando...</p>';
-      modalOverlay.classList.add("active");
-
-      try {
-        const response = await fetch(filePath, { cache: "no-cache" });
-        if (!response.ok) throw new Error("Falha ao carregar o arquivo.");
-        const html = await response.text();
-        modalContent.innerHTML = html;
-      } catch (error) {
-        modalContent.innerHTML =
-          "<p>Não foi possível carregar o conteúdo agora. Tente novamente em instantes.</p>";
-      }
-    }
-
-    function closeModal() {
-      if (!modalOverlay) return;
-      modalOverlay.classList.remove("active");
-      if (modalContent) modalContent.innerHTML = "";
-    }
-
-    modalButtons.forEach((button) => {
-      button.addEventListener("click", (event) => {
-        event.preventDefault();
-        const filePath = button.getAttribute("data-file");
-        if (filePath) openModal(filePath);
-      });
-    });
-
-    modalClose?.addEventListener("click", closeModal);
-    modalOverlay?.addEventListener("click", closeModal);
-    modalCard?.addEventListener("click", (event) => event.stopPropagation());
-  </script>
-  <script>
-    const btnMobile = document.getElementById("btn-mobile");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const menuOverlay = document.getElementById("menu-overlay");
-    const mobileLinks = mobileMenu?.querySelectorAll("a") || [];
-
-    function closeMobileMenu() {
-      mobileMenu?.classList.remove("active");
-      menuOverlay?.classList.remove("active");
-      btnMobile?.classList.remove("open");
-      btnMobile?.setAttribute("aria-expanded", "false");
-    }
-
-    function toggleMobileMenu() {
-      if (!btnMobile || !mobileMenu || !menuOverlay) return;
-      const isOpening = !mobileMenu.classList.contains("active");
-      if (isOpening) {
-        mobileMenu.classList.add("active");
-        menuOverlay.classList.add("active");
-        btnMobile.classList.add("open");
-        btnMobile.setAttribute("aria-expanded", "true");
-      } else {
-        closeMobileMenu();
-      }
-    }
-
-    btnMobile?.addEventListener("click", (event) => {
-      event.stopPropagation();
-      toggleMobileMenu();
-    });
-
-    mobileMenu?.addEventListener("click", (event) => event.stopPropagation());
-
-    menuOverlay?.addEventListener("click", closeMobileMenu);
-
-    mobileLinks?.forEach((link) => link.addEventListener("click", closeMobileMenu));
-
-    document.addEventListener("click", (event) => {
-      if (!mobileMenu?.classList.contains("active")) return;
-      if (mobileMenu.contains(event.target) || btnMobile?.contains(event.target)) return;
-      closeMobileMenu();
-    });
-
-    window.addEventListener(
-      "scroll",
-      () => {
-        if (mobileMenu?.classList.contains("active")) closeMobileMenu();
-      },
-      { passive: true }
-    );
-  </script>
-
-  <script>
-    function animateCounter(element, finalValue, duration = 1200) {
-      const numericValue = parseInt(finalValue.replace(/\D/g, ""), 10);
-      const suffix = finalValue.replace(/[0-9]/g, "");
-      let start = 0;
-      const increment = numericValue / (duration / 16);
-
-      function update() {
-        start += increment;
-        if (start < numericValue) {
-          element.textContent = Math.round(start) + suffix;
-          requestAnimationFrame(update);
-        } else {
-          element.textContent = finalValue;
-        }
-      }
-
-      update();
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const stats = entry.target.querySelectorAll(".stat");
-            stats.forEach((stat) => {
-              const numberElement = stat.querySelector(".stat-number");
-              animateCounter(numberElement, stat.dataset.number);
-            });
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    observer.observe(document.querySelector(".impact"));
-  </script>
-
-  <script>
-    (() => {
-      const track = document.getElementById("carrossel-track");
-      const prevBtn = document.querySelector(".prev");
-      const nextBtn = document.querySelector(".next");
-      if (!track || !prevBtn || !nextBtn) return;
-
-      let autoPlayInterval;
-      let cardStep = 0;
-      let hasLoop = false;
-      let gap = 0;
-      let cardsData = [];
-
-      fetch("assets/data/carrossel.json")
-        .then((res) => res.json())
-        .then((data) => {
-          cardsData = data;
-          montarBase();
-          medir();
-          configurarLoop();
-          iniciarSePreciso();
-          prevBtn.addEventListener("click", () => moverCarrossel(-1));
-          nextBtn.addEventListener("click", () => moverCarrossel(1));
-          track.addEventListener("mouseenter", pararAutoPlay);
-          track.addEventListener("mouseleave", iniciarSePreciso);
-          window.addEventListener("resize", () => {
-            medir();
-            configurarLoop();
-            iniciarSePreciso();
-          });
-        })
-        .catch(() => {
-          track.innerHTML = "<p class=\"error-carrossel\">Não foi possível carregar as imagens.</p>";
-        });
-
-      function criarCard(item, isClone = false) {
-        const card = document.createElement("div");
-        card.className = "card";
-        if (isClone) card.dataset.clone = "true";
-        card.innerHTML = `
-          <img src="${item.imagem}" alt="${item.titulo}">
-          <div class="card-content">
-            <h3>${item.titulo}</h3>
-            <p>${item.descricao}</p>
-          </div>
-        `;
-        return card;
-      }
-
-      function montarBase() {
-        track.innerHTML = "";
-        cardsData.forEach((item) => track.appendChild(criarCard(item)));
-      }
-
-      function removerClones() {
-        track.querySelectorAll("[data-clone]").forEach((clone) => clone.remove());
-      }
-
-      function medir() {
-        const styles = getComputedStyle(track);
-        gap = parseFloat(styles.columnGap || styles.gap || "0") || 0;
-        const firstRealCard = track.querySelector(".card:not([data-clone])");
-        cardStep = firstRealCard ? firstRealCard.getBoundingClientRect().width + gap : 0;
-      }
-
-      function configurarLoop() {
-        if (cardStep <= 0 || !cardsData.length) return;
-        removerClones();
-
-        const totalLarguraReal = cardStep * cardsData.length;
-        const precisaLoop = totalLarguraReal - track.clientWidth >= cardStep;
-        hasLoop = precisaLoop;
-
-        if (hasLoop) {
-          const primeiroClone = criarCard(cardsData[0], true);
-          const ultimoClone = criarCard(cardsData[cardsData.length - 1], true);
-          track.insertBefore(ultimoClone, track.firstChild);
-          track.appendChild(primeiroClone);
-          track.scrollLeft = cardStep;
-          track.addEventListener("scroll", verificarLoop);
-        } else {
-          track.removeEventListener("scroll", verificarLoop);
-          track.scrollLeft = 0;
-        }
-      }
-
-      function verificarLoop() {
-        if (!hasLoop) return;
-        const cloneEnd = track.scrollWidth - track.clientWidth;
-
-        if (track.scrollLeft <= 1) {
-          track.style.scrollBehavior = "auto";
-          track.scrollLeft = track.scrollWidth - 2 * cardStep;
-          requestAnimationFrame(() => (track.style.scrollBehavior = "smooth"));
-        }
-
-        if (track.scrollLeft >= cloneEnd - 1) {
-          track.style.scrollBehavior = "auto";
-          track.scrollLeft = cardStep;
-          requestAnimationFrame(() => (track.style.scrollBehavior = "smooth"));
-        }
-      }
-
-      function moverCarrossel(direction = 1) {
-        if (cardStep <= 0) return;
-        const maxScroll = track.scrollWidth - track.clientWidth;
-        const target = track.scrollLeft + direction * cardStep;
-
-        if (hasLoop) {
-          track.scrollTo({ left: target, behavior: "smooth" });
-        } else {
-          const clamped = Math.max(0, Math.min(target, maxScroll));
-          track.scrollTo({ left: clamped, behavior: "smooth" });
-        }
-      }
-
-      function iniciarSePreciso() {
-        pararAutoPlay();
-        const temEspaco = track.scrollWidth > track.clientWidth && cardStep > 0;
-        if (temEspaco) autoPlayInterval = setInterval(() => moverCarrossel(1), 5000);
-      }
-
-      function pararAutoPlay() {
-        if (autoPlayInterval) clearInterval(autoPlayInterval);
-      }
-    })();
-
-    document.querySelectorAll(".scroll-link").forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault(); // impede o # na URL
-      
-        const targetId = this.getAttribute("data-target");
-        const target = document.getElementById(targetId);
-      
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      });
-    });
-  </script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/mobile-menu.js"></script>
+  <script src="assets/js/impact-counters.js"></script>
+  <script src="assets/js/carrossel.js"></script>
+  <script src="assets/js/scroll.js"></script>
+  <script src="assets/js/colaboradores.js"></script>
 </body>
 </html>
