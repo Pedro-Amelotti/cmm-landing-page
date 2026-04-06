@@ -1,6 +1,8 @@
+@use "colors" as *;
+
 // Seção de impacto (números)
 .impact {
-  background: #f7ecec;
+  background: $color-surface-rose;
   padding: 140px 0 80px;
   text-align: center;
 
@@ -15,13 +17,13 @@
     letter-spacing: 1px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #b66b6b;
+    color: $color-text-tag;
   }
 
   .section-title {
     font-size: 38px;
     font-weight: 700;
-    color: #2b2b2b;
+    color: $color-text-primary;
     margin: 16px 0 40px;
   }
 
@@ -41,10 +43,10 @@
   }
 
   .stat {
-    background: #ffffff;
+    background: $color-white;
     padding: 40px 0;
     border-radius: 16px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 20px $color-black-a05;
     transition: transform 0.35s ease;
 
     &:hover {
@@ -55,14 +57,15 @@
       display: block;
       font-size: 44px;
       font-weight: 700;
-      color: #d63a3a;
+      color: $color-brand-primary;
       margin-bottom: 6px;
     }
 
     .stat-label {
       display: block;
       font-size: 16px;
-      color: #6b5f59;
+      color: $color-text-secondary;
     }
   }
 }
+

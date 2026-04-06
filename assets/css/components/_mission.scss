@@ -1,6 +1,8 @@
+@use "colors" as *;
+
 // Seção "Nossa Missão"
 .mission {
-  background: #fbf5f2;
+  background: $color-surface-soft;
   padding: 100px 0 120px;
   text-align: center;
 
@@ -14,7 +16,7 @@
     font-size: 14px;
     letter-spacing: 1px;
     font-weight: 600;
-    color: #b66b6b;
+    color: $color-text-tag;
     text-transform: uppercase;
   }
 
@@ -22,7 +24,7 @@
     margin: 20px 0 16px;
     font-size: 40px;
     font-weight: 700;
-    color: #2b2b2b;
+    color: $color-text-primary;
   }
 
   .section-description {
@@ -30,7 +32,7 @@
     margin: 0 auto 60px;
     font-size: 18px;
     line-height: 1.65;
-    color: #6b5f59;
+    color: $color-text-secondary;
   }
 
   .mission-cards {
@@ -48,24 +50,24 @@
   }
 
   .card {
-    background: #ffffff;
+    background: $color-white;
     padding: 36px 28px;
     border-radius: 16px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 20px $color-black-a06;
     text-align: left;
     transform: scale(1);
     transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);
 
     &:hover {
       transform: scale(1.05);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 12px 28px $color-black-a10;
     }
 
     .icon {
       width: 52px;
       height: 52px;
       border-radius: 12px;
-      background: #fde7e7;
+      background: $color-surface-accent;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -78,7 +80,7 @@
 
     h3 {
       font-size: 20px;
-      color: #2b2b2b;
+      color: $color-text-primary;
       margin-bottom: 12px;
       font-weight: 600;
     }
@@ -86,7 +88,8 @@
     p {
       font-size: 16px;
       line-height: 1.6;
-      color: #6b5f59;
+      color: $color-text-secondary;
     }
   }
 }
+
