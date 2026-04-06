@@ -1,10 +1,12 @@
+@use "colors" as *;
+
 // Header e navegação principal
 .header {
   width: 100%;
-  background: #fdf9f4;
+  background: $color-surface-base;
   padding: 18px 0;
   border-radius: 0 0 12px 12px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 4px $color-black-a05;
   position: sticky;
   top: 0;
   z-index: 2000;
@@ -32,7 +34,7 @@
     .title {
       font-size: 22px;
       font-weight: 600;
-      color: #2b2b2b;
+      color: $color-text-primary;
     }
   }
 
@@ -45,13 +47,13 @@
 
     li a {
       font-size: 16px;
-      color: #6b5f59;
+      color: $color-text-secondary;
       text-decoration: none;
       font-weight: 500;
       transition: 0.25s;
 
       &:hover {
-        color: #d94444;
+        color: $color-brand-link-hover;
       }
     }
   }
@@ -60,14 +62,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background: #d63a3a;
+    background: $color-brand-primary;
     padding: 12px 26px;
     border-radius: 12px;
-    color: #fff;
+    color: $color-white;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    box-shadow: 0px 4px 12px rgba(214, 58, 58, 0.35);
+    box-shadow: 0px 4px 12px $color-brand-a35;
     transition: 0.3s;
 
     img {
@@ -75,8 +77,8 @@
     }
 
     &:hover {
-      background: #be2f2f;
-      box-shadow: 0px 4px 14px rgba(214, 58, 58, 0.45);
+      background: $color-brand-primary-hover-header;
+      box-shadow: 0px 4px 14px $color-brand-a45;
     }
   }
 
@@ -84,19 +86,19 @@
     display: none;
     flex-direction: column;
     gap: 6px;
-    background: #fff;
-    border: 1px solid #efe4de;
+    background: $color-white;
+    border: 1px solid $color-border-soft;
     padding: 10px 9px;
     border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 20px $color-black-a06;
     transition: 0.25s ease;
 
     span {
       width: 26px;
       height: 3px;
       border-radius: 6px;
-      background: #4a4a4a;
+      background: $color-text-tertiary;
       display: block;
       transition: transform 0.25s ease, opacity 0.2s ease, width 0.2s ease;
     }
@@ -120,7 +122,7 @@
   .menu-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.18);
+    background: $color-black-a18;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.25s ease;
@@ -138,11 +140,11 @@
     top: 82px;
     right: 16px;
     width: min(320px, calc(100% - 32px));
-    background: #fdf9f4;
+    background: $color-surface-base;
     border-radius: 14px;
     padding: 18px 20px;
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
-    border: 1px solid #f0e5df;
+    box-shadow: 0 14px 32px $color-black-a12;
+    border: 1px solid $color-border-soft-alt;
     max-height: 70vh;
     overflow-y: auto;
     opacity: 0;
@@ -161,13 +163,13 @@
 
       li a {
         font-size: 16px;
-        color: #6b5f59;
+        color: $color-text-secondary;
         text-decoration: none;
         font-weight: 600;
         transition: color 0.2s ease;
 
         &:hover {
-          color: #d94444;
+          color: $color-brand-link-hover;
         }
       }
     }
@@ -206,3 +208,4 @@
     }
   }
 }
+

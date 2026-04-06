@@ -1,6 +1,8 @@
+@use "colors" as *;
+
 // Seção "Como Ajudar"
 .help {
-  background: #fdf9f4;
+  background: $color-surface-base;
   padding: 120px 0;
 
   .container {
@@ -14,7 +16,7 @@
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #b66b6b;
+    color: $color-text-tag;
     font-weight: 600;
   }
 
@@ -22,14 +24,14 @@
     margin: 14px 0 10px;
     font-size: 38px;
     font-weight: 700;
-    color: #2b2b2b;
+    color: $color-text-primary;
   }
 
   .section-description {
     max-width: 650px;
     margin: 0 auto 60px;
     font-size: 17px;
-    color: #6b5f59;
+    color: $color-text-secondary;
     line-height: 1.6;
   }
 
@@ -44,11 +46,11 @@
   }
 
   .help-card {
-    background: #fff;
+    background: $color-white;
     padding: 36px 30px;
     border-radius: 18px;
     text-align: left;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 20px $color-black-a06;
     transition: transform 0.35s ease;
     position: relative;
 
@@ -60,7 +62,7 @@
       width: 56px;
       height: 56px;
       border-radius: 12px;
-      background: #fde7e7;
+      background: $color-surface-accent;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -75,30 +77,30 @@
       font-size: 20px;
       font-weight: 600;
       margin-bottom: 10px;
-      color: #2b2b2b;
+      color: $color-text-primary;
     }
 
     p {
-      color: #6b5f59;
+      color: $color-text-secondary;
       line-height: 1.6;
       margin-bottom: 20px;
     }
   }
 
   .help-card.destaque {
-    background: linear-gradient(135deg, #d73737, #b62323);
-    color: #fff;
+    background: linear-gradient(135deg, $color-brand-gradient-start, $color-brand-danger);
+    color: $color-white;
 
     .icon {
-      background: rgba(255, 255, 255, 0.2);
+      background: $color-white-a20;
     }
 
     h3 {
-      color: #fff;
+      color: $color-white;
     }
 
     p {
-      color: #fceaea;
+      color: $color-surface-accent-text;
     }
   }
 
@@ -113,21 +115,22 @@
   }
 
   .btn-white {
-    background: #fff;
-    color: #c73636;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    background: $color-white;
+    color: $color-brand-secondary;
+    box-shadow: 0 3px 10px $color-black-a10;
 
     &:hover {
-      background: #ffefef;
+      background: $color-surface-soft-accent-hover;
     }
   }
 
   .btn-red {
-    background: #d63a3a;
-    color: #fff;
+    background: $color-brand-primary;
+    color: $color-white;
 
     &:hover {
-      background: #b92b2b;
+      background: $color-brand-primary-hover;
     }
   }
 }
+

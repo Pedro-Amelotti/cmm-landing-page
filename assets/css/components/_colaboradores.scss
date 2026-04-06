@@ -1,5 +1,7 @@
+@use "colors" as *;
+
 .colaboradores {
-  background: #f9f2f1;
+  background: $color-surface-rose-light;
   padding: 80px 0;
 
   .titulo {
@@ -7,13 +9,13 @@
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 12px;
-    color: #2c2c2c;
+    color: $color-text-primary-alt;
   }
 
   .subtitulo {
     text-align: center;
     font-size: 18px;
-    color: #6a5e5e;
+    color: $color-text-secondary-alt;
     margin-bottom: 40px;
   }
 
@@ -25,7 +27,7 @@
   }
 
   .colab-btn {
-    background: #ffffff;
+    background: $color-white;
     border: none;
     font-size: 26px;
     font-weight: 700;
@@ -35,7 +37,7 @@
     place-items: center;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 12px $color-black-a15;
     cursor: pointer;
     margin: 0 12px;
     transition: 0.3s;
@@ -43,7 +45,7 @@
     padding: 0;
 
     &:hover {
-      background: #ffe5e5;
+      background: $color-surface-soft-accent-strong;
     }
   }
 
@@ -60,22 +62,22 @@
     .colab-card {
       min-width: 260px;
       max-width: 260px;
-      background: #fff;
+      background: $color-white;
       border-radius: 16px;
       padding: 24px;
       text-align: center;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 20px $color-black-a08;
       scroll-snap-align: center;
 
       .avatar {
         width: 96px;
         height: 96px;
         margin: 0 auto 14px;
-        background: #f4d7d7;
+        background: $color-surface-avatar;
         border-radius: 50%;
         overflow: hidden;
-        border: 3px solid #ffe5e5;
-        box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+        border: 3px solid $color-surface-soft-accent-strong;
+        box-shadow: 0 6px 16px $color-black-a06;
 
         img {
           width: 100%;
@@ -93,7 +95,7 @@
 
       p {
         font-size: 15px;
-        color: #6b5f59;
+        color: $color-text-secondary;
       }
     }
   }
@@ -115,3 +117,4 @@
     }
   }
 }
+

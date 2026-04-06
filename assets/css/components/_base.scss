@@ -1,7 +1,10 @@
+@use "colors" as *;
+
 :root {
-  --background: 253, 249, 244;
+  --background: #{$color-background-rgb};
 }
 
 html {
   scroll-behavior: smooth;
 }
+

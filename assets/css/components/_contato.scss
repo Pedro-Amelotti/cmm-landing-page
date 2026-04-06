@@ -1,6 +1,8 @@
+@use "colors" as *;
+
 // Seção de contato
 .contato {
-  background: #f7ecec;
+  background: $color-surface-rose;
   padding: 80px 0;
 
   .container {
@@ -21,7 +23,7 @@
       font-size: 14px;
       text-transform: uppercase;
       font-weight: 600;
-      color: #b66b6b;
+      color: $color-text-tag;
       letter-spacing: 1px;
     }
 
@@ -29,12 +31,12 @@
       font-size: 42px;
       font-weight: 700;
       margin: 12px 0 10px;
-      color: #2b2b2b;
+      color: $color-text-primary;
     }
 
     .section-description {
       font-size: 17px;
-      color: #6b5f59;
+      color: $color-text-secondary;
       margin-bottom: 30px;
       max-width: 500px;
       line-height: 1.6;
@@ -49,7 +51,7 @@
         width: 48px;
         height: 48px;
         border-radius: 12px;
-        background: #fde7e7;
+        background: $color-surface-accent;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,11 +62,11 @@
       }
 
       strong {
-        color: #2b2b2b;
+        color: $color-text-primary;
       }
 
       div {
-        color: #6b5f59;
+        color: $color-text-secondary;
       }
     }
 
@@ -76,12 +78,12 @@
       a {
         width: 44px;
         height: 44px;
-        background: #fff;
+        background: $color-white;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px $color-black-a10;
 
         img {
           width: 22px;
@@ -91,22 +93,22 @@
   }
 
   .contato-form {
-    background: #fff;
+    background: $color-white;
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 24px $color-black-a08;
 
     h3 {
       font-size: 22px;
       margin-bottom: 22px;
-      color: #2b2b2b;
+      color: $color-text-primary;
       font-weight: 700;
     }
 
     label {
       font-size: 15px;
       font-weight: 600;
-      color: #2b2b2b;
+      color: $color-text-primary;
       display: block;
       margin: 14px 0 6px;
     }
@@ -116,23 +118,23 @@
       width: 92%;
       padding: 14px;
       border-radius: 10px;
-      border: 1px solid #f0e4df;
-      background: #fdf8f6;
+      border: 1px solid $color-border-input;
+      background: $color-surface-input;
       font-size: 15px;
       resize: none;
       outline: none;
       transition: border 0.25s;
 
       &:focus {
-        border-color: #d63a3a;
+        border-color: $color-brand-primary;
       }
     }
 
     .btn-red {
       margin-top: 22px;
       width: 100%;
-      background: #d63a3a;
-      color: #fff;
+      background: $color-brand-primary;
+      color: $color-white;
       padding: 14px;
       border-radius: 10px;
       font-size: 16px;
@@ -141,8 +143,9 @@
       cursor: pointer;
 
       &:hover {
-        background: #b92b2b;
+        background: $color-brand-primary-hover;
       }
     }
   }
 }
+

@@ -1,3 +1,5 @@
+@use "colors" as *;
+
 .btn-open-modal {
   font: inherit;
   border: none;
@@ -8,7 +10,7 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: $color-black-a35;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   display: flex;
@@ -28,13 +30,13 @@
 }
 
 .modal-card {
-  background: #fff;
+  background: $color-white;
   border-radius: 16px;
   max-width: 620px;
   width: 90%;
   padding: 28px 24px;
   position: relative;
-  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 16px 44px $color-black-a18;
   max-height: 80vh;
   overflow-y: auto;
 }
@@ -43,29 +45,29 @@
   position: absolute;
   top: 12px;
   right: 12px;
-  background: transparent;
+  background: $color-transparent;
   border: none;
   font-size: 24px;
   line-height: 1;
   cursor: pointer;
-  color: #2b2b2b;
+  color: $color-text-primary;
   padding: 6px;
 }
 
 .modal-close:hover {
-  color: #b62b2b;
+  color: $color-brand-primary-hover-alt;
 }
 
 .modal-content h2 {
   margin-top: 0;
   margin-bottom: 12px;
   font-size: 24px;
-  color: #2b2b2b;
+  color: $color-text-primary;
 }
 
 .modal-content p,
 .modal-content li {
-  color: #4a3f3c;
+  color: $color-text-body;
   line-height: 1.6;
 }
 
@@ -76,6 +78,7 @@
 
 .modal-loading {
   margin: 0;
-  color: #6b5f59;
+  color: $color-text-secondary;
   font-weight: 600;
 }
+

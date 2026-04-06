@@ -1,6 +1,8 @@
+@use "colors" as *;
+
 // Carrossel de imagens
 .carrossel {
-  background: #f7ecec;
+  background: $color-surface-rose;
   padding: 40px 0 120px;
   text-align: center;
 
@@ -8,7 +10,7 @@
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 40px;
-    color: #2b2b2b;
+    color: $color-text-primary;
   }
 
   .carrossel-wrapper {
@@ -19,12 +21,12 @@
   }
 
   .carrossel-btn {
-    background: #ffffff;
+    background: $color-white;
     border: none;
     cursor: pointer;
     font-size: 28px;
     font-weight: 700;
-    color: #c73636;
+    color: $color-brand-secondary;
     width: 52px;
     height: 52px;
     border-radius: 50%;
@@ -33,11 +35,11 @@
     aspect-ratio: 1 / 1;
     line-height: 1;
     padding: 0;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px $color-black-a10;
     transition: 0.3s;
 
     &:hover {
-      background: #ffeaea;
+      background: $color-surface-soft-accent;
     }
     @media (max-width: 768px) {
       display: none;
@@ -63,7 +65,7 @@
 
   // para mensagem de erro caso o carrossel não carregue
   .error-carrossel {
-    color: #b62323;
+    color: $color-brand-danger;
     font-weight: 600;
     width: 100%;
     text-align: center;
@@ -71,10 +73,10 @@
 
   .card {
     min-width: 360px;
-    background: #fff;
+    background: $color-white;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 20px $color-black-a08;
     transition: transform 0.35s ease;
 
     img {
@@ -90,12 +92,12 @@
       h3 {
         font-size: 20px;
         margin-bottom: 8px;
-        color: #2b2b2b;
+        color: $color-text-primary;
       }
 
       p {
         font-size: 15px;
-        color: #6b5f59;
+        color: $color-text-secondary;
       }
     }
 
@@ -137,3 +139,4 @@
     }
   }
 }
+
