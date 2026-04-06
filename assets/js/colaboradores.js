@@ -29,6 +29,21 @@
     btnNext.style.display = isScrollable ? "grid" : "none";
   }
 
+  function centerTrackOnDesktop() {
+    const isMobile = window.innerWidth <= mobileBreakpoint;
+    if (isMobile) {
+      track.scrollLeft = 0;
+      return;
+    }
+
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    if (maxScroll > 0) {
+      track.scrollLeft = maxScroll / 2;
+    } else {
+      track.scrollLeft = 0;
+    }
+  }
+
   btnNext.addEventListener("click", () => {
     track.scrollBy({ left: scrollStep, behavior: "smooth" });
   });
@@ -40,6 +55,7 @@
   const recalc = () => {
     medirPasso();
     updateArrows();
+    centerTrackOnDesktop();
   };
 
   window.addEventListener("load", recalc);
