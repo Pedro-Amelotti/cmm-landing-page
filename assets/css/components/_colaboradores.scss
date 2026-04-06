@@ -20,9 +20,9 @@
   }
 
   .colab-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
+    // position: relative;
+    // display: flex;
+    // align-items: center;
     gap: 10px;
   }
 
@@ -51,11 +51,11 @@
 
   .colab-track {
     display: flex;
+    justify-content: center;
     gap: 24px;
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 20px 0;
-
     /* MOBILE: carrossel com snap */
     scroll-snap-type: x mandatory;
 
@@ -107,6 +107,7 @@
     }
 
     .colab-track {
+      justify-content: flex-start;
       padding: 10px 8px;
       gap: 16px;
 
