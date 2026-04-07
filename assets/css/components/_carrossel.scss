@@ -22,7 +22,7 @@
 
   .carrossel-btn {
     background: $color-white;
-    border: none;
+    border: 1px solid $color-border-soft;
     cursor: pointer;
     font-size: 28px;
     font-weight: 700;
@@ -35,11 +35,12 @@
     aspect-ratio: 1 / 1;
     line-height: 1;
     padding: 0;
-    box-shadow: 0 4px 16px $color-black-a10;
+    box-shadow: var(--shadow-soft);
     transition: 0.3s;
 
     &:hover {
       background: $color-surface-soft-accent;
+      color: $color-brand-primary;
     }
     @media (max-width: 768px) {
       display: none;
@@ -74,9 +75,10 @@
   .card {
     min-width: 360px;
     background: $color-white;
+    border: 1px solid $color-border-soft-alt;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 6px 20px $color-black-a08;
+    box-shadow: var(--shadow-soft);
     transition: transform 0.35s ease;
 
     img {
@@ -103,6 +105,7 @@
 
     &:hover {
       transform: scale(1.03);
+      box-shadow: 0 12px 28px $color-black-a12;
     }
   }
 

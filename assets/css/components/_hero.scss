@@ -25,12 +25,14 @@
     .overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(
-        to right,
-        rgba(var(--background), 0.95),
-        rgba(var(--background), 0.8),
-        rgba(var(--background), 0.6)
-      );
+      background:
+        linear-gradient(
+          to right,
+          hsl(var(--background) / 0.95),
+          hsl(var(--background) / 0.8),
+          hsl(var(--background) / 0.62)
+        ),
+        var(--gradient-hero);
     }
   }
 
@@ -45,12 +47,14 @@
     align-items: center;
     gap: 8px;
     background: $color-surface-badge;
+    border: 1px solid $color-border-soft;
     padding: 8px 16px;
     border-radius: 12px;
     backdrop-filter: blur(6px);
     font-size: 14px;
     font-weight: 500;
     color: $color-text-badge;
+    box-shadow: var(--shadow-soft);
 
     img {
       width: 16px;
@@ -104,6 +108,7 @@
 
       &:hover {
         background: $color-brand-primary-hover;
+        box-shadow: 0 8px 18px $color-brand-a35;
       }
     }
 
@@ -128,6 +133,8 @@
 
       &:hover {
         background: $color-brand-a10;
+        border-color: $color-brand-secondary;
+        color: $color-brand-secondary;
       }
     }
   }

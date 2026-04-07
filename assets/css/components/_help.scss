@@ -50,7 +50,8 @@
     padding: 36px 30px;
     border-radius: 18px;
     text-align: left;
-    box-shadow: 0 6px 20px $color-black-a06;
+    border: 1px solid $color-border-soft-alt;
+    box-shadow: var(--shadow-soft);
     transition: transform 0.35s ease;
     position: relative;
 
@@ -88,7 +89,11 @@
   }
 
   .help-card.destaque {
-    background: linear-gradient(135deg, $color-brand-gradient-start, $color-brand-danger);
+    background: linear-gradient(
+      135deg,
+      $color-brand-gradient-start,
+      $color-brand-gradient-end
+    );
     color: $color-white;
 
     .icon {
@@ -117,6 +122,7 @@
   .btn-white {
     background: $color-white;
     color: $color-brand-secondary;
+    border: 1px solid $color-border-soft;
     box-shadow: 0 3px 10px $color-black-a10;
 
     &:hover {
@@ -127,9 +133,11 @@
   .btn-red {
     background: $color-brand-primary;
     color: $color-white;
+    box-shadow: 0 4px 14px $color-brand-a35;
 
     &:hover {
       background: $color-brand-primary-hover;
+      box-shadow: 0 8px 18px $color-brand-a35;
     }
   }
 }

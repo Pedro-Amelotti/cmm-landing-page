@@ -79,11 +79,12 @@
         width: 44px;
         height: 44px;
         background: $color-white;
+        border: 1px solid $color-border-soft;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 4px 10px $color-black-a10;
+        box-shadow: var(--shadow-soft);
 
         img {
           width: 22px;
@@ -94,9 +95,10 @@
 
   .contato-form {
     background: $color-white;
+    border: 1px solid $color-border-soft-alt;
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 0 6px 24px $color-black-a08;
+    box-shadow: var(--shadow-soft);
 
     h3 {
       font-size: 22px;
@@ -125,8 +127,13 @@
       outline: none;
       transition: border 0.25s;
 
+      &::placeholder {
+        color: $color-text-secondary;
+      }
+
       &:focus {
         border-color: $color-brand-primary;
+        box-shadow: 0 0 0 4px $color-ring-a32;
       }
     }
 
@@ -141,9 +148,11 @@
       font-weight: 600;
       border: none;
       cursor: pointer;
+      box-shadow: 0 4px 14px $color-brand-a35;
 
       &:hover {
         background: $color-brand-primary-hover;
+        box-shadow: 0 8px 18px $color-brand-a35;
       }
     }
   }
