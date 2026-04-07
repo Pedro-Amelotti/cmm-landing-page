@@ -53,14 +53,15 @@
     background: $color-white;
     padding: 36px 28px;
     border-radius: 16px;
-    box-shadow: 0 6px 20px $color-black-a06;
+    border: 1px solid $color-border-soft-alt;
+    box-shadow: var(--shadow-soft);
     text-align: left;
     transform: scale(1);
     transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);
 
     &:hover {
       transform: scale(1.05);
-      box-shadow: 0 12px 28px $color-black-a10;
+      box-shadow: 0 12px 28px $color-black-a12;
     }
 
     .icon {

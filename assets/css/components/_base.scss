@@ -1,10 +1,50 @@
 @use "colors" as *;
 
 :root {
-  --background: #{$color-background-rgb};
+  --background: 30 40% 97%;
+  --foreground: 270 15% 15%;
+  --card-foreground: 270 15% 15%;
+  --popover-foreground: 270 15% 15%;
+  --primary: 350 65% 48%;
+  --secondary: 270 30% 95%;
+  --secondary-foreground: 270 20% 25%;
+  --muted: 280 15% 93%;
+  --muted-foreground: 270 10% 45%;
+  --accent: 275 40% 92%;
+  --accent-foreground: 275 50% 40%;
+  --border: 270 15% 90%;
+  --input: 270 15% 90%;
+  --ring: 350 65% 48%;
+  --rose: 280 30% 96%;
+  --rose-dark: 280 30% 55%;
+  --lilac: 270 40% 92%;
+  --lilac-dark: 270 35% 55%;
+  --background-rgb: #{$color-background-rgb};
+  --gradient-hero: linear-gradient(
+    128deg,
+    hsl(var(--primary) / 0.16),
+    hsl(var(--lilac) / 0.42)
+  );
+  --shadow-soft: 0 10px 30px rgba(36, 28, 49, 0.14);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: $color-surface-base;
+  color: $color-text-primary;
+}
+
+a,
+button,
+input,
+textarea {
+  &:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba($color-ring, 0.16);
+  }
 }
 

@@ -5,6 +5,7 @@
   color: $color-footer-text;
   padding: 50px 0 20px;
   border-radius: 12px 12px 0 0;
+  border-top: 1px solid rgba($color-lilac, 0.2);
 
   .container {
     max-width: 1250px;
@@ -56,11 +57,11 @@
       color: $color-white;
     }
   }
-  .footer-map-real {
+.footer-map-real {
   width: 150%;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 4px 20px $color-black-a25;
+  box-shadow: var(--shadow-soft);
   margin-top: 16px;
 
   iframe {
@@ -146,6 +147,7 @@
     .footer-btn-secondary {
       background: $color-white;
       color: $color-footer-bg;
+      border: 1px solid rgba($color-lilac, 0.35);
 
       &:hover {
         background: $color-surface-footer-secondary-hover;

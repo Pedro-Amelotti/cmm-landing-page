@@ -28,7 +28,7 @@
 
   .colab-btn {
     background: $color-white;
-    border: none;
+    border: 1px solid $color-border-soft;
     font-size: 26px;
     font-weight: 700;
     width: 52px;
@@ -37,15 +37,16 @@
     place-items: center;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    box-shadow: 0 3px 12px $color-black-a15;
+    box-shadow: var(--shadow-soft);
     cursor: pointer;
     margin: 0 12px;
     transition: 0.3s;
     line-height: 1;
     padding: 0;
 
-    &:hover {
+      &:hover {
       background: $color-surface-soft-accent-strong;
+      color: $color-brand-primary;
     }
   }
 
@@ -63,10 +64,11 @@
       min-width: 260px;
       max-width: 260px;
       background: $color-white;
+      border: 1px solid $color-border-soft-alt;
       border-radius: 16px;
       padding: 24px;
       text-align: center;
-      box-shadow: 0 6px 20px $color-black-a08;
+      box-shadow: var(--shadow-soft);
       scroll-snap-align: center;
 
       .avatar {
