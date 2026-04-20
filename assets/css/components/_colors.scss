@@ -1,59 +1,106 @@
-$color-background-rgb: 250, 247, 244;
+@use "sass:color";
+
+// Base pastel (backgrounds)
+$pink-light: #fbd0e0;
+$pink: #f2b9d3;
+$lilac-light: #e1c9f4;
+$lilac: #c1afe8;
+$cream: #fff6fb;
+
+// Vivid accents
+$pink-vivid: hsl(330, 80%, 60%);
+$pink-deep: hsl(335, 75%, 48%);
+$lilac-vivid: hsl(265, 70%, 62%);
+$lilac-deep: hsl(270, 65%, 45%);
+
+// Semantic palette
+$primary: $pink-vivid;
+$primary-foreground: $cream;
+$accent: $lilac-vivid;
+$secondary: $lilac-light;
+$muted: hsl(338, 86%, 94%);
+$background: $cream;
+$foreground: hsl(270, 40%, 22%);
+$muted-foreground: hsl(270, 25%, 40%);
+$border: hsl(273, 50%, 86%);
+
+// Gradients
+$gradient-hero: linear-gradient(135deg, $pink-vivid, $lilac-vivid);
+$gradient-vivid: linear-gradient(135deg, $pink-deep, $pink-vivid, $lilac-vivid);
+$gradient-cta: linear-gradient(135deg, hsl(335, 80%, 55%), hsl(270, 70%, 55%));
+$gradient-accent: linear-gradient(135deg, $lilac-light, $pink-light);
+$gradient-soft: linear-gradient(180deg, $pink-light, $cream);
+$gradient-section: linear-gradient(
+  135deg,
+  hsl(273, 65%, 92%),
+  hsl(338, 86%, 94%),
+  $cream
+);
+
+// Shadows and glow
+$shadow-soft: 0 6px 24px -4px hsla(330, 75%, 50%, 0.3);
+$shadow-card: 0 12px 44px -10px hsla(270, 50%, 30%, 0.2);
+$glow-primary:
+  0 0 24px hsla(330, 80%, 55%, 0.55),
+  0 0 60px hsla(265, 70%, 60%, 0.4);
+
+// Compatibility tokens used across existing components
+$color-background-rgb: 255, 246, 251;
 
 $color-transparent: transparent;
 $color-white: #fff;
-$color-black: #1b1624;
+$color-black: hsl(270, 30%, 16%);
 
-$color-surface-base: #faf7f4;
-$color-surface-soft: #f6f2f8;
-$color-surface-rose: #f2eef6;
-$color-surface-rose-light: #f7f4fa;
-$color-surface-badge: #efe5f4;
-$color-surface-accent: #ece2f3;
-$color-surface-avatar: #eadcf4;
-$color-surface-soft-accent: #f3ebf8;
-$color-surface-soft-accent-strong: #eee1f6;
-$color-surface-soft-accent-hover: #f8f2fc;
-$color-surface-accent-text: #f9f4fc;
-$color-surface-input: #fbf8fc;
-$color-surface-footer-secondary-hover: #ece5f2;
+$color-surface-base: $background;
+$color-surface-soft: color.mix($background, $pink-light, 72%);
+$color-surface-rose: color.mix($background, $lilac-light, 62%);
+$color-surface-rose-light: color.mix($background, $pink-light, 82%);
+$color-surface-badge: color.mix($background, $lilac-light, 60%);
+$color-surface-accent: color.mix($lilac-light, $pink-light, 45%);
+$color-surface-avatar: color.mix($lilac-light, $background, 58%);
+$color-surface-soft-accent: color.mix($background, $lilac-light, 74%);
+$color-surface-soft-accent-strong: color.mix($lilac-light, $background, 70%);
+$color-surface-soft-accent-hover: color.mix($background, $pink-light, 88%);
+$color-surface-accent-text: color.mix($background, $lilac-light, 90%);
+$color-surface-input: color.mix($background, $pink-light, 90%);
+$color-surface-footer-secondary-hover: rgba($color-white, 0.24);
 
-$color-text-primary: #26212c;
-$color-text-primary-alt: #2b2433;
-$color-text-secondary: #73677e;
-$color-text-secondary-alt: #6f6280;
-$color-text-tertiary: #4f455d;
-$color-text-body: #5a4f67;
-$color-text-tag: #8b629f;
-$color-text-badge: #7f4f95;
+$color-text-primary: $foreground;
+$color-text-primary-alt: hsl(270, 38%, 24%);
+$color-text-secondary: $muted-foreground;
+$color-text-secondary-alt: hsl(270, 22%, 43%);
+$color-text-tertiary: hsl(270, 20%, 34%);
+$color-text-body: hsl(270, 24%, 36%);
+$color-text-tag: $lilac-deep;
+$color-text-badge: $cream;
 
-$color-brand-primary: #ca2b45;
-$color-brand-primary-hover: #b3243b;
-$color-brand-primary-hover-header: #ae2038;
-$color-brand-primary-hover-alt: #a52037;
-$color-brand-secondary: #be3251;
-$color-brand-link-hover: #d33f5d;
-$color-brand-gradient-start: #ca2b45;
-$color-brand-gradient-end: #8c64b4;
-$color-brand-danger: #9f1f38;
+$color-brand-primary: $pink-vivid;
+$color-brand-primary-hover: $pink-deep;
+$color-brand-primary-hover-header: hsl(334, 76%, 51%);
+$color-brand-primary-hover-alt: hsl(333, 72%, 46%);
+$color-brand-secondary: $lilac-vivid;
+$color-brand-link-hover: $pink-vivid;
+$color-brand-gradient-start: $pink-deep;
+$color-brand-gradient-end: $lilac-vivid;
+$color-brand-danger: hsl(345, 70%, 44%);
 
-$color-border-soft: #e6e2e9;
-$color-border-soft-alt: #e9e3ee;
-$color-border-input: #e6e2e9;
+$color-border-soft: rgba($lilac-vivid, 0.2);
+$color-border-soft-alt: rgba($lilac-vivid, 0.28);
+$color-border-input: rgba($lilac-vivid, 0.24);
 
-$color-footer-bg: #231c2d;
-$color-footer-social-bg: #332844;
-$color-footer-social-bg-hover: #3e3054;
-$color-footer-text: #f4f1f7;
-$color-footer-text-muted: #d8d1df;
-$color-footer-link: #ece8f1;
-$color-footer-link-hover: #e3b8f2;
-$color-footer-copy: #c7bed2;
+$color-footer-bg: $lilac-deep;
+$color-footer-social-bg: rgba($color-white, 0.2);
+$color-footer-social-bg-hover: rgba($color-white, 0.34);
+$color-footer-text: rgba($color-white, 0.92);
+$color-footer-text-muted: rgba($color-white, 0.76);
+$color-footer-link: rgba($color-white, 0.86);
+$color-footer-link-hover: #fff;
+$color-footer-copy: rgba($color-white, 0.74);
 
-$color-lilac: #ebe2f3;
-$color-lilac-dark: #8c64b4;
-$color-ring: #ca2b45;
-$color-shadow-base: #241c31;
+$color-lilac: $lilac-light;
+$color-lilac-dark: $lilac-deep;
+$color-ring: $pink-vivid;
+$color-shadow-base: hsl(270, 35%, 24%);
 $color-shadow-soft: rgba($color-shadow-base, 0.14);
 $color-shadow-soft-strong: rgba($color-shadow-base, 0.2);
 

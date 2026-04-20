@@ -1,21 +1,19 @@
 @use "colors" as *;
 
-// Header e navegação principal
 .header {
   width: 100%;
-  background: $color-surface-base;
-  padding: 18px 0;
-  border-radius: 0 0 12px 12px;
-  border-bottom: 1px solid $color-border-soft;
-  box-shadow: 0 1px 4px $color-black-a05;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  background: rgba(255, 246, 251, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(225, 201, 244, 0.5);
+  box-shadow: 0 10px 34px -24px rgba($color-black, 0.6);
+  padding: 16px 0;
   z-index: 2000;
 
   .container {
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 0 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,16 +24,38 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+
+    > div {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: $gradient-hero;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 6px 22px -8px rgba($pink-vivid, 0.8);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
 
     .icon {
-      width: 32px;
-      height: 32px;
+      width: 22px;
+      height: 22px;
+      filter: brightness(0) invert(1);
     }
 
     .title {
-      font-size: 22px;
-      font-weight: 600;
-      color: $color-text-primary;
+      font-size: 24px;
+      font-weight: 700;
+      background: $gradient-vivid;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: 0.03em;
+    }
+
+    &:hover > div {
+      box-shadow: $glow-primary;
+      transform: scale(1.03);
     }
   }
 
@@ -48,13 +68,13 @@
 
     li a {
       font-size: 16px;
-      color: $color-text-secondary;
+      color: $muted-foreground;
       text-decoration: none;
       font-weight: 500;
-      transition: 0.25s;
+      transition: color 0.25s ease;
 
       &:hover {
-        color: $color-brand-link-hover;
+        color: $pink-vivid;
       }
     }
   }
@@ -63,23 +83,24 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background: $color-brand-primary;
+    background: $gradient-hero;
     padding: 12px 26px;
     border-radius: 12px;
-    color: $color-white;
+    color: $cream;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    box-shadow: 0px 4px 12px $color-brand-a35;
-    transition: 0.3s;
+    box-shadow: $glow-primary;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 
     img {
       width: 20px;
+      filter: brightness(0) invert(1);
     }
 
     &:hover {
-      background: $color-brand-primary-hover-header;
-      box-shadow: 0px 4px 14px $color-brand-a45;
+      transform: scale(1.05);
+      filter: saturate(1.08);
     }
   }
 
@@ -87,24 +108,24 @@
     display: none;
     flex-direction: column;
     gap: 6px;
-    background: $color-white;
-    border: 1px solid $color-border-soft;
+    background: rgba($color-white, 0.76);
+    border: 1px solid rgba($lilac-vivid, 0.35);
     padding: 10px 9px;
     border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 8px 20px $color-black-a06;
+    box-shadow: 0 8px 20px rgba($color-black, 0.12);
     transition: 0.25s ease;
 
     &:hover {
-      border-color: $color-border-soft-alt;
-      background: $color-surface-soft;
+      border-color: rgba($pink-vivid, 0.55);
+      background: rgba($color-white, 0.9);
     }
 
     span {
       width: 26px;
       height: 3px;
       border-radius: 6px;
-      background: $color-text-tertiary;
+      background: $foreground;
       display: block;
       transition: transform 0.25s ease, opacity 0.2s ease, width 0.2s ease;
     }
@@ -128,7 +149,7 @@
   .menu-overlay {
     position: fixed;
     inset: 0;
-    background: $color-black-a18;
+    background: rgba($color-black, 0.24);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.25s ease;
@@ -146,11 +167,13 @@
     top: 82px;
     right: 16px;
     width: min(320px, calc(100% - 32px));
-    background: $color-surface-base;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border-radius: 14px;
     padding: 18px 20px;
-    box-shadow: 0 14px 32px $color-black-a12;
-    border: 1px solid $color-border-soft-alt;
+    box-shadow: $shadow-card;
+    border: 1px solid rgba(225, 201, 244, 0.5);
     max-height: 70vh;
     overflow-y: auto;
     opacity: 0;
@@ -169,13 +192,13 @@
 
       li a {
         font-size: 16px;
-        color: $color-text-secondary;
+        color: $muted-foreground;
         text-decoration: none;
         font-weight: 600;
         transition: color 0.2s ease;
 
         &:hover {
-          color: $color-brand-link-hover;
+          color: $pink-vivid;
         }
       }
     }
@@ -184,6 +207,12 @@
       opacity: 1;
       transform: translateY(0);
       pointer-events: auto;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .nav ul {
+      gap: 28px;
     }
   }
 
@@ -214,4 +243,3 @@
     }
   }
 }
-

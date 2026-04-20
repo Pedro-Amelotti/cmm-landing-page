@@ -64,7 +64,7 @@
     width: 80%;
   }
 
-  // para mensagem de erro caso o carrossel não carregue
+  // fallback message if carousel fails to load
   .error-carrossel {
     color: $color-brand-danger;
     font-weight: 600;
