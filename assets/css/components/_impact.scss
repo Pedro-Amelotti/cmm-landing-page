@@ -1,37 +1,31 @@
 @use "colors" as *;
 
-// Seção de impacto (números)
 .impact {
-  background: $color-surface-rose;
-  padding: 140px 0 80px;
+  background: $gradient-accent;
+  padding: 130px 0 84px;
   text-align: center;
-
-  .container {
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
 
   .section-tag {
     font-size: 14px;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    color: $color-text-tag;
+    color: $lilac-deep;
   }
 
   .section-title {
-    font-size: 38px;
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
-    color: $color-text-primary;
+    color: $foreground;
     margin: 16px 0 40px;
+    font-family: "Playfair Display", serif;
   }
 
   .impact-stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 28px;
-    margin-bottom: 20px;
+    gap: 24px;
+    margin-bottom: 24px;
 
     @media (max-width: 900px) {
       grid-template-columns: repeat(2, 1fr);
@@ -43,31 +37,37 @@
   }
 
   .stat {
-    background: $color-white;
-    padding: 40px 0;
-    border-radius: 16px;
-    border: 1px solid $color-border-soft-alt;
-    box-shadow: var(--shadow-soft);
-    transition: transform 0.35s ease;
+    background: rgba(255, 255, 255, 0.68);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 38px 0;
+    border-radius: 1rem;
+    border: 1px solid rgba(225, 201, 244, 0.5);
+    box-shadow: $shadow-card;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 
     &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 28px $color-black-a10;
+      transform: translateY(-8px);
+      box-shadow: $glow-primary;
     }
 
     .stat-number {
-      display: block;
+      display: inline-block;
       font-size: 44px;
       font-weight: 700;
-      color: $color-brand-primary;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
+      background: $gradient-vivid;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 200% auto;
+      animation: shimmer 3s linear infinite;
     }
 
     .stat-label {
       display: block;
       font-size: 16px;
-      color: $color-text-secondary;
+      color: $muted-foreground;
     }
   }
 }
-

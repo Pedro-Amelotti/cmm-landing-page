@@ -1,14 +1,14 @@
 @use "colors" as *;
 
-// Seção de contato
+// Contact section
 .contato {
   background: $color-surface-rose;
   padding: 80px 0;
 
   .container {
-    max-width: 1250px;
+    max-width: var(--container-max);
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 var(--container-padding);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;

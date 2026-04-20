@@ -1,44 +1,59 @@
 @use "colors" as *;
 
-// Seção "Como Ajudar"
 .help {
-  background: $color-surface-base;
-  padding: 120px 0;
+  background: $gradient-section;
+  padding: 118px 0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: -100px;
+    width: 320px;
+    height: 320px;
+    border-radius: 9999px;
+    background: rgba($pink-vivid, 0.2);
+    filter: blur(54px);
+    pointer-events: none;
+  }
 
   .container {
-    max-width: 970px;
-    margin: 0 auto;
-    padding: 0 24px;
+    max-width: 1080px;
     text-align: center;
+    position: relative;
+    z-index: 1;
   }
 
   .section-tag {
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $color-text-tag;
-    font-weight: 600;
+    color: $lilac-deep;
+    font-weight: 700;
   }
 
   .section-title {
     margin: 14px 0 10px;
-    font-size: 38px;
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
-    color: $color-text-primary;
+    color: $foreground;
+    font-family: "Playfair Display", serif;
   }
 
   .section-description {
-    max-width: 650px;
-    margin: 0 auto 60px;
+    max-width: 680px;
+    margin: 0 auto 56px;
     font-size: 17px;
-    color: $color-text-secondary;
-    line-height: 1.6;
+    color: $muted-foreground;
+    line-height: 1.7;
   }
 
   .help-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
+    gap: 24px;
 
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
@@ -46,99 +61,84 @@
   }
 
   .help-card {
-    background: $color-white;
-    padding: 36px 30px;
-    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(225, 201, 244, 0.5);
+    padding: 34px 30px;
+    border-radius: 1rem;
     text-align: left;
-    border: 1px solid $color-border-soft-alt;
-    box-shadow: var(--shadow-soft);
-    transition: transform 0.35s ease;
+    box-shadow: $shadow-card;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
     position: relative;
 
     &:hover {
       transform: translateY(-5px);
+      box-shadow: $glow-primary;
     }
 
     .icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 12px;
-      background: $color-surface-accent;
+      width: 64px;
+      height: 64px;
+      border-radius: 1rem;
+      background: $gradient-hero;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 18px;
 
       img {
-        width: 24px;
+        width: 28px;
+        filter: brightness(0) invert(1);
       }
     }
 
     h3 {
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 22px;
+      font-weight: 700;
       margin-bottom: 10px;
-      color: $color-text-primary;
+      color: $foreground;
     }
 
     p {
-      color: $color-text-secondary;
-      line-height: 1.6;
+      color: $muted-foreground;
+      line-height: 1.65;
       margin-bottom: 20px;
     }
   }
 
   .help-card.destaque {
-    background: linear-gradient(
-      135deg,
-      $color-brand-gradient-start,
-      $color-brand-gradient-end
-    );
-    color: $color-white;
+    background: $gradient-vivid;
+    color: $cream;
 
     .icon {
-      background: $color-white-a20;
+      background: rgba($color-white, 0.24);
     }
 
-    h3 {
-      color: $color-white;
-    }
-
+    h3,
     p {
-      color: $color-surface-accent-text;
+      color: $cream;
     }
   }
 
   .btn-white,
   .btn-red {
     display: inline-block;
-    padding: 10px 22px;
-    border-radius: 10px;
+    padding: 11px 24px;
+    border-radius: 12px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
-  }
-
-  .btn-white {
-    background: $color-white;
-    color: $color-brand-secondary;
-    border: 1px solid $color-border-soft;
-    box-shadow: 0 3px 10px $color-black-a10;
-
-    &:hover {
-      background: $color-surface-soft-accent-hover;
-    }
-  }
-
-  .btn-red {
-    background: $color-brand-primary;
-    color: $color-white;
-    box-shadow: 0 4px 14px $color-brand-a35;
+    border: 0;
+    cursor: pointer;
+    background: $gradient-hero;
+    color: $cream;
+    box-shadow: $glow-primary;
+    transition: transform 0.28s ease, filter 0.28s ease;
 
     &:hover {
-      background: $color-brand-primary-hover;
-      box-shadow: 0 8px 18px $color-brand-a35;
+      transform: translateY(-2px) scale(1.03);
+      filter: saturate(1.1);
     }
   }
 }
-
