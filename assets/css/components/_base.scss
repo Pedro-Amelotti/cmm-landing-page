@@ -24,7 +24,7 @@
   --shadow-soft: #{$shadow-soft};
   --container-max: 1400px;
   --container-padding: 2rem;
-  --header-height: 98px;
+  --header-height: 78px;
 }
 
 html {
@@ -167,7 +167,7 @@ textarea {
 
 @media (max-width: 900px) {
   :root {
-    --header-height: 86px;
+    --header-height: 76px;
     --container-padding: 1.5rem;
   }
 }
