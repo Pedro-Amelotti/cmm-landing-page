@@ -37,7 +37,7 @@
     card.className = "card";
     if (isClone) card.dataset.clone = "true";
     card.innerHTML = `
-      <img src="${item.imagem}" alt="${item.titulo}">
+      <img src="${item.imagem}" alt="${item.titulo}" loading="lazy">
       <div class="card-content">
         <h3>${item.titulo}</h3>
         <p>${item.descricao}</p>
