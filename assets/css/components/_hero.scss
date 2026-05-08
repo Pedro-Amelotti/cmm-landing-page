@@ -1,4 +1,4 @@
-@use "colors" as *;
+@use "colors"as *;
 
 .hero {
   position: relative;
@@ -25,12 +25,10 @@
     .overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(
-        to right,
-        rgba(255, 246, 251, 0.95),
-        rgba(255, 246, 251, 0.75),
-        rgba(255, 246, 251, 0.5)
-      );
+      background: linear-gradient(to right,
+          rgba(255, 246, 251, 0.95),
+          rgba(255, 246, 251, 0.75),
+          rgba(255, 246, 251, 0.5));
     }
   }
 
@@ -212,7 +210,6 @@
 
   @media (max-width: 900px) {
     min-height: 620px;
-    padding: 52px 0 94px;
 
     .container::before {
       right: 0;

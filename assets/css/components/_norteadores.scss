@@ -1,6 +1,5 @@
 .norteadores {
   background: linear-gradient(135deg, #fff6fb, hsl(273, 65%, 92%), hsl(338, 86%, 94%));
-  padding: 108px 0 118px;
   position: relative;
   overflow: hidden;
 
@@ -199,8 +198,6 @@
 
 @media (max-width: 900px) {
   .norteadores {
-    padding: 88px 0 94px;
-
     .norteadores-card {
       padding: 26px;
     }
