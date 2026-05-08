@@ -2,7 +2,6 @@
 
 .help {
   background: $gradient-section;
-  padding: 118px 0;
   position: relative;
   overflow: hidden;
 
@@ -27,7 +26,7 @@
   }
 
   .section-tag {
-    font-size: 14px;
+    font-size: clamp(0.75rem, 1.2vw, 0.875rem);
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $lilac-deep;
@@ -45,7 +44,7 @@
   .section-description {
     max-width: 680px;
     margin: 0 auto 56px;
-    font-size: 17px;
+    font-size: clamp(0.9375rem, 1.45vw, 1.0625rem);
     color: $muted-foreground;
     line-height: 1.7;
   }
@@ -94,7 +93,7 @@
     }
 
     h3 {
-      font-size: 22px;
+      font-size: clamp(1.125rem, 2.1vw, 1.375rem);
       font-weight: 700;
       margin-bottom: 10px;
       color: $foreground;
@@ -126,7 +125,7 @@
     display: inline-block;
     padding: 11px 24px;
     border-radius: 12px;
-    font-size: 15px;
+    font-size: clamp(0.8125rem, 1.25vw, 0.9375rem);
     font-weight: 700;
     text-decoration: none;
     border: 0;

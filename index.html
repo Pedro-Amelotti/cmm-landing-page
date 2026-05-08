@@ -1,14 +1,17 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="pt-BR">
-<head>
-  <title>Casa Menina Mulher</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link
+  <head>
+    <title>Casa Menina Mulher</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
@@ -16,387 +19,666 @@
     />
 
     <!-- Primary Meta Tags -->
-  <meta name="title" content="Casa Menina Mulher — Transformando vidas" />
-  <meta
-    name="description"
-    content="A Casa Menina Mulher acolhe, protege e oferece oportunidades para meninas em situação de vulnerabilidade. Conheça nosso trabalho e saiba como ajudar."
-  />
+    <meta name="title" content="Casa Menina Mulher — Transformando vidas" />
+    <meta
+      name="description"
+      content="A Casa Menina Mulher acolhe, protege e oferece oportunidades para meninas em situação de vulnerabilidade. Conheça nosso trabalho e saiba como ajudar."
+    />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://casameninamulher.org.br/" />
-  <meta
-    property="og:title"
-    content="Casa Menina Mulher — Transformando vidas"
-  />
-  <meta
-    property="og:description"
-    content="Há mais de uma década acolhemos meninas, oferecendo cuidado, educação e dignidade. Contribua para transformar vidas."
-  />
-  <meta
-    property="og:image"
-    content="https://casameninamulher.org.br/assets/img/og-image.jpg"
-  />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://casameninamulher.org.br/" />
+    <meta
+      property="og:title"
+      content="Casa Menina Mulher — Transformando vidas"
+    />
+    <meta
+      property="og:description"
+      content="Há mais de uma década acolhemos meninas, oferecendo cuidado, educação e dignidade. Contribua para transformar vidas."
+    />
+    <meta
+      property="og:image"
+      content="https://casameninamulher.org.br/assets/img/og-image.jpg"
+    />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://casameninamulher.org.br/" />
-  <meta
-    property="twitter:title"
-    content="Casa Menina Mulher — Transformando vidas"
-  />
-  <meta
-    property="twitter:description"
-    content="Conheça o trabalho da Casa Menina Mulher e saiba como ajudar a transformar vidas através do acolhimento e da educação."
-  />
-  <meta
-    property="twitter:image"
-    content="https://casameninamulher.org.br/assets/img/img-banner.png"
-  />
-</head>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://casameninamulher.org.br/" />
+    <meta
+      property="twitter:title"
+      content="Casa Menina Mulher — Transformando vidas"
+    />
+    <meta
+      property="twitter:description"
+      content="Conheça o trabalho da Casa Menina Mulher e saiba como ajudar a transformar vidas através do acolhimento e da educação."
+    />
+    <meta
+      property="twitter:image"
+      content="https://casameninamulher.org.br/assets/img/img-banner.png"
+    />
+  </head>
 
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="brand">
-        <div>
-          <img src="assets/img/favicon.png" alt="Coração vermelho" class="icon" id="svg">
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="brand">
+          <div>
+            <img
+              src="assets/img/favicon.png"
+              alt="logo cmm"
+              class="icon"
+              id="svg"
+            />
+          </div>
+          <span class="title">CMM</span>
         </div>
-        <span class="title">CMM</span>
+
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#" class="scroll-link" data-target="sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="#" class="scroll-link" data-target="norteadores"
+                >Norteadores</a
+              >
+            </li>
+            <li>
+              <a href="#" class="scroll-link" data-target="impacto"
+                >Nosso Impacto</a
+              >
+            </li>
+            <li>
+              <a href="#" class="scroll-link" data-target="help">Como Ajudar</a>
+            </li>
+            <li>
+              <a href="#" class="scroll-link" data-target="contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn-donate scroll-link" data-target="help">
+          <img src="./assets/img/icon-heart.svg" alt="Coração tracejado" />
+          Doe Agora
+        </a>
+
+        <button
+          class="btn-mobile"
+          id="btn-mobile"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
-      <nav class="nav">
+      <div class="menu-overlay" id="menu-overlay"></div>
+
+      <nav class="mobile-menu" id="mobile-menu">
         <ul>
           <li><a href="#" class="scroll-link" data-target="sobre">Sobre</a></li>
-          <li><a href="#" class="scroll-link" data-target="impacto">Nosso Impacto</a></li>
-          <li><a href="#" class="scroll-link" data-target="help">Como Ajudar</a></li>
-          <li><a href="#" class="scroll-link" data-target="contato">Contato</a></li>
+          <li>
+            <a href="#" class="scroll-link" data-target="norteadores"
+              >Norteadores</a
+            >
+          </li>
+          <li>
+            <a href="#" class="scroll-link" data-target="impacto"
+              >Nosso Impacto</a
+            >
+          </li>
+          <li>
+            <a href="#" class="scroll-link" data-target="help">Como Ajudar</a>
+          </li>
+          <li>
+            <a href="#" class="scroll-link" data-target="colaboradores"
+              >Nossos Colaboradores</a
+            >
+          </li>
+          <li>
+            <a href="#" class="scroll-link" data-target="contato">Contato</a>
+          </li>
         </ul>
       </nav>
+    </header>
 
-      <a 
-        href="#" 
-        class="btn-donate scroll-link" 
-        data-target="help">
-          <img src="./assets/img/icon-heart.svg" alt="Coração tracejado">
-        Doe Agora
-      </a>
-
-      <button class="btn-mobile" id="btn-mobile" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <div class="menu-overlay" id="menu-overlay"></div>
-
-    <nav class="mobile-menu" id="mobile-menu">
-      <ul>
-          <li><a href="#" class="scroll-link" data-target="sobre">Sobre</a></li>
-          <li><a href="#" class="scroll-link" data-target="impacto">Nosso Impacto</a></li>
-          <li><a href="#" class="scroll-link" data-target="help">Como Ajudar</a></li>
-          <li><a href="#" class="scroll-link" data-target="colaboradores">Nossos Colaboradores</a></li>
-          <li><a href="#" class="scroll-link" data-target="contato">Contato</a></li>
-        </ul>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero" id="ajudar">
-    <div class="hero-bg">
-      <img src="assets/img/hero-bg.jpg" alt="Fundo abstrato" loading="eager">
-      <div class="overlay"></div>
-    </div>
-
-    <div class="container">
-      <div class="hero-badge">
-        <img src="assets/img/icon-heart-red.svg" alt="">
-        Organização da Sociedade Civil
+    <!-- Hero -->
+    <section class="hero pd" id="ajudar">
+      <div class="hero-bg">
+        <img
+          src="assets/img/hero-bg.jpg"
+          alt="Fundo abstrato"
+          loading="eager"
+        />
+        <div class="overlay"></div>
       </div>
 
-      <h1 class="hero-title">
-        Casa Menina Mulher<br>
-        <span>Transformando vidas</span>
-      </h1>
+      <div class="container">
+        <div class="hero-badge">
+          <img src="assets/img/icon-heart-red.svg" alt="" />
+          Organização da Sociedade Civil
+        </div>
 
-      <p class="hero-text">
-        Há mais de três década, acolhemos e protegemos meninas em situação de vulnerabilidade,
-        oferecendo educação e conhecimento para um futuro digno.
-      </p>
+        <h1 class="hero-title">
+          Casa Menina Mulher<br />
+          <span>Transformando vidas</span>
+        </h1>
 
-      <div class="hero-buttons">
-        <a 
-          href="#" 
-          class="btn-primary scroll-link"
-          data-target="help">
-            <img src="assets/img/icon-heart.svg" alt="">
+        <p class="hero-text">
+          Há mais de três década, acolhemos e protegemos meninas em situação de
+          vulnerabilidade, oferecendo educação e conhecimento para um futuro
+          digno.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary scroll-link" data-target="help">
+            <img src="assets/img/icon-heart.svg" alt="" />
             Faça uma Doação
-        </a>
+          </a>
 
-        <a 
-          href="#" 
-          class="btn-outline scroll-link"
-          data-target="sobre">
+          <a href="#" class="btn-outline scroll-link" data-target="sobre">
             Conheça Nosso Trabalho
             <span class="arrow">&rarr;</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Missão -->
-  <section class="mission" id="sobre">
-    <div class="container">
-      <span class="section-tag">Nossa Missão</span>
-      <h2 class="section-title">Um espaço de aprendizagem e de esperança</h2>
-      <p class="section-description">
-        A Casa Menina Mulher nasceu do sonho de criar um espaço onde meninas em situação de
-        vulnerabilidade social pudessem encontrar dignidade
-        e a chance de construir um futuro melhor.
-      </p>
-
-      <div class="mission-cards">
-        <div class="card">
-          <div class="icon"><img src="assets/img/icon-missao-heart.svg" alt=""></div>
-          <h3>Cuidado</h3>
-          <p>Cada menina recebe atenção individualizada.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon"><img src="assets/img/icon-missao-protecao.svg" alt=""></div>
-          <h3>Proteção</h3>
-          <p>Trabalhamos no eixo de prevenção à violência contra crianças e adolescentes.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon"><img src="assets/img/icon-missao-educacao.svg" alt=""></div>
-          <h3>Educação</h3>
-          <p>Investimos na formação educacional como ferramenta de transformação social.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon"><img src="assets/img/icon-missao-comunidade.svg" alt=""></div>
-          <h3>Comunidade</h3>
-          <p>Construímos uma rede de apoio que envolve famílias, voluntários e parceiros.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Impacto + Carrossel -->
-  <section class="impact" id="impacto">
-    <div class="container">
-      <span class="section-tag">Nosso Impacto</span>
-      <h2 class="section-title">Números que transformam vidas</h2>
-
-      <div class="impact-stats">
-        <div class="stat" data-number="500+" data-label="Meninas Acolhidas">
-          <span class="stat-number">500+</span>
-          <span class="stat-label">Meninas Acolhidas</span>
-        </div>
-
-        <div class="stat" data-number="30+" data-label="Anos de Atuação">
-          <span class="stat-number">30+</span>
-          <span class="stat-label">Anos de Atuação</span>
-        </div>
-
-        <div class="stat" data-number="200+" data-label="Voluntários Ativos">
-          <span class="stat-number">200+</span>
-          <span class="stat-label">Voluntários Ativos</span>
-        </div>
-
-        <div class="stat" data-number="95%" data-label="Reintegração Familiar">
-          <span class="stat-number">95%</span>
-          <span class="stat-label">Reintegração Familiar</span>
-        </div>
-      </div>
-    </div>
-
-    <section class="carrossel">
-      <div class="container">
-        <h2 class="carrossel-titulo">Nosso Trabalho em Imagens</h2>
-
-        <div class="carrossel-wrapper">
-          <button class="carrossel-btn prev" aria-label="Slide anterior">&lt;</button>
-
-          <div class="carrossel-track" id="carrossel-track">
-            <!-- Cards serão injetados via JS -->
-          </div>
-
-          <button class="carrossel-btn next" aria-label="Próximo slide">&gt;</button>
+          </a>
         </div>
       </div>
     </section>
-  </section>
 
-  <!-- Como Ajudar -->
-  <section class="help" id="help">
-    <div class="container">
-      <span class="section-tag">Faça Parte</span>
-      <h2 class="section-title">Como você pode ajudar</h2>
-      <p class="section-description">
-        Existem várias formas de contribuir para transformar a vida dessas meninas.
-        Escolha a que mais combina com você.
-      </p>
+    <!-- Missão -->
+    <section class="mission pd" id="sobre">
+      <div class="container">
+        <span class="section-tag">Nossa Missão</span>
+        <h2 class="section-title">Um espaço de aprendizagem e de esperança</h2>
+        <p class="section-description">
+          A Casa Menina Mulher nasceu do sonho de criar um espaço onde meninas
+          em situação de vulnerabilidade social pudessem encontrar dignidade e a
+          chance de construir um futuro melhor.
+        </p>
 
-      <div class="help-grid">
-        <div class="help-card destaque">
-          <div class="icon">
-            <img src="assets/img/icon-heart.svg" alt="Ícone Doação Financeira">
+        <div class="mission-cards">
+          <div class="card">
+            <div class="icon">
+              <img src="assets/img/icon-missao-heart.svg" alt="" />
+            </div>
+            <h3>Cuidado</h3>
+            <p>Cada menina recebe atenção individualizada.</p>
           </div>
-          <h3>Doação Financeira</h3>
-          <p>
-            Sua contribuição ajuda a manter nossos programas de acolhimento,
-            educação e cuidados com as meninas.
-          </p>
-          <button type="button" class="btn-white btn-open-modal" data-file="assets/data/doacao-financeira.html">Doar Agora</button>
-        </div>
 
-        <div class="help-card">
-          <div class="icon">
-            <img src="assets/img/icon-voluntario.svg" alt="Ícone Seja Voluntário">
+          <div class="card">
+            <div class="icon">
+              <img src="assets/img/icon-missao-protecao.svg" alt="" />
+            </div>
+            <h3>Proteção</h3>
+            <p>
+              Trabalhamos no eixo de prevenção à violência contra crianças e
+              adolescentes.
+            </p>
           </div>
-          <h3>Seja Voluntário</h3>
-          <p>
-            Compartilhe seu tempo e habilidades. Precisamos de educadores,
-            psicólogos, cuidadores e mais.
-          </p>
-          <a 
-            href="#" 
-            class="btn-red scroll-link"
-            data-target="contato">
-            Quero Ajudar
-          </a>
-        </div>
 
-        <div class="help-card">
-          <div class="icon">
-            <img src="assets/img/icon-doacao.svg" alt="Ícone Doação de Itens">
+          <div class="card">
+            <div class="icon">
+              <img src="assets/img/icon-missao-educacao.svg" alt="" />
+            </div>
+            <h3>Educação</h3>
+            <p>
+              Investimos na formação educacional como ferramenta de
+              transformação social.
+            </p>
           </div>
-          <h3>Doação de Itens</h3>
-          <p>
-            Roupas, materiais escolares, brinquedos e outros itens são sempre bem-vindos.
-          </p>
-          <button type="button" class="btn-red btn-open-modal" data-file="assets/data/doacao-itens.html">Ver Lista</button>
-        </div>
 
-        <div class="help-card">
-          <div class="icon">
-            <img src="assets/img/icon-calendario.svg" alt="Ícone Eventos e Parcerias">
+          <div class="card">
+            <div class="icon">
+              <img src="assets/img/icon-missao-comunidade.svg" alt="" />
+            </div>
+            <h3>Comunidade</h3>
+            <p>
+              Construímos uma rede de apoio que envolve famílias, voluntários e
+              parceiros.
+            </p>
           </div>
-          <h3>Eventos e Parcerias</h3>
-          <p>
-            Empresas e instituições podem se tornar parceiras e organizar eventos beneficentes.
-          </p>
-          <a 
-            href="#" 
-            class="btn-red scroll-link"
-            data-target="contato">
-            Seja Parceiro
-          </a>
         </div>
+      </div>
+    </section>
+
+    <!-- Norteadores -->
+    <section class="norteadores pd" id="norteadores">
+      <div class="container">
+        <span class="section-tag">Norteadores Institucionais</span>
+        <h2 class="section-title">Diretrizes que orientam nosso trabalho</h2>
+        <p class="section-description">
+          Nossa atuação é guiada por dois marcos complementares: a Política de
+          Salvaguarda e os Objetivos de Desenvolvimento Sustentável no Brasil.
+        </p>
+
+        <article class="norteadores-card">
+          <h3>Política de Salvaguarda</h3>
+          <p>
+            Adotamos diretrizes claras para prevenir riscos, proteger crianças e
+            adolescentes e orientar a resposta institucional em situações de
+            preocupação.
+          </p>
+
+          <ul class="norteadores-list">
+            <li>
+              Proteção integral de crianças, adolescentes e pessoas em
+              vulnerabilidade.
+            </li>
+            <li>
+              Prevenção de abuso, exploração e qualquer forma de violência.
+            </li>
+            <li>
+              Conduta obrigatória para equipe, voluntários e parceiros, com
+              fluxo de resposta.
+            </li>
+          </ul>
+
+          <div class="norteadores-actions">
+            <a
+              href="https://drive.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="norteadores-btn-primary"
+            >
+              Ler Política de Salvaguarda
+            </a>
+            <button
+              type="button"
+              class="norteadores-btn-secondary btn-open-modal"
+              data-file="assets/data/salvaguarda-reporte.html"
+            >
+              Como reportar uma preocupação
+            </button>
+          </div>
+
+          <!-- Quando necessário, ativar download local do PDF:
+        <a href="assets/docs/politica-de-salvaguarda.pdf" download class="norteadores-link-download">
+          Baixar Política de Salvaguarda (PDF)
+        </a>
+        --></article>
+
+        <div class="ods-area">
+          <h3 class="ods-title">
+            Os Objetivos de Desenvolvimento Sustentável no Brasil
+          </h3>
+          <div class="ods-grid">
+            <img
+              src="assets/img/SDG-1.svg"
+              alt="ODS 1 - Erradicação da Pobreza"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-2.svg"
+              alt="ODS 2 - Fome Zero e Agricultura Sustentável"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-3.svg"
+              alt="ODS 3 - Saúde e Bem-Estar"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-4.svg"
+              alt="ODS 4 - Educação de Qualidade"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-5.svg"
+              alt="ODS 5 - Igualdade de Gênero"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-6.svg"
+              alt="ODS 6 - Água Potável e Saneamento"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-7.svg"
+              alt="ODS 7 - Energia Limpa e Acessível"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-8.svg"
+              alt="ODS 8 - Trabalho Decente e Crescimento Econômico"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-9.svg"
+              alt="ODS 9 - Indústria, Inovação e Infraestrutura"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-10.svg"
+              alt="ODS 10 - Redução das Desigualdades"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-11.svg"
+              alt="ODS 11 - Cidades e Comunidades Sustentáveis"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-12.svg"
+              alt="ODS 12 - Consumo e Produção Responsáveis"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-13.svg"
+              alt="ODS 13 - Ação Contra a Mudança Global do Clima"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-14.svg"
+              alt="ODS 14 - Vida na Água"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-15.svg"
+              alt="ODS 15 - Vida Terrestre"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-16.svg"
+              alt="ODS 16 - Paz, Justiça e Instituições Eficazes"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/SDG-17.svg"
+              alt="ODS 17 - Parcerias e Meios de Implementação"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/objetivos_02.png"
+              alt="Banner dos Objetivos de Desenvolvimento Sustentável da ONU no Brasil"
+              loading="lazy"
+              class="ods-image-highlight"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impacto + Carrossel -->
+    <section class="impact pd" id="impacto">
+      <div class="container">
+        <span class="section-tag">Nosso Impacto</span>
+        <h2 class="section-title">Números que transformam vidas</h2>
+
+        <div class="impact-stats">
+          <div class="stat" data-number="500+" data-label="Meninas Acolhidas">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Meninas Acolhidas</span>
+          </div>
+
+          <div class="stat" data-number="30+" data-label="Anos de Atuação">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Anos de Atuação</span>
+          </div>
+
+          <div class="stat" data-number="200+" data-label="Voluntários Ativos">
+            <span class="stat-number">200+</span>
+            <span class="stat-label">Voluntários Ativos</span>
+          </div>
+
+          <div
+            class="stat"
+            data-number="95%"
+            data-label="Reintegração Familiar"
+          >
+            <span class="stat-number">95%</span>
+            <span class="stat-label">Reintegração Familiar</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="carrossel">
+        <div class="container">
+          <h2 class="carrossel-titulo">Nosso Trabalho em Imagens</h2>
+
+          <div class="carrossel-wrapper">
+            <button class="carrossel-btn prev" aria-label="Slide anterior">
+              &lt;
+            </button>
+
+            <div class="carrossel-track" id="carrossel-track">
+              <!-- Cards serão injetados via JS -->
+            </div>
+
+            <button class="carrossel-btn next" aria-label="Próximo slide">
+              &gt;
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Como Ajudar -->
+    <section class="help pd" id="help">
+      <div class="container">
+        <span class="section-tag">Faça Parte</span>
+        <h2 class="section-title">Como você pode ajudar</h2>
+        <p class="section-description">
+          Existem várias formas de contribuir para transformar a vida dessas
+          meninas. Escolha a que mais combina com você.
+        </p>
+
+        <div class="help-grid">
+          <div class="help-card destaque">
+            <div class="icon">
+              <img
+                src="assets/img/icon-heart.svg"
+                alt="Ícone Doação Financeira"
+              />
+            </div>
+            <h3>Doação Financeira</h3>
+            <p>
+              Sua contribuição ajuda a manter nossos programas de acolhimento,
+              educação e cuidados com as meninas.
+            </p>
+            <button
+              type="button"
+              class="btn-white btn-open-modal"
+              data-file="assets/data/doacao-financeira.html"
+            >
+              Doar Agora
+            </button>
+          </div>
+
+          <div class="help-card">
+            <div class="icon">
+              <img
+                src="assets/img/icon-voluntario.svg"
+                alt="Ícone Seja Voluntário"
+              />
+            </div>
+            <h3>Seja Voluntário</h3>
+            <p>
+              Compartilhe seu tempo e habilidades. Precisamos de educadores,
+              psicólogos, cuidadores e mais.
+            </p>
+            <a href="#" class="btn-red scroll-link" data-target="contato">
+              Quero Ajudar
+            </a>
+          </div>
+
+          <div class="help-card">
+            <div class="icon">
+              <img
+                src="assets/img/icon-doacao.svg"
+                alt="Ícone Doação de Itens"
+              />
+            </div>
+            <h3>Doação de Itens</h3>
+            <p>
+              Roupas, materiais escolares, brinquedos e outros itens são sempre
+              bem-vindos.
+            </p>
+            <button
+              type="button"
+              class="btn-red btn-open-modal"
+              data-file="assets/data/doacao-itens.html"
+            >
+              Ver Lista
+            </button>
+          </div>
+
+          <div class="help-card">
+            <div class="icon">
+              <img
+                src="assets/img/icon-calendario.svg"
+                alt="Ícone Eventos e Parcerias"
+              />
+            </div>
+            <h3>Eventos e Parcerias</h3>
+            <p>
+              Empresas e instituições podem se tornar parceiras e organizar
+              eventos beneficentes.
+            </p>
+            <a href="#" class="btn-red scroll-link" data-target="contato">
+              Seja Parceiro
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal-overlay" class="modal-overlay">
+      <div class="modal-card">
+        <button
+          class="modal-close"
+          id="modal-close"
+          type="button"
+          aria-label="Fechar modal"
+        >
+          &times;
+        </button>
+        <div id="modal-content" class="modal-content">
+          <!-- Conteúdo carregado via fetch() aparece aqui -->
         </div>
       </div>
     </div>
-  </section>
 
-  <div id="modal-overlay" class="modal-overlay">
-    <div class="modal-card">
-      <button class="modal-close" id="modal-close" type="button" aria-label="Fechar modal">&times;</button>
-      <div id="modal-content" class="modal-content">
-        <!-- Conteúdo carregado via fetch() aparece aqui -->
-      </div>
-    </div>
-  </div>
-
-    <section class="colaboradores" id="colaboradores">
-    <div class="container">
+    <section class="colaboradores pd" id="colaboradores">
+      <div class="container">
         <h2 class="titulo">Nossos Patrocinadores</h2>
         <p class="subtitulo">
           Conheça as empresas parceiras que apoiam e fortalecem nossa missão.
         </p>
 
         <div class="colab-wrapper">
-            <button class="colab-btn prev" id="colab-prev" aria-label="Voltar colaboradores">&lsaquo;</button>
-            <div class="colab-track" id="colab-track">
-                <div class="colab-card">
-                    <div class="avatar">
-                      <img src="assets/img/colaboradores/Instituto Aurora.png" alt="Logo da empresa Instituto Aurora" loading="lazy">
-                    </div>
-                    <h3>Instituto Aurora</h3>
-                </div>
-
-                <div class="colab-card">
-                    <div class="avatar">
-                      <img src="assets/img/colaboradores/VerdeVida Alimentos.png" alt="Logo da empresa VerdeVida Alimentos" loading="lazy">
-                    </div>
-                    <h3>VerdeVida Alimentos</h3>
-                </div>
-
-                <div class="colab-card">
-                    <div class="avatar">
-                      <img src="assets/img/colaboradores/NovaTrilha Logística.png" alt="Logo da empresa NovaTrilha Logística" loading="lazy">
-                    </div>
-                    <h3>NovaTrilha Logística</h3>
-                </div>
+          <button
+            class="colab-btn prev"
+            id="colab-prev"
+            aria-label="Voltar colaboradores"
+          >
+            &lsaquo;
+          </button>
+          <div class="colab-track" id="colab-track">
+            <div class="colab-card">
+              <div class="avatar">
+                <img
+                  src="assets/img/colaboradores/Instituto Aurora.png"
+                  alt="Logo da empresa Instituto Aurora"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Instituto Aurora</h3>
             </div>
-            <button class="colab-btn next" id="colab-next" aria-label="Avançar patrocinadores">&rsaquo;</button>
-        </div>
-    </div>
-</section>
 
+            <div class="colab-card">
+              <div class="avatar">
+                <img
+                  src="assets/img/colaboradores/VerdeVida Alimentos.png"
+                  alt="Logo da empresa VerdeVida Alimentos"
+                  loading="lazy"
+                />
+              </div>
+              <h3>VerdeVida Alimentos</h3>
+            </div>
 
-
-  <!-- Contato + Endereço -->
-  <section class="contato" id="contato">
-    <div class="container">
-      <div class="contato-left">
-        <span class="section-tag">Entre em contato</span>
-        <h2 class="section-title">Vamos conversar</h2>
-
-        <p class="section-description">
-          Tem dúvidas, quer saber mais sobre nosso trabalho ou deseja contribuir?
-          Estamos aqui para você.
-        </p>
-
-        <div class="info-item">
-          <div class="icon"><img src="assets/img/icon-lugar.svg" alt=""></div>
-          <div>
-            <strong>Endereço</strong><br>
-            Rua Leão Coroado, 55 - Boa Vista<br>
-            Recife - PE, CEP 50.060-250
+            <div class="colab-card">
+              <div class="avatar">
+                <img
+                  src="assets/img/colaboradores/NovaTrilha Logística.png"
+                  alt="Logo da empresa NovaTrilha Logística"
+                  loading="lazy"
+                />
+              </div>
+              <h3>NovaTrilha Logística</h3>
+            </div>
           </div>
-        </div>
-
-        <div class="info-item">
-          <div class="icon"><img src="assets/img/icon-phone.svg" alt=""></div>
-          <div>
-            <strong>Telefone</strong><br>
-            +55 (81) 3231-0463
-          </div>
-        </div>
-
-        <div class="info-item">
-          <div class="icon"><img src="assets/img/icon-email.svg" alt=""></div>
-          <div>
-            <strong>E-mail</strong><br>
-            contato@casameninamulher.org.br
-          </div>
-        </div>
-
-        <div class="social">
-          <a href="https://www.instagram.com/casa_menina_mulher55/" target="_blank" rel="noreferrer noopener">
-            <img src="assets/img/icon-instagram.svg" alt="">
-          </a>
-          <a href="#" target="_blank" rel="noreferrer noopener">
-            <img src="assets/img/icon-facebook.svg" alt="">
-          </a>
+          <button
+            class="colab-btn next"
+            id="colab-next"
+            aria-label="Avançar patrocinadores"
+          >
+            &rsaquo;
+          </button>
         </div>
       </div>
+    </section>
 
-      <!-- <form
+    <!-- Contato + Endereço -->
+    <section class="contato pd" id="contato">
+      <div class="container">
+        <div class="contato-left">
+          <span class="section-tag">Entre em contato</span>
+          <h2 class="section-title">Vamos conversar</h2>
+
+          <p class="section-description">
+            Tem dúvidas, quer saber mais sobre nosso trabalho ou deseja
+            contribuir? Estamos aqui para você.
+          </p>
+
+          <div class="info-item">
+            <div class="icon">
+              <img src="assets/img/icon-lugar.svg" alt="" />
+            </div>
+            <div>
+              <strong>Endereço</strong><br />
+              Rua Leão Coroado, 55 - Boa Vista<br />
+              Recife - PE, CEP 50.060-250
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">
+              <img src="assets/img/icon-phone.svg" alt="" />
+            </div>
+            <div>
+              <strong>Telefone</strong><br />
+              +55 (81) 3231-0463
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">
+              <img src="assets/img/icon-email.svg" alt="" />
+            </div>
+            <div>
+              <strong>E-mail</strong><br />
+              contato@casameninamulher.org.br
+            </div>
+          </div>
+
+          <div class="social">
+            <a
+              href="https://www.instagram.com/casa_menina_mulher55/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src="assets/img/icon-instagram.svg" alt="" />
+            </a>
+            <a href="#" target="_blank" rel="noreferrer noopener">
+              <img src="assets/img/icon-facebook.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <!-- <form
         class="contato-form"
         action="https://formsubmit.co/#colocar da casa"
         method="POST"
@@ -421,77 +703,106 @@
 
         <button type="submit" class="btn-red">Enviar Mensagem</button>
       </form> -->
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-
-      <!-- COLUNA 1 — LOGO + MINI MAPA -->
-      <div class="footer-col footer-col-brand">
-        <div class="footer-brand">
-          <img src="assets/img/favicon.png" alt="Logo CMM" class="footer-logo">
-          <span class="footer-title">Casa Menina Mulher</span>
-        </div>
-        <div class="footer-map-real">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.371839022903!2d-34.89039102519065!3d-8.063501480573688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c650eff7ed%3A0x871c0f85a63d04d8!2sR.%20Le%C3%A3o%20Coroado%2C%2055%20-%20Boa%20Vista%2C%20Recife%20-%20PE%2C%2050060-250%2C%20Brasil!5e0!3m2!1spt-BR!2sbe!4v1764936353918!5m2!1spt-BR!2sbe" 
-            width="400" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
       </div>
+    </section>
 
-      <!-- COLUNA 2 — MENU -->
-      <nav class="footer-col footer-nav">
-        <li><a href="#" class="scroll-link" data-target="sobre">Sobre</a></li>
-        <li><a href="#" class="scroll-link" data-target="impacto">Nosso Impacto</a></li>
-        <li><a href="#" class="scroll-link" data-target="help">Como Ajudar</a></li>
-        <li><a href="#" class="scroll-link" data-target="contato">Contato</a></li>
+    <footer class="footer pd">
+      <div class="container">
+        <!-- COLUNA 1 — LOGO + MINI MAPA -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand">
+            <img
+              src="assets/img/favicon.png"
+              alt="Logo CMM"
+              class="footer-logo"
+            />
+            <span class="footer-title">Casa Menina Mulher</span>
+          </div>
+          <div class="footer-map-real">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.371839022903!2d-34.89039102519065!3d-8.063501480573688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c650eff7ed%3A0x871c0f85a63d04d8!2sR.%20Le%C3%A3o%20Coroado%2C%2055%20-%20Boa%20Vista%2C%20Recife%20-%20PE%2C%2050060-250%2C%20Brasil!5e0!3m2!1spt-BR!2sbe!4v1764936353918!5m2!1spt-BR!2sbe"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
 
-        <div class="footer-social">
-          <a href="https://www.instagram.com/casa_menina_mulher55/" target="_blank" aria-label="Instagram">
-            <img src="assets/img/icon-instagram.svg" alt="Instagram">
-          </a>
-          <!-- <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <!-- COLUNA 2 — MENU -->
+        <nav class="footer-col footer-nav">
+          <li><a href="#" class="scroll-link" data-target="sobre">Sobre</a></li>
+          <li>
+            <a href="#" class="scroll-link" data-target="norteadores"
+              >Norteadores</a
+            >
+          </li>
+          <li>
+            <a href="#" class="scroll-link" data-target="impacto"
+              >Nosso Impacto</a
+            >
+          </li>
+          <li>
+            <a href="#" class="scroll-link" data-target="help">Como Ajudar</a>
+          </li>
+          <li>
+            <a href="#" class="scroll-link" data-target="contato">Contato</a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Política de Salvaguarda
+            </a>
+          </li>
+
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/casa_menina_mulher55/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <img src="assets/img/icon-instagram.svg" alt="Instagram" />
+            </a>
+            <!-- <a href="https://facebook.com" target="_blank" aria-label="Facebook">
             <img src="assets/img/icon-facebook.svg" alt="Facebook">
           </a> -->
-        </div>
-      </nav>
+          </div>
+        </nav>
 
-      <!-- COLUNA 3 — BOTÕES CTA -->
-      <div class="footer-col footer-actions">
-        <a 
-          href="#" 
-          class="footer-btn-primary scroll-link"
-          data-target="help">
-          Doe Agora
-        </a>
-        <a 
-          href="#" 
-          class="footer-btn-secondary scroll-link"
-          data-target="help">
-          Quero Ajudar
-        </a>
+        <!-- COLUNA 3 — BOTÕES CTA -->
+        <div class="footer-col footer-actions">
+          <a href="#" class="footer-btn-primary scroll-link" data-target="help">
+            Doe Agora
+          </a>
+          <a
+            href="#"
+            class="footer-btn-secondary scroll-link"
+            data-target="help"
+          >
+            Quero Ajudar
+          </a>
+        </div>
       </div>
 
-    </div>
+      <!-- Direitos autorais -->
+      <div class="footer-copy">
+        © 2025 Casa Menina Mulher — CNPJ XX.XXX.XXX/0001-XX. <br />Todos os
+        direitos reservados.
+      </div>
+    </footer>
 
-    <!-- Direitos autorais -->
-    <div class="footer-copy">
-      © 2025 Casa Menina Mulher — CNPJ XX.XXX.XXX/0001-XX. <br />Todos os direitos reservados.
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="assets/js/modal.js"></script>
-  <script src="assets/js/mobile-menu.js"></script>
-  <script src="assets/js/impact-counters.js"></script>
-  <script src="assets/js/carrossel.js"></script>
-  <script src="assets/js/scroll.js"></script>
-  <script src="assets/js/colaboradores.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/impact-counters.js"></script>
+    <script src="assets/js/carrossel.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/colaboradores.js"></script>
+  </body>
 </html>
