@@ -62,6 +62,11 @@
     text-align: center;
   }
 
+  .cards{
+    display: grid;
+    gap: 40px;
+  }
+
   .norteadores-card {
     background: hsla(0, 0%, 100%, 0.75);
     backdrop-filter: blur(16px);
@@ -140,6 +145,49 @@
     margin-top: 14px;
     font-size: clamp(0.75rem, 1.2vw, 0.875rem);
     color: hsl(270, 65%, 45%);
+  }
+
+  .norteadores-eca-link {
+    margin-top: 10px;
+    text-align: center;
+
+    .norteadores-link-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border: 1px solid hsla(265, 70%, 62%, 0.35);
+      border-radius: 999px;
+      background: hsla(0, 0%, 100%, 0.75);
+      text-decoration: none;
+      transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .norteadores-link-download:hover {
+      transform: translateY(-1px);
+      background: hsla(0, 0%, 100%, 0.9);
+      border-color: hsla(330, 80%, 60%, 0.45);
+    }
+
+    .eca-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: hsl(270, 40%, 22%);
+      background: hsla(273, 62%, 88%, 0.55);
+      border: 1px solid hsla(265, 70%, 62%, 0.3);
+    }
+
+    .eca-text {
+      color: hsl(270, 45%, 32%);
+      font-weight: 600;
+    }
   }
 
   .ods-area {
