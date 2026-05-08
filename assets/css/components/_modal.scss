@@ -48,7 +48,7 @@
   right: 12px;
   background: $color-transparent;
   border: none;
-  font-size: 24px;
+  font-size: clamp(1.25rem, 2.3vw, 1.5rem);
   line-height: 1;
   cursor: pointer;
   color: $color-text-primary;
@@ -62,7 +62,7 @@
 .modal-content h2 {
   margin-top: 0;
   margin-bottom: 12px;
-  font-size: 24px;
+  font-size: clamp(1.25rem, 2.3vw, 1.5rem);
   color: $color-text-primary;
 }
 

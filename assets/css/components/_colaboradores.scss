@@ -14,7 +14,7 @@
 
   .subtitulo {
     text-align: center;
-    font-size: 18px;
+    font-size: clamp(1rem, 1.6vw, 1.125rem);
     color: $muted-foreground;
     margin-bottom: 40px;
   }
@@ -26,7 +26,7 @@
   .colab-btn {
     background: rgba($color-white, 0.8);
     border: 1px solid rgba(225, 201, 244, 0.5);
-    font-size: 26px;
+    font-size: clamp(1.25rem, 2.8vw, 1.625rem);
     font-weight: 700;
     width: 52px;
     height: 52px;
@@ -121,14 +121,14 @@
       }
 
       h3 {
-        font-size: 18px;
+        font-size: clamp(1rem, 1.6vw, 1.125rem);
         font-weight: 700;
         margin-bottom: 6px;
         color: $foreground;
       }
 
       p {
-        font-size: 15px;
+        font-size: clamp(0.8125rem, 1.25vw, 0.9375rem);
         color: $muted-foreground;
       }
     }

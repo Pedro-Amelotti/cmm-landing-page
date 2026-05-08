@@ -5,7 +5,7 @@
   text-align: center;
 
   .section-tag {
-    font-size: 14px;
+    font-size: clamp(0.75rem, 1.2vw, 0.875rem);
     letter-spacing: 1px;
     font-weight: 700;
     text-transform: uppercase;
@@ -52,7 +52,7 @@
 
     .stat-number {
       display: inline-block;
-      font-size: 44px;
+      font-size: clamp(2rem, 5vw, 2.75rem);
       font-weight: 700;
       margin-bottom: 8px;
       background: $gradient-vivid;
@@ -65,7 +65,7 @@
 
     .stat-label {
       display: block;
-      font-size: 16px;
+      font-size: clamp(0.875rem, 1.3vw, 1rem);
       color: $muted-foreground;
     }
   }

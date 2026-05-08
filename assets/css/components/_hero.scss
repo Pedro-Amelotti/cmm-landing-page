@@ -92,7 +92,7 @@
     border: 0;
     padding: 9px 18px;
     border-radius: 9999px;
-    font-size: 14px;
+    font-size: clamp(0.75rem, 1.2vw, 0.875rem);
     font-weight: 600;
     color: $cream;
     box-shadow: $shadow-soft;
@@ -107,7 +107,7 @@
 
   .hero-title {
     font-family: "Playfair Display", serif;
-    font-size: 3rem;
+    font-size: clamp(2rem, 6.2vw, 5.25rem);
     line-height: 1.08;
     margin: 26px 0 20px;
     color: $foreground;
@@ -125,7 +125,7 @@
 
   .hero-text {
     max-width: 620px;
-    font-size: 18px;
+    font-size: clamp(1rem, 1.6vw, 1.125rem);
     color: $muted-foreground;
     line-height: 1.7;
     margin-bottom: 36px;
@@ -148,7 +148,7 @@
       padding: 14px 28px;
       border-radius: 12px;
       text-decoration: none;
-      font-size: 17px;
+      font-size: clamp(0.9375rem, 1.45vw, 1.0625rem);
       font-weight: 600;
       box-shadow: $glow-primary;
       transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
@@ -173,13 +173,13 @@
       background: transparent;
       border: 2px solid $pink-vivid;
       color: $pink-vivid;
-      font-size: 17px;
+      font-size: clamp(0.9375rem, 1.45vw, 1.0625rem);
       font-weight: 600;
       text-decoration: none;
       transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 
       .arrow {
-        font-size: 20px;
+        font-size: clamp(1.0625rem, 1.9vw, 1.25rem);
         margin-left: 4px;
       }
 
@@ -196,18 +196,6 @@
     }
   }
 
-  @media (min-width: 768px) {
-    .hero-title {
-      font-size: 4.5rem;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .hero-title {
-      font-size: 5.25rem;
-    }
-  }
-
   @media (max-width: 900px) {
     min-height: 620px;
 
@@ -215,10 +203,6 @@
       right: 0;
       font-size: clamp(4rem, 24vw, 8rem);
       top: 64px;
-    }
-
-    .hero-text {
-      font-size: 16px;
     }
 
     .hero-buttons {
