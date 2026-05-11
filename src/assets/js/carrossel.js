@@ -10,7 +10,7 @@
   let gap = 0;
   let cardsData = [];
 
-  const source = track.dataset.source || "assets/data/carrossel/pt.json";
+  const source = track.dataset.source || "../assets/data/carrossel/pt.json";
   const errorMessage = track.dataset.errorMessage || "Unable to load images.";
 
   fetch(source)

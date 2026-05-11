@@ -26,7 +26,7 @@
           <button
             type="button"
             class="norteadores-btn-secondary btn-open-modal"
-            data-file="{{ ('/assets/data/modals/' ~ locale ~ '/' ~ card.secondaryModal ~ '.html') | url }}"
+            data-file="../assets/data/modals/{{ locale }}/{{ card.secondaryModal }}.html"
           >
             {{ card.secondaryLabel }}
           </button>
@@ -56,7 +56,7 @@
         {% for item in t.ods.cards %}
         <article class="ods-card">
           <img
-            src="{{ ('/assets/img/' ~ item.image) | url }}"
+            src="../assets/img/{{ item.image }}"
             alt="{{ item.alt }}"
             loading="lazy"
           />

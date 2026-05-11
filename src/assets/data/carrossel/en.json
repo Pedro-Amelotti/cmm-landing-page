@@ -1,17 +1,17 @@
-[
+﻿[
   {
     "titulo": "Art Therapy Workshop",
     "descricao": "In this technique, each adolescent is invited to look beyond the apparent form and discover what emerges behind the image. It is an exercise in creativity and self-esteem, where each girl recognizes her own ability to transform something simple into something beautiful and meaningful. The activity was led by facilitator Leila Palmeira.",
-    "imagem": "assets/img/carrossel/carrossel1.jpg"
+    "imagem": "../assets/img/carrossel/carrossel1.jpg"
   },
   {
     "titulo": "Art Education Workshop",
     "descricao": "The Art Education Workshop uses modeling clay and colorful paints, creating a playful moment through creative painting. Beyond pedagogy, the proposal strengthens positive connections in child development, encouraging imagination and expression. The activity was led by facilitator Tereza Santoianni.",
-    "imagem": "assets/img/carrossel/carrossel2.jpg"
+    "imagem": "../assets/img/carrossel/carrossel2.jpg"
   },
   {
     "titulo": "Robotics Workshop",
-    "descricao": "In the Robotics Workshop, adolescents at Casa Menina Mulher began learning computational logic using cardboard boards and PET bottle caps, building a concrete foundation before applying concepts on a digital platform. The activity was led by teacher Américo Barros.",
-    "imagem": "assets/img/carrossel/carrossel3.jpg"
+    "descricao": "In the Robotics Workshop, adolescents at Casa Menina Mulher began learning computational logic using cardboard boards and PET bottle caps, building a concrete foundation before applying concepts on a digital platform. The activity was led by teacher AmÃ©rico Barros.",
+    "imagem": "../assets/img/carrossel/carrossel3.jpg"
   }
 ]
