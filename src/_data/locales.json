@@ -42,11 +42,11 @@
     "mission": {
       "tag": "Nossa Missão",
       "title": "Um espaço de aprendizagem e de esperança",
-      "description": "A Casa Menina Mulher nasceu do sonho de criar um espaço onde meninas em situação de vulnerabilidade social pudessem encontrar dignidade e a chance de construir um futuro melhor.",
+      "description": "A Casa Menina Mulher nasceu do sonho de criar um espaço onde meninas em situação de vulnerabilidade social pudessem encontrar dignidade e a chance de construir um futuro com mais perspectivas.",
       "cards": [
         {
           "title": "Cuidado",
-          "description": "Cada menina recebe atenção individualizada.",
+          "description": "Cada criança recebe atenção individualizada.",
           "iconAlt": "Ícone de cuidado"
         },
         {
@@ -193,7 +193,7 @@
         },
         {
           "title": "Eventos e Parcerias",
-          "description": "Empresas e instituições podem se tornar parceiras e organizar eventos beneficentes.",
+          "description": "Empresas, instituições e universidades podem se tornar parceiras e organizar eventos beneficentes.",
           "button": "Seja Parceiro",
           "type": "scroll",
           "target": "contato",
@@ -288,11 +288,11 @@
     "mission": {
       "tag": "Our Mission",
       "title": "A space for learning and hope",
-      "description": "Casa Menina Mulher was born from the dream of creating a place where girls facing social vulnerability could find dignity and the chance to build a better future.",
+      "description": "Casa Menina Mulher was born from the dream of creating a place where girls facing social vulnerability could find dignity and the chance to build a future with more opportunities.",
       "cards": [
         {
           "title": "Care",
-          "description": "Each girl receives individualized attention.",
+          "description": "Each child receives individualized attention.",
           "iconAlt": "Care icon"
         },
         {
@@ -439,7 +439,7 @@
         },
         {
           "title": "Events and Partnerships",
-          "description": "Companies and institutions can become partners and organize fundraising events.",
+          "description": "Companies, institutions, and universities can become partners and organize fundraising events.",
           "button": "Become a Partner",
           "type": "scroll",
           "target": "contato",
@@ -534,11 +534,11 @@
     "mission": {
       "tag": "Unsere Mission",
       "title": "Ein Raum für Lernen und Hoffnung",
-      "description": "Casa Menina Mulher entstand aus dem Wunsch, einen Ort zu schaffen, an dem Mädchen in sozial benachteiligten Lebenslagen Würde und die Chance auf eine bessere Zukunft finden.",
+      "description": "Casa Menina Mulher entstand aus dem Wunsch, einen Ort zu schaffen, an dem Mädchen in sozial benachteiligten Lebenslagen Würde und die Chance auf eine Zukunft mit mehr Perspektiven finden.",
       "cards": [
         {
           "title": "Fürsorge",
-          "description": "Jedes Mädchen erhält individuelle Begleitung.",
+          "description": "Jedes Kind erhält individuelle Begleitung.",
           "iconAlt": "Symbol für Fürsorge"
         },
         {
@@ -685,7 +685,7 @@
         },
         {
           "title": "Veranstaltungen und Partnerschaften",
-          "description": "Unternehmen und Institutionen können Partner werden und Benefizveranstaltungen organisieren.",
+          "description": "Unternehmen, Institutionen und Universitäten können Partner werden und Benefizveranstaltungen organisieren.",
           "button": "Partner werden",
           "type": "scroll",
           "target": "contato",
