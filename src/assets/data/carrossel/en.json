@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "titulo": "Art Therapy Workshop",
     "descricao": "In this activity, each adolescent is invited to look beyond outward appearance and discover what emerges behind the image. It is an exercise in creativity and self-esteem, where each girl recognizes her own ability to transform something simple into something beautiful and meaningful. The session was led by facilitator Leila Palmeira.",
@@ -6,12 +6,18 @@
   },
   {
     "titulo": "Art Education Workshop",
-    "descricao": "The Art Education Workshop uses modeling clay and colorful paints, creating a playful moment through creative painting. In addition to its educational value, the activity strengthens positive developmental bonds in children and encourages imagination and expression. The session was led by facilitator Tereza Santoianni.",
+    "descricao": "The Art Education Workshop uses modeling clay and colorful paints, creating a playful moment through creative painting. In addition to its educational value, the activity strengthens positive developmental bonds in children and encourages imagination and expression. The session was led by educator Micheline Cândida.",
     "imagem": "../assets/img/carrossel/carrossel2.jpg"
   },
   {
     "titulo": "Robotics Workshop",
     "descricao": "In the Robotics Workshop, adolescents at Casa Menina Mulher began learning computational logic using cardboard boards and PET bottle caps, building a concrete foundation before applying the concepts on a digital platform. The session was led by instructor Américo Barros.",
     "imagem": "../assets/img/carrossel/carrossel3.jpg"
+  },
+  {
+    "titulo": "Percussion Workshop",
+    "descricao": "The Percussion Workshop strengthens expression, discipline, and teamwork through music. In a context of violence prevention, the activity creates a safe space for coexistence, belonging, and listening, where girls and adolescents develop confidence, rhythm, concentration, and cooperation, transforming energy into art, culture, and protagonism. The session was led by educator Maria de Lourdes da Silva Neta.",
+    "imagem": "../assets/img/carrossel/carrossel4.jpeg"
   }
 ]
+

@@ -11,9 +11,10 @@
       >
         &lsaquo;
       </button>
-      <div class="colab-track" id="colab-track">
+      <div class="colab-swiper swiper" id="colab-swiper">
+        <div class="colab-track swiper-wrapper" id="colab-track">
         {% for sponsor in t.sponsors.items %}
-        <div class="colab-card">
+        <div class="colab-card swiper-slide">
           <div class="avatar">
             <img
               src="../assets/img/colaboradores/{{ sponsor.image }}"
@@ -24,6 +25,8 @@
           <h3>{{ sponsor.name }}</h3>
         </div>
         {% endfor %}
+        </div>
+        <div class="colab-pagination swiper-pagination"></div>
       </div>
       <button
         class="colab-btn next"

@@ -1,63 +1,50 @@
 (() => {
+  const swiperRoot = document.getElementById("colab-swiper");
   const track = document.getElementById("colab-track");
-  const btnPrev = document.getElementById("colab-prev");
-  const btnNext = document.getElementById("colab-next");
+  const prevBtn = document.getElementById("colab-prev");
+  const nextBtn = document.getElementById("colab-next");
 
-  if (!track || !btnPrev || !btnNext) return;
+  if (!swiperRoot || !track || !prevBtn || !nextBtn) return;
 
-  let scrollStep = 260;
-  const mobileBreakpoint = 900;
+  const paginationEl = swiperRoot.querySelector(".colab-pagination");
 
-  function medirPasso() {
-    const firstCard = track.querySelector(".colab-card");
-    if (!firstCard) return;
-    const styles = getComputedStyle(track);
-    const gap = parseFloat(styles.columnGap || styles.gap || "0") || 0;
-    scrollStep = firstCard.getBoundingClientRect().width + gap;
-  }
+  if (typeof Swiper === "undefined") return;
 
-  function updateArrows() {
-    const isMobile = window.innerWidth <= mobileBreakpoint;
-    if (isMobile) {
-      btnPrev.style.display = "none";
-      btnNext.style.display = "none";
-      return;
-    }
-
-    const isScrollable = track.scrollWidth > track.clientWidth + 2;
-    btnPrev.style.display = isScrollable ? "grid" : "none";
-    btnNext.style.display = isScrollable ? "grid" : "none";
-  }
-
-  function centerTrackOnDesktop() {
-    const isMobile = window.innerWidth <= mobileBreakpoint;
-    if (isMobile) {
-      track.scrollLeft = 0;
-      return;
-    }
-
-    const maxScroll = track.scrollWidth - track.clientWidth;
-    if (maxScroll > 0) {
-      track.scrollLeft = maxScroll / 2;
-    } else {
-      track.scrollLeft = 0;
-    }
-  }
-
-  btnNext.addEventListener("click", () => {
-    track.scrollBy({ left: scrollStep, behavior: "smooth" });
+  const swiper = new Swiper(swiperRoot, {
+    loop: false,
+    autoplay: false,
+    watchOverflow: true,
+    slidesPerView: 1.2,
+    slidesPerGroup: 1,
+    spaceBetween: 16,
+    pagination: {
+      el: paginationEl,
+      clickable: true,
+    },
+    navigation: {
+      prevEl: prevBtn,
+      nextEl: nextBtn,
+      disabledClass: "is-disabled",
+      lockClass: "is-locked",
+    },
+    breakpoints: {
+      900: {
+        slidesPerView: "auto",
+        slidesPerGroup: 1,
+        spaceBetween: 24,
+      },
+    },
   });
 
-  btnPrev.addEventListener("click", () => {
-    track.scrollBy({ left: -scrollStep, behavior: "smooth" });
-  });
-
-  const recalc = () => {
-    medirPasso();
-    updateArrows();
-    centerTrackOnDesktop();
+  const syncNavState = () => {
+    prevBtn.classList.toggle("is-disabled", swiper.isBeginning);
+    nextBtn.classList.toggle("is-disabled", swiper.isEnd);
   };
 
-  window.addEventListener("load", recalc);
-  window.addEventListener("resize", recalc);
+  syncNavState();
+  swiper.on("slideChange", syncNavState);
+  swiper.on("resize", syncNavState);
+  swiper.on("reachBeginning", syncNavState);
+  swiper.on("reachEnd", syncNavState);
+  swiper.on("fromEdge", syncNavState);
 })();
