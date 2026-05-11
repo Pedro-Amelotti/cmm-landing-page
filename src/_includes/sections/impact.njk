@@ -1,0 +1,38 @@
+<section class="impact pd" id="impacto">
+  <div class="container">
+    <span class="section-tag">{{ t.impact.tag }}</span>
+    <h2 class="section-title">{{ t.impact.title }}</h2>
+
+    <div class="impact-stats">
+      {% for stat in t.impact.stats %}
+      <div class="stat" data-number="{{ stat.number }}" data-label="{{ stat.label }}">
+        <span class="stat-number">{{ stat.number }}</span>
+        <span class="stat-label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <section class="carrossel">
+    <div class="container">
+      <h2 class="carrossel-titulo">{{ t.impact.carouselTitle }}</h2>
+
+      <div class="carrossel-wrapper">
+        <button class="carrossel-btn prev" aria-label="{{ t.ui.scrollPrev }}">
+          &lt;
+        </button>
+
+        <div
+          class="carrossel-track"
+          id="carrossel-track"
+          data-source="{{ ('/assets/data/carrossel/' ~ locale ~ '.json') | url }}"
+          data-error-message="{{ t.ui.carouselError }}"
+        ></div>
+
+        <button class="carrossel-btn next" aria-label="{{ t.ui.scrollNext }}">
+          &gt;
+        </button>
+      </div>
+    </div>
+  </section>
+</section>

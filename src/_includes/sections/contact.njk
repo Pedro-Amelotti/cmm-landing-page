@@ -1,0 +1,55 @@
+<section class="contato pd" id="contato">
+  <div class="container">
+    <div class="contato-left">
+      <span class="section-tag">{{ t.contact.tag }}</span>
+      <h2 class="section-title">{{ t.contact.title }}</h2>
+
+      <p class="section-description">{{ t.contact.description }}</p>
+
+      <div class="info-item">
+        <div class="icon">
+          <img src="{{ '/assets/img/icon-lugar.svg' | url }}" alt="" />
+        </div>
+        <div>
+          <strong>{{ t.contact.addressLabel }}</strong><br />
+          {{ t.contact.addressLines[0] }}<br />
+          {{ t.contact.addressLines[1] }}
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon">
+          <img src="{{ '/assets/img/icon-phone.svg' | url }}" alt="" />
+        </div>
+        <div>
+          <strong>{{ t.contact.phoneLabel }}</strong><br />
+          {{ t.contact.phone }}
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon">
+          <img src="{{ '/assets/img/icon-email.svg' | url }}" alt="" />
+        </div>
+        <div>
+          <strong>{{ t.contact.emailLabel }}</strong><br />
+          {{ t.contact.email }}
+        </div>
+      </div>
+
+      <div class="social">
+        <a
+          href="https://www.instagram.com/casa_menina_mulher55/"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="Instagram"
+        >
+          <img src="{{ '/assets/img/icon-instagram.svg' | url }}" alt="Instagram" />
+        </a>
+        <a href="#" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
+          <img src="{{ '/assets/img/icon-facebook.svg' | url }}" alt="Facebook" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

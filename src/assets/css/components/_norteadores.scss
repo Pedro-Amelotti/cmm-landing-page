@@ -1,0 +1,312 @@
+.norteadores {
+  background: linear-gradient(135deg, #fff6fb, hsl(273, 65%, 92%), hsl(338, 86%, 94%));
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(56px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  &::before {
+    width: 300px;
+    height: 300px;
+    top: -110px;
+    right: -90px;
+    background: hsla(330, 80%, 60%, 0.2);
+  }
+
+  &::after {
+    width: 280px;
+    height: 280px;
+    bottom: -120px;
+    left: -80px;
+    background: hsla(265, 70%, 62%, 0.22);
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-tag {
+    font-size: clamp(0.75rem, 1.2vw, 0.875rem);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(270, 65%, 45%);
+    display: block;
+    text-align: center;
+  }
+
+  .section-title {
+    margin: 16px 0 12px;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: hsl(270, 40%, 22%);
+  }
+
+  .section-description {
+    max-width: 760px;
+    margin: 0 auto 44px;
+    font-size: clamp(0.9375rem, 1.45vw, 1.0625rem);
+    line-height: 1.7;
+    color: hsl(270, 25%, 40%);
+    text-align: center;
+  }
+
+  .cards {
+    display: grid;
+    gap: 40px;
+  }
+
+  .norteadores-card {
+    background: hsla(0, 0%, 100%, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(225, 201, 244, 0.5);
+    border-radius: 1rem;
+    padding: 34px;
+    box-shadow: 0 12px 44px -10px hsla(270, 50%, 30%, 0.2);
+
+    h3 {
+      margin: 0 0 12px;
+      font-size: clamp(1.5rem, 3vw, 1.75rem);
+      font-weight: 700;
+      color: hsl(270, 40%, 22%);
+      font-family: "Playfair Display", serif;
+    }
+
+    p {
+      margin: 0 0 20px;
+      font-size: clamp(0.875rem, 1.3vw, 1rem);
+      line-height: 1.7;
+      color: hsl(270, 25%, 40%);
+    }
+  }
+
+  .norteadores-list {
+    margin: 0;
+    padding-left: 22px;
+    display: grid;
+    gap: 8px;
+    color: hsl(270, 25%, 34%);
+  }
+
+  .norteadores-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 26px;
+  }
+
+  .norteadores-btn-primary,
+  .norteadores-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-size: clamp(0.8125rem, 1.25vw, 0.9375rem);
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    transition: transform 0.25s ease, filter 0.25s ease;
+  }
+
+  .norteadores-btn-primary {
+    background: linear-gradient(135deg, hsl(330, 80%, 60%), hsl(265, 70%, 62%));
+    color: #fff6fb;
+    box-shadow: 0 0 24px hsla(330, 80%, 55%, 0.55), 0 0 60px hsla(265, 70%, 60%, 0.4);
+  }
+
+  .norteadores-btn-secondary {
+    background: hsla(0, 0%, 100%, 0.9);
+    color: hsl(270, 65%, 45%);
+    border: 1px solid hsla(265, 70%, 62%, 0.35);
+  }
+
+  .norteadores-btn-primary:hover,
+  .norteadores-btn-secondary:hover {
+    transform: translateY(-2px);
+    filter: saturate(1.08);
+  }
+
+  .norteadores-link-download {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: clamp(0.75rem, 1.2vw, 0.875rem);
+    color: hsl(270, 65%, 45%);
+  }
+
+  .norteadores-eca-link {
+    margin-top: 10px;
+    text-align: center;
+
+    .norteadores-link-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border: 1px solid hsla(265, 70%, 62%, 0.35);
+      border-radius: 999px;
+      background: hsla(0, 0%, 100%, 0.75);
+      text-decoration: none;
+      transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .norteadores-link-download:hover {
+      transform: translateY(-1px);
+      background: hsla(0, 0%, 100%, 0.9);
+      border-color: hsla(330, 80%, 60%, 0.45);
+    }
+
+    .eca-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: hsl(270, 40%, 22%);
+      background: hsla(273, 62%, 88%, 0.55);
+      border: 1px solid hsla(265, 70%, 62%, 0.3);
+    }
+
+    .eca-text {
+      color: hsl(270, 45%, 32%);
+      font-weight: 600;
+    }
+  }
+
+  .ods-area {
+    margin-top: 38px;
+    text-align: center;
+
+    .section-tag {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ods-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
+    font-weight: 700;
+    color: hsl(270, 40%, 22%);
+    font-family: "Playfair Display", serif;
+    margin: 0 0 22px;
+  }
+
+  .ods-intro {
+    max-width: 800px;
+    margin: 0 auto 26px;
+    font-size: clamp(0.9375rem, 1.45vw, 1.0625rem);
+    line-height: 1.7;
+    color: hsl(270, 25%, 40%);
+  }
+
+  .ods-alinhamento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+  }
+
+  .ods-card {
+    display: grid;
+    justify-items: center;
+    background: hsla(0, 0%, 100%, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(225, 201, 244, 0.5);
+    border-radius: 1rem;
+    padding: 20px 18px 18px;
+    box-shadow: 0 12px 44px -10px hsla(270, 50%, 30%, 0.2);
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 24px hsla(330, 80%, 55%, 0.55),
+        0 0 60px hsla(265, 70%, 60%, 0.35);
+    }
+
+    img {
+      width: 100%;
+      max-width: 60%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      border: 1px solid rgba(225, 201, 244, 0.5);
+      box-shadow: 0 8px 20px -14px hsla(270, 50%, 30%, 0.4);
+      background: #fff;
+      margin-bottom: 14px;
+    }
+
+    p {
+      margin: 0;
+      font-size: clamp(0.875rem, 1.3vw, 1rem);
+      line-height: 1.65;
+      color: hsl(270, 25%, 36%);
+    }
+  }
+
+  .ods-fechamento {
+    max-width: 860px;
+    margin: 24px auto 0;
+    font-size: clamp(0.9375rem, 1.45vw, 1.0625rem);
+    line-height: 1.7;
+    color: hsl(270, 25%, 34%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .norteadores .ods-alinhamento-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .norteadores {
+    .norteadores-card {
+      padding: 26px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .norteadores {
+    .section-description {
+      text-align: left;
+    }
+
+    .norteadores-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .norteadores-btn-primary,
+    .norteadores-btn-secondary {
+      width: 100%;
+    }
+
+    .ods-alinhamento-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .ods-card {
+      padding: 18px 16px 16px;
+
+    }
+  }
+}

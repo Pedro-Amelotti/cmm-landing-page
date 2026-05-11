@@ -1,0 +1,15 @@
+{
+  "name": "cmm-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "node -e \"require('fs').rmSync('_site',{recursive:true,force:true})\"",
+    "dev": "npm run build:css && eleventy --serve",
+    "build": "npm run clean && npm run build:css && eleventy",
+    "build:css": "sass src/assets/css/style.scss src/assets/css/style.css --style=compressed --no-source-map"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "sass": "^1.89.0"
+  }
+}

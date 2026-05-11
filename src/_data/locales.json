@@ -1,0 +1,716 @@
+{
+  "pt": {
+    "meta": {
+      "title": "Casa Menina Mulher — Transformando vidas",
+      "description": "A Casa Menina Mulher acolhe, protege e oferece oportunidades para meninas em situação de vulnerabilidade. Conheça nosso trabalho e saiba como ajudar.",
+      "ogTitle": "Casa Menina Mulher — Transformando vidas",
+      "ogDescription": "Há mais de três décadas acolhemos meninas, oferecendo cuidado, educação e dignidade. Contribua para transformar vidas.",
+      "twitterTitle": "Casa Menina Mulher — Transformando vidas",
+      "twitterDescription": "Conheça o trabalho da Casa Menina Mulher e saiba como ajudar a transformar vidas através do acolhimento e da educação.",
+      "ogImageAlt": "Identidade visual da Casa Menina Mulher",
+      "redirectTitle": "Redirecionando...",
+      "redirectText": "Redirecionando para a versão em português"
+    },
+    "ui": {
+      "languageSwitcherLabel": "Selecionar idioma",
+      "openMenu": "Abrir menu",
+      "scrollPrev": "Slide anterior",
+      "scrollNext": "Próximo slide",
+      "modalCloseAria": "Fechar modal",
+      "modalLoading": "Carregando...",
+      "modalError": "Não foi possível carregar o conteúdo agora. Tente novamente em instantes.",
+      "carouselError": "Não foi possível carregar as imagens."
+    },
+    "nav": {
+      "about": "Sobre",
+      "guidelines": "Norteadores",
+      "impact": "Nosso Impacto",
+      "help": "Como Ajudar",
+      "sponsors": "Nossos Colaboradores",
+      "contact": "Contato",
+      "donate": "Doe Agora"
+    },
+    "hero": {
+      "badge": "Organização da Sociedade Civil",
+      "title": "Casa Menina Mulher",
+      "highlight": "Transformando vidas",
+      "text": "Há mais de três décadas, acolhemos e protegemos meninas em situação de vulnerabilidade, oferecendo educação e conhecimento para um futuro digno.",
+      "primaryCta": "Faça uma Doação",
+      "secondaryCta": "Conheça Nosso Trabalho",
+      "backgroundAlt": "Fundo abstrato"
+    },
+    "mission": {
+      "tag": "Nossa Missão",
+      "title": "Um espaço de aprendizagem e de esperança",
+      "description": "A Casa Menina Mulher nasceu do sonho de criar um espaço onde meninas em situação de vulnerabilidade social pudessem encontrar dignidade e a chance de construir um futuro melhor.",
+      "cards": [
+        {
+          "title": "Cuidado",
+          "description": "Cada menina recebe atenção individualizada.",
+          "iconAlt": "Ícone de cuidado"
+        },
+        {
+          "title": "Proteção",
+          "description": "Trabalhamos no eixo de prevenção à violência contra crianças e adolescentes.",
+          "iconAlt": "Ícone de proteção"
+        },
+        {
+          "title": "Educação",
+          "description": "Investimos na formação educacional como ferramenta de transformação social.",
+          "iconAlt": "Ícone de educação"
+        },
+        {
+          "title": "Comunidade",
+          "description": "Construímos uma rede de apoio que envolve famílias, voluntários e parceiros.",
+          "iconAlt": "Ícone de comunidade"
+        }
+      ]
+    },
+    "guidelines": {
+      "tag": "Norteadores Institucionais",
+      "title": "Diretrizes que orientam nosso trabalho",
+      "description": "Nossa atuação é guiada pela Política de Salvaguarda, pelo Plano Municipal do Recife e pelo Estatuto da Criança e do Adolescente (ECA).",
+      "cards": [
+        {
+          "title": "Política de Salvaguarda",
+          "description": "Adotamos diretrizes claras para prevenir riscos, proteger crianças e adolescentes e orientar a resposta institucional em situações de preocupação.",
+          "items": [
+            "Proteção integral de crianças, adolescentes e pessoas em vulnerabilidade.",
+            "Prevenção de abuso, exploração e qualquer forma de violência.",
+            "Conduta obrigatória para equipe, voluntários e parceiros, com fluxo de resposta.",
+            "Atuação alinhada ao ECA (Lei nº 8.069/1990)."
+          ],
+          "primaryLabel": "Ler Política de Salvaguarda",
+          "primaryUrl": "https://drive.google.com/file/d/1YWDwkU4pjzlMOAY3NJCvwQRRZWc7itlG/view?usp=sharing",
+          "secondaryLabel": "Como reportar uma preocupação",
+          "secondaryModal": "salvaguarda-reporte"
+        },
+        {
+          "title": "Plano Municipal de Enfrentamento à Violência e Exploração Sexual de Crianças e Adolescentes",
+          "description": "Em alinhamento com o Plano Municipal do Recife (2024-2034), organizado e fiscalizado pelo COMDICA, fortalecemos ações intersetoriais de prevenção, proteção e resposta à violência e à exploração sexual de crianças e adolescentes.",
+          "items": [
+            "Referência ao COMDICA (Conselho Municipal dos Direitos da Criança e do Adolescente do Recife) como instância de controle social do plano.",
+            "Articulação entre assistência social, saúde, educação, conselho tutelar, segurança pública e sistema de justiça.",
+            "Fluxos de identificação, acolhimento e encaminhamento para reduzir revitimização e ampliar a proteção integral.",
+            "Monitoramento de metas, formação continuada das equipes e participação social no enfrentamento das violações.",
+            "Atuação alinhada ao ECA (Lei nº 8.069/1990)."
+          ],
+          "primaryLabel": "Acessar COMDICA Recife",
+          "primaryUrl": "https://comdica.recife.pe.gov.br/",
+          "secondaryLabel": "Como reportar uma preocupação",
+          "secondaryModal": "salvaguarda-reporte"
+        }
+      ],
+      "eca": {
+        "badge": "Base legal",
+        "text": "Estatuto da Criança e do Adolescente (Lei nº 8.069/1990)",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm"
+      }
+    },
+    "ods": {
+      "tag": "Agenda 2030",
+      "title": "Nosso alinhamento com os Objetivos de Desenvolvimento Sustentável",
+      "intro": "A Casa Menina Mulher atua de forma estratégica e comprometida com a Agenda 2030 da ONU, contribuindo diretamente para o avanço dos ODS em contextos de alta vulnerabilidade social.",
+      "cards": [
+        {
+          "image": "SDG-3.svg",
+          "alt": "ODS 3 - Saúde e Bem-Estar",
+          "text": "Promovemos cuidado integral e fortalecimento emocional de crianças e adolescentes, especialmente as impactadas por violências."
+        },
+        {
+          "image": "SDG-5.svg",
+          "alt": "ODS 5 - Igualdade de Gênero",
+          "text": "Atuamos no enfrentamento à violência sexual e de gênero, uma realidade ainda alarmante no Brasil, com milhares de casos registrados anualmente (SINAN e Disque 100)."
+        },
+        {
+          "image": "SDG-11.svg",
+          "alt": "ODS 11 - Cidades e Comunidades Sustentáveis",
+          "text": "Nossa atuação também impacta o ODS 11 ao fortalecer as redes de proteção e convivência segura nos territórios."
+        },
+        {
+          "image": "SDG-16.svg",
+          "alt": "ODS 16 - Paz, Justiça e Instituições Eficazes",
+          "text": "Promovemos os direitos humanos e o enfrentamento sistemático às violências contra crianças e adolescentes."
+        },
+        {
+          "image": "SDG-17.svg",
+          "alt": "ODS 17 - Parcerias e Meios de Implementação",
+          "text": "Articulamos redes com organizações da sociedade civil, poder público e organismos internacionais, potencializando resultados e ampliando o alcance das ações."
+        }
+      ],
+      "closing": "Investir na Casa Menina Mulher é fortalecer respostas locais efetivas, com impacto direto, mensurável e sustentável. Ao apoiar nossa atuação, parceiros contribuem para transformar realidades, proteger vidas e promover justiça social."
+    },
+    "impact": {
+      "tag": "Nosso Impacto",
+      "title": "Números que transformam vidas",
+      "stats": [
+        { "number": "500+", "label": "Meninas Acolhidas" },
+        { "number": "30+", "label": "Anos de Atuação" },
+        { "number": "200+", "label": "Voluntários Ativos" },
+        { "number": "95%", "label": "Reintegração Familiar" }
+      ],
+      "carouselTitle": "Nosso Trabalho em Imagens"
+    },
+    "help": {
+      "tag": "Faça Parte",
+      "title": "Como você pode ajudar",
+      "description": "Existem várias formas de contribuir para transformar a vida dessas meninas. Escolha a que mais combina com você.",
+      "cards": [
+        {
+          "title": "Doação Financeira",
+          "description": "Sua contribuição ajuda a manter nossos programas de acolhimento, educação e cuidados com as meninas.",
+          "button": "Doar Agora",
+          "type": "modal",
+          "modal": "doacao-financeira",
+          "iconAlt": "Ícone doação financeira",
+          "highlight": true
+        },
+        {
+          "title": "Seja Voluntário",
+          "description": "Compartilhe seu tempo e habilidades. Precisamos de educadores, psicólogos, cuidadores e mais.",
+          "button": "Quero Ajudar",
+          "type": "scroll",
+          "target": "contato",
+          "iconAlt": "Ícone seja voluntário",
+          "highlight": false
+        },
+        {
+          "title": "Doação de Itens",
+          "description": "Roupas, materiais escolares, brinquedos e outros itens são sempre bem-vindos.",
+          "button": "Ver Lista",
+          "type": "modal",
+          "modal": "doacao-itens",
+          "iconAlt": "Ícone doação de itens",
+          "highlight": false
+        },
+        {
+          "title": "Eventos e Parcerias",
+          "description": "Empresas e instituições podem se tornar parceiras e organizar eventos beneficentes.",
+          "button": "Seja Parceiro",
+          "type": "scroll",
+          "target": "contato",
+          "iconAlt": "Ícone eventos e parcerias",
+          "highlight": false
+        }
+      ]
+    },
+    "sponsors": {
+      "title": "Nossos Patrocinadores",
+      "subtitle": "Conheça as empresas parceiras que apoiam e fortalecem nossa missão.",
+      "items": [
+        {
+          "name": "Instituto Aurora",
+          "image": "Instituto Aurora.png",
+          "logoAlt": "Logo da empresa Instituto Aurora"
+        },
+        {
+          "name": "VerdeVida Alimentos",
+          "image": "VerdeVida Alimentos.png",
+          "logoAlt": "Logo da empresa VerdeVida Alimentos"
+        },
+        {
+          "name": "NovaTrilha Logística",
+          "image": "NovaTrilha Logística.png",
+          "logoAlt": "Logo da empresa NovaTrilha Logística"
+        }
+      ]
+    },
+    "contact": {
+      "tag": "Entre em contato",
+      "title": "Vamos conversar",
+      "description": "Tem dúvidas, quer saber mais sobre nosso trabalho ou deseja contribuir? Estamos aqui para você.",
+      "addressLabel": "Endereço",
+      "addressLines": [
+        "Rua Leão Coroado, 55 - Boa Vista",
+        "Recife - PE, CEP 50.060-250"
+      ],
+      "phoneLabel": "Telefone",
+      "phone": "+55 (81) 3231-0463",
+      "emailLabel": "E-mail",
+      "email": "contato@casameninamulher.org.br"
+    },
+    "footer": {
+      "policyLabel": "Política de Salvaguarda",
+      "policyUrl": "https://drive.google.com/file/d/1YWDwkU4pjzlMOAY3NJCvwQRRZWc7itlG/view?usp=sharing",
+      "donateCta": "Doe Agora",
+      "helpCta": "Quero Ajudar",
+      "copyright": "© 2025 Casa Menina Mulher — CNPJ XX.XXX.XXX/0001-XX. Todos os direitos reservados."
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Casa Menina Mulher — Transforming lives",
+      "description": "Casa Menina Mulher welcomes, protects, and creates opportunities for girls in vulnerable situations. Learn about our work and how you can help.",
+      "ogTitle": "Casa Menina Mulher — Transforming lives",
+      "ogDescription": "For more than three decades, we have welcomed girls and offered care, education, and dignity. Help us transform lives.",
+      "twitterTitle": "Casa Menina Mulher — Transforming lives",
+      "twitterDescription": "Discover Casa Menina Mulher's work and learn how to support life-changing protection and education programs.",
+      "ogImageAlt": "Casa Menina Mulher visual identity",
+      "redirectTitle": "Redirecting...",
+      "redirectText": "Redirecting to the Portuguese version"
+    },
+    "ui": {
+      "languageSwitcherLabel": "Select language",
+      "openMenu": "Open menu",
+      "scrollPrev": "Previous slide",
+      "scrollNext": "Next slide",
+      "modalCloseAria": "Close modal",
+      "modalLoading": "Loading...",
+      "modalError": "We could not load this content right now. Please try again in a moment.",
+      "carouselError": "We could not load the images."
+    },
+    "nav": {
+      "about": "About",
+      "guidelines": "Guiding Principles",
+      "impact": "Our Impact",
+      "help": "How to Help",
+      "sponsors": "Our Sponsors",
+      "contact": "Contact",
+      "donate": "Donate Now"
+    },
+    "hero": {
+      "badge": "Civil Society Organization",
+      "title": "Casa Menina Mulher",
+      "highlight": "Transforming lives",
+      "text": "For more than three decades, we have welcomed and protected girls in vulnerable situations, providing education and knowledge for a dignified future.",
+      "primaryCta": "Make a Donation",
+      "secondaryCta": "Learn About Our Work",
+      "backgroundAlt": "Abstract background"
+    },
+    "mission": {
+      "tag": "Our Mission",
+      "title": "A space for learning and hope",
+      "description": "Casa Menina Mulher was born from the dream of creating a place where girls facing social vulnerability could find dignity and the chance to build a better future.",
+      "cards": [
+        {
+          "title": "Care",
+          "description": "Each girl receives individualized attention.",
+          "iconAlt": "Care icon"
+        },
+        {
+          "title": "Protection",
+          "description": "We work on preventing violence against children and adolescents.",
+          "iconAlt": "Protection icon"
+        },
+        {
+          "title": "Education",
+          "description": "We invest in educational development as a driver of social transformation.",
+          "iconAlt": "Education icon"
+        },
+        {
+          "title": "Community",
+          "description": "We build a support network that involves families, volunteers, and partners.",
+          "iconAlt": "Community icon"
+        }
+      ]
+    },
+    "guidelines": {
+      "tag": "Institutional Framework",
+      "title": "Guidelines that shape our work",
+      "description": "Our work is guided by our Safeguarding Policy, the Recife Municipal Plan, and Brazil's Child and Adolescent Statute (ECA).",
+      "cards": [
+        {
+          "title": "Safeguarding Policy",
+          "description": "We adopt clear guidelines to prevent risks, protect children and adolescents, and direct the institutional response in situations of concern.",
+          "items": [
+            "Comprehensive protection for children, adolescents, and vulnerable people.",
+            "Prevention of abuse, exploitation, and all forms of violence.",
+            "Mandatory conduct for staff, volunteers, and partners, with a response workflow.",
+            "Action aligned with ECA (Law No. 8,069/1990)."
+          ],
+          "primaryLabel": "Read Safeguarding Policy",
+          "primaryUrl": "https://drive.google.com/file/d/1YWDwkU4pjzlMOAY3NJCvwQRRZWc7itlG/view?usp=sharing",
+          "secondaryLabel": "How to report a concern",
+          "secondaryModal": "salvaguarda-reporte"
+        },
+        {
+          "title": "Municipal Plan to Combat Sexual Violence and Exploitation of Children and Adolescents",
+          "description": "Aligned with Recife's Municipal Plan (2024-2034), overseen by COMDICA, we strengthen cross-sector prevention, protection, and response actions against violence and sexual exploitation of children and adolescents.",
+          "items": [
+            "Reference to COMDICA (Recife Municipal Council for the Rights of Children and Adolescents) as the social oversight body.",
+            "Coordination among social assistance, health, education, guardianship councils, public safety, and the justice system.",
+            "Identification, reception, and referral workflows to reduce revictimization and expand comprehensive protection.",
+            "Monitoring of goals, ongoing staff training, and social participation in addressing rights violations.",
+            "Action aligned with ECA (Law No. 8,069/1990)."
+          ],
+          "primaryLabel": "Visit COMDICA Recife",
+          "primaryUrl": "https://comdica.recife.pe.gov.br/",
+          "secondaryLabel": "How to report a concern",
+          "secondaryModal": "salvaguarda-reporte"
+        }
+      ],
+      "eca": {
+        "badge": "Legal basis",
+        "text": "Child and Adolescent Statute (Law No. 8,069/1990)",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm"
+      }
+    },
+    "ods": {
+      "tag": "Agenda 2030",
+      "title": "Our alignment with the Sustainable Development Goals",
+      "intro": "Casa Menina Mulher acts strategically and with commitment to the UN 2030 Agenda, directly contributing to SDG progress in contexts of high social vulnerability.",
+      "cards": [
+        {
+          "image": "SDG-3.svg",
+          "alt": "SDG 3 - Good Health and Well-Being",
+          "text": "We promote comprehensive care and emotional strengthening for children and adolescents, especially those impacted by violence."
+        },
+        {
+          "image": "SDG-5.svg",
+          "alt": "SDG 5 - Gender Equality",
+          "text": "We work directly to confront sexual and gender-based violence, still an alarming reality in Brazil, with thousands of cases reported annually (SINAN and Disque 100)."
+        },
+        {
+          "image": "SDG-11.svg",
+          "alt": "SDG 11 - Sustainable Cities and Communities",
+          "text": "Our work also impacts SDG 11 by strengthening protection networks and safe coexistence across local territories."
+        },
+        {
+          "image": "SDG-16.svg",
+          "alt": "SDG 16 - Peace, Justice and Strong Institutions",
+          "text": "We promote human rights and systematic responses to violence against children and adolescents."
+        },
+        {
+          "image": "SDG-17.svg",
+          "alt": "SDG 17 - Partnerships for the Goals",
+          "text": "We build networked partnerships with civil society organizations, public authorities, and international bodies to amplify results and broaden the reach of actions."
+        }
+      ],
+      "closing": "Investing in Casa Menina Mulher means strengthening effective local responses with direct, measurable, and sustainable impact. By supporting our work, partners help transform realities, protect lives, and promote social justice."
+    },
+    "impact": {
+      "tag": "Our Impact",
+      "title": "Numbers that transform lives",
+      "stats": [
+        { "number": "500+", "label": "Girls Welcomed" },
+        { "number": "30+", "label": "Years of Service" },
+        { "number": "200+", "label": "Active Volunteers" },
+        { "number": "95%", "label": "Family Reintegration" }
+      ],
+      "carouselTitle": "Our Work in Images"
+    },
+    "help": {
+      "tag": "Get Involved",
+      "title": "How you can help",
+      "description": "There are many ways to support and help transform the lives of these girls. Choose the one that fits you best.",
+      "cards": [
+        {
+          "title": "Financial Donation",
+          "description": "Your contribution helps maintain our shelter, education, and care programs for girls.",
+          "button": "Donate Now",
+          "type": "modal",
+          "modal": "doacao-financeira",
+          "iconAlt": "Financial donation icon",
+          "highlight": true
+        },
+        {
+          "title": "Become a Volunteer",
+          "description": "Share your time and skills. We need educators, psychologists, caregivers, and more.",
+          "button": "I Want to Help",
+          "type": "scroll",
+          "target": "contato",
+          "iconAlt": "Volunteer icon",
+          "highlight": false
+        },
+        {
+          "title": "Item Donation",
+          "description": "Clothes, school supplies, toys, and other essentials are always welcome.",
+          "button": "See List",
+          "type": "modal",
+          "modal": "doacao-itens",
+          "iconAlt": "Item donation icon",
+          "highlight": false
+        },
+        {
+          "title": "Events and Partnerships",
+          "description": "Companies and institutions can become partners and organize fundraising events.",
+          "button": "Become a Partner",
+          "type": "scroll",
+          "target": "contato",
+          "iconAlt": "Events and partnerships icon",
+          "highlight": false
+        }
+      ]
+    },
+    "sponsors": {
+      "title": "Our Sponsors",
+      "subtitle": "Meet the partner organizations that support and strengthen our mission.",
+      "items": [
+        {
+          "name": "Instituto Aurora",
+          "image": "Instituto Aurora.png",
+          "logoAlt": "Instituto Aurora company logo"
+        },
+        {
+          "name": "VerdeVida Alimentos",
+          "image": "VerdeVida Alimentos.png",
+          "logoAlt": "VerdeVida Alimentos company logo"
+        },
+        {
+          "name": "NovaTrilha Logística",
+          "image": "NovaTrilha Logística.png",
+          "logoAlt": "NovaTrilha Logística company logo"
+        }
+      ]
+    },
+    "contact": {
+      "tag": "Contact us",
+      "title": "Let's talk",
+      "description": "Have questions, want to learn more about our work, or looking to contribute? We are here for you.",
+      "addressLabel": "Address",
+      "addressLines": [
+        "Rua Leão Coroado, 55 - Boa Vista",
+        "Recife - PE, ZIP 50.060-250"
+      ],
+      "phoneLabel": "Phone",
+      "phone": "+55 (81) 3231-0463",
+      "emailLabel": "Email",
+      "email": "contato@casameninamulher.org.br"
+    },
+    "footer": {
+      "policyLabel": "Safeguarding Policy",
+      "policyUrl": "https://drive.google.com/file/d/1YWDwkU4pjzlMOAY3NJCvwQRRZWc7itlG/view?usp=sharing",
+      "donateCta": "Donate Now",
+      "helpCta": "I Want to Help",
+      "copyright": "© 2025 Casa Menina Mulher — CNPJ XX.XXX.XXX/0001-XX. All rights reserved."
+    }
+  },
+  "de": {
+    "meta": {
+      "title": "Casa Menina Mulher — Leben verändern",
+      "description": "Casa Menina Mulher nimmt Mädchen in vulnerablen Lebenslagen auf, schützt sie und eröffnet ihnen neue Perspektiven. Lernen Sie unsere Arbeit kennen und erfahren Sie, wie Sie helfen können.",
+      "ogTitle": "Casa Menina Mulher — Leben verändern",
+      "ogDescription": "Seit mehr als drei Jahrzehnten begleiten wir Mädchen mit Fürsorge, Bildung und Würde. Unterstützen Sie uns dabei, Leben zu verändern.",
+      "twitterTitle": "Casa Menina Mulher — Leben verändern",
+      "twitterDescription": "Erfahren Sie mehr über die Arbeit von Casa Menina Mulher und wie Sie Schutz und Bildung für Mädchen unterstützen können.",
+      "ogImageAlt": "Visuelle Identität von Casa Menina Mulher",
+      "redirectTitle": "Weiterleitung...",
+      "redirectText": "Weiterleitung zur portugiesischen Version"
+    },
+    "ui": {
+      "languageSwitcherLabel": "Sprache wählen",
+      "openMenu": "Menü öffnen",
+      "scrollPrev": "Vorherige Folie",
+      "scrollNext": "Nächste Folie",
+      "modalCloseAria": "Modal schließen",
+      "modalLoading": "Wird geladen...",
+      "modalError": "Der Inhalt konnte gerade nicht geladen werden. Bitte versuchen Sie es in Kürze erneut.",
+      "carouselError": "Die Bilder konnten nicht geladen werden."
+    },
+    "nav": {
+      "about": "Über uns",
+      "guidelines": "Leitlinien",
+      "impact": "Unsere Wirkung",
+      "help": "Wie Sie helfen können",
+      "sponsors": "Unsere Förderer",
+      "contact": "Kontakt",
+      "donate": "Jetzt spenden"
+    },
+    "hero": {
+      "badge": "Zivilgesellschaftliche Organisation",
+      "title": "Casa Menina Mulher",
+      "highlight": "Leben verändern",
+      "text": "Seit mehr als drei Jahrzehnten nehmen wir Mädchen in vulnerablen Situationen auf und schützen sie. Durch Bildung und Wissen schaffen wir Perspektiven für eine würdevolle Zukunft.",
+      "primaryCta": "Jetzt spenden",
+      "secondaryCta": "Unsere Arbeit kennenlernen",
+      "backgroundAlt": "Abstrakter Hintergrund"
+    },
+    "mission": {
+      "tag": "Unsere Mission",
+      "title": "Ein Raum für Lernen und Hoffnung",
+      "description": "Casa Menina Mulher entstand aus dem Wunsch, einen Ort zu schaffen, an dem Mädchen in sozialer Vulnerabilität Würde und die Chance auf eine bessere Zukunft finden.",
+      "cards": [
+        {
+          "title": "Fürsorge",
+          "description": "Jedes Mädchen erhält individuelle Begleitung.",
+          "iconAlt": "Symbol für Fürsorge"
+        },
+        {
+          "title": "Schutz",
+          "description": "Wir arbeiten präventiv gegen Gewalt an Kindern und Jugendlichen.",
+          "iconAlt": "Symbol für Schutz"
+        },
+        {
+          "title": "Bildung",
+          "description": "Wir investieren in Bildung als Schlüssel zur sozialen Transformation.",
+          "iconAlt": "Symbol für Bildung"
+        },
+        {
+          "title": "Gemeinschaft",
+          "description": "Wir stärken ein Unterstützungsnetzwerk aus Familien, Freiwilligen und Partnern.",
+          "iconAlt": "Symbol für Gemeinschaft"
+        }
+      ]
+    },
+    "guidelines": {
+      "tag": "Institutionelle Leitlinien",
+      "title": "Leitlinien, die unsere Arbeit prägen",
+      "description": "Unsere Arbeit orientiert sich an der Schutzrichtlinie, dem kommunalen Plan von Recife und dem brasilianischen Kinder- und Jugendstatut (ECA).",
+      "cards": [
+        {
+          "title": "Schutzrichtlinie (Safeguarding)",
+          "description": "Wir verfolgen klare Leitlinien, um Risiken vorzubeugen, Kinder und Jugendliche zu schützen und institutionelle Reaktionen in Verdachtsfällen zu steuern.",
+          "items": [
+            "Umfassender Schutz für Kinder, Jugendliche und besonders vulnerable Personen.",
+            "Prävention von Missbrauch, Ausbeutung und jeder Form von Gewalt.",
+            "Verbindliche Verhaltensregeln für Team, Freiwillige und Partner mit klaren Meldewegen.",
+            "Ausrichtung am ECA (Gesetz Nr. 8.069/1990)."
+          ],
+          "primaryLabel": "Schutzrichtlinie lesen",
+          "primaryUrl": "https://drive.google.com/file/d/1YWDwkU4pjzlMOAY3NJCvwQRRZWc7itlG/view?usp=sharing",
+          "secondaryLabel": "Wie man ein Anliegen meldet",
+          "secondaryModal": "salvaguarda-reporte"
+        },
+        {
+          "title": "Kommunaler Plan zur Bekämpfung sexueller Gewalt und Ausbeutung von Kindern und Jugendlichen",
+          "description": "In Abstimmung mit dem kommunalen Plan von Recife (2024-2034), koordiniert und überwacht durch COMDICA, stärken wir sektorübergreifende Präventions-, Schutz- und Reaktionsmaßnahmen gegen Gewalt und sexuelle Ausbeutung von Kindern und Jugendlichen.",
+          "items": [
+            "Bezug auf COMDICA als Instanz der gesellschaftlichen Kontrolle des Plans.",
+            "Vernetzung von Sozialhilfe, Gesundheit, Bildung, Kinderschutzrat, öffentlicher Sicherheit und Justiz.",
+            "Erkennungs-, Aufnahme- und Weiterleitungsprozesse zur Verringerung von Retraumatisierung und für besseren Schutz.",
+            "Monitoring von Zielen, kontinuierliche Fortbildung der Teams und gesellschaftliche Beteiligung.",
+            "Ausrichtung am ECA (Gesetz Nr. 8.069/1990)."
+          ],
+          "primaryLabel": "COMDICA Recife aufrufen",
+          "primaryUrl": "https://comdica.recife.pe.gov.br/",
+          "secondaryLabel": "Wie man ein Anliegen meldet",
+          "secondaryModal": "salvaguarda-reporte"
+        }
+      ],
+      "eca": {
+        "badge": "Rechtsgrundlage",
+        "text": "Kinder- und Jugendstatut (Gesetz Nr. 8.069/1990)",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm"
+      }
+    },
+    "ods": {
+      "tag": "Agenda 2030",
+      "title": "Unsere Ausrichtung an den Zielen für nachhaltige Entwicklung",
+      "intro": "Casa Menina Mulher handelt strategisch und engagiert im Sinne der UN-Agenda 2030 und trägt direkt zum Fortschritt der SDGs in Kontexten hoher sozialer Vulnerabilität bei.",
+      "cards": [
+        {
+          "image": "SDG-3.svg",
+          "alt": "SDG 3 - Gesundheit und Wohlergehen",
+          "text": "Wir fördern ganzheitliche Fürsorge und emotionale Stärkung von Kindern und Jugendlichen, insbesondere jener, die von Gewalt betroffen sind."
+        },
+        {
+          "image": "SDG-5.svg",
+          "alt": "SDG 5 - Geschlechtergleichheit",
+          "text": "Wir arbeiten direkt gegen sexuelle und geschlechtsspezifische Gewalt, die in Brasilien weiterhin alarmierend ist, mit tausenden gemeldeten Fällen pro Jahr (SINAN und Disque 100)."
+        },
+        {
+          "image": "SDG-11.svg",
+          "alt": "SDG 11 - Nachhaltige Städte und Gemeinden",
+          "text": "Unsere Arbeit wirkt auch auf SDG 11, indem wir Schutznetzwerke und sichere Gemeinschaftsräume in den Quartieren stärken."
+        },
+        {
+          "image": "SDG-16.svg",
+          "alt": "SDG 16 - Frieden, Gerechtigkeit und starke Institutionen",
+          "text": "Wir fördern Menschenrechte und ein systematisches Vorgehen gegen Gewalt an Kindern und Jugendlichen."
+        },
+        {
+          "image": "SDG-17.svg",
+          "alt": "SDG 17 - Partnerschaften zur Erreichung der Ziele",
+          "text": "Wir vernetzen uns mit zivilgesellschaftlichen Organisationen, öffentlichen Stellen und internationalen Akteuren, um Wirkung und Reichweite zu erhöhen."
+        }
+      ],
+      "closing": "In Casa Menina Mulher zu investieren bedeutet, wirksame lokale Antworten mit direkter, messbarer und nachhaltiger Wirkung zu stärken. Mit Ihrer Unterstützung tragen Partner dazu bei, Lebensrealitäten zu verändern, Leben zu schützen und soziale Gerechtigkeit zu fördern."
+    },
+    "impact": {
+      "tag": "Unsere Wirkung",
+      "title": "Zahlen, die Leben verändern",
+      "stats": [
+        { "number": "500+", "label": "Aufgenommene Mädchen" },
+        { "number": "30+", "label": "Jahre Engagement" },
+        { "number": "200+", "label": "Aktive Freiwillige" },
+        { "number": "95%", "label": "Familiäre Reintegration" }
+      ],
+      "carouselTitle": "Unsere Arbeit in Bildern"
+    },
+    "help": {
+      "tag": "Mitmachen",
+      "title": "Wie Sie helfen können",
+      "description": "Es gibt viele Möglichkeiten, dazu beizutragen, das Leben dieser Mädchen zu verändern. Wählen Sie den Weg, der am besten zu Ihnen passt.",
+      "cards": [
+        {
+          "title": "Geldspende",
+          "description": "Ihr Beitrag hilft, unsere Programme für Aufnahme, Bildung und Fürsorge aufrechtzuerhalten.",
+          "button": "Jetzt spenden",
+          "type": "modal",
+          "modal": "doacao-financeira",
+          "iconAlt": "Symbol Geldspende",
+          "highlight": true
+        },
+        {
+          "title": "Freiwillig engagieren",
+          "description": "Teilen Sie Ihre Zeit und Ihre Fähigkeiten. Wir brauchen Lehrkräfte, Psychologinnen, Betreuende und mehr.",
+          "button": "Ich möchte helfen",
+          "type": "scroll",
+          "target": "contato",
+          "iconAlt": "Symbol Freiwilligenarbeit",
+          "highlight": false
+        },
+        {
+          "title": "Sachspende",
+          "description": "Kleidung, Schulmaterial, Lernspielzeug und weitere wichtige Artikel sind jederzeit willkommen.",
+          "button": "Liste ansehen",
+          "type": "modal",
+          "modal": "doacao-itens",
+          "iconAlt": "Symbol Sachspende",
+          "highlight": false
+        },
+        {
+          "title": "Veranstaltungen und Partnerschaften",
+          "description": "Unternehmen und Institutionen können Partner werden und Benefizveranstaltungen organisieren.",
+          "button": "Partner werden",
+          "type": "scroll",
+          "target": "contato",
+          "iconAlt": "Symbol Veranstaltungen und Partnerschaften",
+          "highlight": false
+        }
+      ]
+    },
+    "sponsors": {
+      "title": "Unsere Förderer",
+      "subtitle": "Lernen Sie die Partnerunternehmen kennen, die unsere Mission unterstützen und stärken.",
+      "items": [
+        {
+          "name": "Instituto Aurora",
+          "image": "Instituto Aurora.png",
+          "logoAlt": "Logo der Firma Instituto Aurora"
+        },
+        {
+          "name": "VerdeVida Alimentos",
+          "image": "VerdeVida Alimentos.png",
+          "logoAlt": "Logo der Firma VerdeVida Alimentos"
+        },
+        {
+          "name": "NovaTrilha Logística",
+          "image": "NovaTrilha Logística.png",
+          "logoAlt": "Logo der Firma NovaTrilha Logística"
+        }
+      ]
+    },
+    "contact": {
+      "tag": "Kontakt",
+      "title": "Lassen Sie uns sprechen",
+      "description": "Haben Sie Fragen, möchten Sie mehr über unsere Arbeit erfahren oder uns unterstützen? Wir sind für Sie da.",
+      "addressLabel": "Adresse",
+      "addressLines": [
+        "Rua Leão Coroado, 55 - Boa Vista",
+        "Recife - PE, PLZ 50.060-250"
+      ],
+      "phoneLabel": "Telefon",
+      "phone": "+55 (81) 3231-0463",
+      "emailLabel": "E-Mail",
+      "email": "contato@casameninamulher.org.br"
+    },
+    "footer": {
+      "policyLabel": "Schutzrichtlinie",
+      "policyUrl": "https://drive.google.com/file/d/1YWDwkU4pjzlMOAY3NJCvwQRRZWc7itlG/view?usp=sharing",
+      "donateCta": "Jetzt spenden",
+      "helpCta": "Ich möchte helfen",
+      "copyright": "© 2025 Casa Menina Mulher — CNPJ XX.XXX.XXX/0001-XX. Alle Rechte vorbehalten."
+    }
+  }
+}

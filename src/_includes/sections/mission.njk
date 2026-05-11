@@ -1,0 +1,41 @@
+<section class="mission pd" id="sobre">
+  <div class="container">
+    <span class="section-tag">{{ t.mission.tag }}</span>
+    <h2 class="section-title">{{ t.mission.title }}</h2>
+    <p class="section-description">{{ t.mission.description }}</p>
+
+    <div class="mission-cards">
+      <div class="card">
+        <div class="icon">
+          <img src="{{ '/assets/img/icon-missao-heart.svg' | url }}" alt="{{ t.mission.cards[0].iconAlt }}" />
+        </div>
+        <h3>{{ t.mission.cards[0].title }}</h3>
+        <p>{{ t.mission.cards[0].description }}</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">
+          <img src="{{ '/assets/img/icon-missao-protecao.svg' | url }}" alt="{{ t.mission.cards[1].iconAlt }}" />
+        </div>
+        <h3>{{ t.mission.cards[1].title }}</h3>
+        <p>{{ t.mission.cards[1].description }}</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">
+          <img src="{{ '/assets/img/icon-missao-educacao.svg' | url }}" alt="{{ t.mission.cards[2].iconAlt }}" />
+        </div>
+        <h3>{{ t.mission.cards[2].title }}</h3>
+        <p>{{ t.mission.cards[2].description }}</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">
+          <img src="{{ '/assets/img/icon-missao-comunidade.svg' | url }}" alt="{{ t.mission.cards[3].iconAlt }}" />
+        </div>
+        <h3>{{ t.mission.cards[3].title }}</h3>
+        <p>{{ t.mission.cards[3].description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

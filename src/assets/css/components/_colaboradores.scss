@@ -1,0 +1,153 @@
+@use "colors" as *;
+
+.colaboradores {
+  background: $gradient-section;
+
+  .titulo {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: $foreground;
+    font-family: "Playfair Display", serif;
+  }
+
+  .subtitulo {
+    text-align: center;
+    font-size: clamp(1rem, 1.6vw, 1.125rem);
+    color: $muted-foreground;
+    margin-bottom: 40px;
+  }
+
+  .colab-wrapper {
+    gap: 10px;
+  }
+
+  .colab-btn {
+    background: rgba($color-white, 0.8);
+    border: 1px solid rgba(225, 201, 244, 0.5);
+    font-size: clamp(1.25rem, 2.8vw, 1.625rem);
+    font-weight: 700;
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    box-shadow: $shadow-card;
+    cursor: pointer;
+    margin: 0 12px;
+    transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    line-height: 1;
+    padding: 0;
+    color: $lilac-deep;
+
+    &:hover {
+      background: rgba($color-white, 0.95);
+      color: $pink-vivid;
+      transform: scale(1.04);
+    }
+  }
+
+  .colab-track {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+
+    .colab-card {
+      min-width: 260px;
+      max-width: 260px;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(225, 201, 244, 0.5);
+      border-radius: 1rem;
+      padding: 24px;
+      text-align: center;
+      box-shadow: $shadow-card;
+      scroll-snap-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: $glow-primary;
+      }
+
+      .avatar {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 14px;
+        border-radius: 50%;
+        overflow: visible;
+        border: 3px solid rgba($pink-vivid, 0.36);
+        box-shadow: 0 6px 16px rgba($color-black, 0.12);
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: -8px;
+          border-radius: 50%;
+          background: $gradient-hero;
+          filter: blur(8px);
+          opacity: 0.32;
+          z-index: 0;
+          transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          border-radius: 50%;
+          position: relative;
+          z-index: 1;
+          background: $color-white;
+        }
+      }
+
+      &:hover .avatar {
+        border-color: rgba($pink-vivid, 0.64);
+
+        &::before {
+          opacity: 0.56;
+          transform: scale(1.06);
+        }
+      }
+
+      h3 {
+        font-size: clamp(1rem, 1.6vw, 1.125rem);
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: $foreground;
+      }
+
+      p {
+        font-size: clamp(0.8125rem, 1.25vw, 0.9375rem);
+        color: $muted-foreground;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .colab-btn {
+      display: none;
+    }
+
+    .colab-track {
+      justify-content: flex-start;
+      padding: 10px 8px;
+      gap: 16px;
+
+      .colab-card {
+        min-width: 80%;
+        max-width: 80%;
+      }
+    }
+  }
+}
