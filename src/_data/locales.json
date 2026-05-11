@@ -42,16 +42,16 @@
     "mission": {
       "tag": "Nossa Missão",
       "title": "Um espaço de aprendizagem e de esperança",
-      "description": "A Casa Menina Mulher nasceu do sonho de criar um espaço onde meninas em situação de vulnerabilidade social pudessem encontrar dignidade e a chance de construir um futuro melhor.",
+      "description": "A Casa Menina Mulher nasceu do sonho de criar um espaço onde meninas em situação de vulnerabilidade social pudessem encontrar dignidade e a chance de construir um futuro com mais perspectivas.",
       "cards": [
         {
           "title": "Cuidado",
-          "description": "Cada menina recebe atenção individualizada.",
+          "description": "Cada criança recebe atenção individualizada.",
           "iconAlt": "Ícone de cuidado"
         },
         {
           "title": "Proteção",
-          "description": "Trabalhamos no eixo de prevenção à violência contra crianças e adolescentes.",
+          "description": "Trabalhamos no eixo de prevenção às violências contra crianças e adolescentes.",
           "iconAlt": "Ícone de proteção"
         },
         {
@@ -155,10 +155,6 @@
         {
           "number": "200+",
           "label": "Voluntários Ativos"
-        },
-        {
-          "number": "95%",
-          "label": "Reintegração Familiar"
         }
       ],
       "carouselTitle": "Nosso Trabalho em Imagens"
@@ -197,7 +193,7 @@
         },
         {
           "title": "Eventos e Parcerias",
-          "description": "Empresas e instituições podem se tornar parceiras e organizar eventos beneficentes.",
+          "description": "Empresas, instituições e universidades podem se tornar parceiras e organizar eventos beneficentes.",
           "button": "Seja Parceiro",
           "type": "scroll",
           "target": "contato",
@@ -292,11 +288,11 @@
     "mission": {
       "tag": "Our Mission",
       "title": "A space for learning and hope",
-      "description": "Casa Menina Mulher was born from the dream of creating a place where girls facing social vulnerability could find dignity and the chance to build a better future.",
+      "description": "Casa Menina Mulher was born from the dream of creating a place where girls facing social vulnerability could find dignity and the chance to build a future with more opportunities.",
       "cards": [
         {
           "title": "Care",
-          "description": "Each girl receives individualized attention.",
+          "description": "Each child receives individualized attention.",
           "iconAlt": "Care icon"
         },
         {
@@ -339,7 +335,7 @@
           "title": "Municipal Plan to Combat Sexual Violence and Exploitation of Children and Adolescents",
           "description": "Aligned with Recife's Municipal Plan (2024-2034), overseen by COMDICA, we strengthen cross-sector prevention, protection, and response actions against violence and sexual exploitation of children and adolescents.",
           "items": [
-            "Reference to COMDICA (Conselho Municipal dos Direitos da Crian?a e do Adolescente do Recife) as the social oversight body.",
+            "Reference to COMDICA (Conselho Municipal dos Direitos da Criança e do Adolescente do Recife) as the social oversight body.",
             "Coordination among social assistance, health, education, Conselho Tutelar, public safety, and the justice system.",
             "Identification, intake, and referral workflows to reduce revictimization and strengthen comprehensive protection.",
             "Monitoring of goals, ongoing staff training, and social participation in addressing rights violations.",
@@ -405,10 +401,6 @@
         {
           "number": "200+",
           "label": "Active Volunteers"
-        },
-        {
-          "number": "95%",
-          "label": "Family Reintegration"
         }
       ],
       "carouselTitle": "Our Work in Images"
@@ -447,7 +439,7 @@
         },
         {
           "title": "Events and Partnerships",
-          "description": "Companies and institutions can become partners and organize fundraising events.",
+          "description": "Companies, institutions, and universities can become partners and organize fundraising events.",
           "button": "Become a Partner",
           "type": "scroll",
           "target": "contato",
@@ -542,11 +534,11 @@
     "mission": {
       "tag": "Unsere Mission",
       "title": "Ein Raum für Lernen und Hoffnung",
-      "description": "Casa Menina Mulher entstand aus dem Wunsch, einen Ort zu schaffen, an dem Mädchen in sozial benachteiligten Lebenslagen Würde und die Chance auf eine bessere Zukunft finden.",
+      "description": "Casa Menina Mulher entstand aus dem Wunsch, einen Ort zu schaffen, an dem Mädchen in sozial benachteiligten Lebenslagen Würde und die Chance auf eine Zukunft mit mehr Perspektiven finden.",
       "cards": [
         {
           "title": "Fürsorge",
-          "description": "Jedes Mädchen erhält individuelle Begleitung.",
+          "description": "Jedes Kind erhält individuelle Begleitung.",
           "iconAlt": "Symbol für Fürsorge"
         },
         {
@@ -589,7 +581,7 @@
           "title": "Kommunaler Plan zur Bekämpfung sexueller Gewalt und Ausbeutung von Kindern und Jugendlichen",
           "description": "In Abstimmung mit dem kommunalen Plan von Recife (2024-2034), koordiniert und überwacht durch COMDICA, stärken wir sektorübergreifende Präventions-, Schutz- und Reaktionsmaßnahmen gegen Gewalt und sexuelle Ausbeutung von Kindern und Jugendlichen.",
           "items": [
-            "Bezug auf COMDICA (Conselho Municipal dos Direitos da Crian?a e do Adolescente do Recife) als zust?ndige Instanz f?r die gesellschaftliche Aufsicht ?ber den Plan.",
+            "Bezug auf COMDICA (Conselho Municipal dos Direitos da Criança e do Adolescente do Recife) als zuständige Instanz für die gesellschaftliche Aufsicht über den Plan.",
             "Vernetzung von Sozialhilfe, Gesundheit, Bildung, Conselho Tutelar, öffentlicher Sicherheit und Justiz.",
             "Identifikations-, Aufnahme- und Weiterleitungsprozesse zur Verringerung von Retraumatisierung und zur Stärkung des umfassenden Schutzes.",
             "Monitoring von Zielen, kontinuierliche Fortbildung der Teams und gesellschaftliche Beteiligung.",
@@ -655,10 +647,6 @@
         {
           "number": "200+",
           "label": "Aktive Freiwillige"
-        },
-        {
-          "number": "95%",
-          "label": "Familiäre Reintegration"
         }
       ],
       "carouselTitle": "Unsere Arbeit in Bildern"
@@ -697,7 +685,7 @@
         },
         {
           "title": "Veranstaltungen und Partnerschaften",
-          "description": "Unternehmen und Institutionen können Partner werden und Benefizveranstaltungen organisieren.",
+          "description": "Unternehmen, Institutionen und Universitäten können Partner werden und Benefizveranstaltungen organisieren.",
           "button": "Partner werden",
           "type": "scroll",
           "target": "contato",
