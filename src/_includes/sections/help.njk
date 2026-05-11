@@ -6,15 +6,15 @@
 
     <div class="help-grid">
       {% set icons = [
-        '/assets/img/icon-heart.svg',
-        '/assets/img/icon-voluntario.svg',
-        '/assets/img/icon-doacao.svg',
-        '/assets/img/icon-calendario.svg'
+        'assets/img/icon-heart.svg',
+        'assets/img/icon-voluntario.svg',
+        'assets/img/icon-doacao.svg',
+        'assets/img/icon-calendario.svg'
       ] %}
       {% for card in t.help.cards %}
       <div class="help-card {% if card.highlight %}destaque{% endif %}">
         <div class="icon">
-          <img src="{{ icons[loop.index0] | url }}" alt="{{ card.iconAlt }}" />
+          <img src="../{{ icons[loop.index0] }}" alt="{{ card.iconAlt }}" />
         </div>
         <h3>{{ card.title }}</h3>
         <p>{{ card.description }}</p>
@@ -23,7 +23,7 @@
         <button
           type="button"
           class="{% if card.highlight %}btn-white{% else %}btn-red{% endif %} btn-open-modal"
-          data-file="{{ ('/assets/data/modals/' ~ locale ~ '/' ~ card.modal ~ '.html') | url }}"
+          data-file="../assets/data/modals/{{ locale }}/{{ card.modal }}.html"
         >
           {{ card.button }}
         </button>

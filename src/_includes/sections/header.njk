@@ -3,7 +3,7 @@
     <div class="brand">
       <div>
         <img
-          src="{{ '/assets/img/favicon.png' | url }}"
+          src="../assets/img/favicon.png"
           alt="logo cmm"
           class="icon"
           id="svg"
@@ -24,14 +24,17 @@
       </ul>
     </nav>
 
-    <nav class="language-switcher" aria-label="{{ t.ui.languageSwitcherLabel }}">
-      <a href="{{ '/pt/' | url }}" lang="pt-BR" class="{% if locale == 'pt' %}active{% endif %}">PT</a>
-      <a href="{{ '/en/' | url }}" lang="en" class="{% if locale == 'en' %}active{% endif %}">EN</a>
-      <a href="{{ '/de/' | url }}" lang="de" class="{% if locale == 'de' %}active{% endif %}">DE</a>
+    <nav
+      class="language-switcher language-switcher-desktop"
+      aria-label="{{ t.ui.languageSwitcherLabel }}"
+    >
+      <a href="../pt/" lang="pt-BR" class="{% if locale == 'pt' %}active{% endif %}">PT</a>
+      <a href="../en/" lang="en" class="{% if locale == 'en' %}active{% endif %}">EN</a>
+      <a href="../de/" lang="de" class="{% if locale == 'de' %}active{% endif %}">DE</a>
     </nav>
 
     <a href="#" class="btn-donate scroll-link" data-target="help">
-      <img src="{{ '/assets/img/icon-heart.svg' | url }}" alt="" />
+      <img src="../assets/img/icon-heart.svg" alt="" />
       {{ t.nav.donate }}
     </a>
 
@@ -58,6 +61,16 @@
       <li><a href="#" class="scroll-link" data-target="help">{{ t.nav.help }}</a></li>
       <li><a href="#" class="scroll-link" data-target="colaboradores">{{ t.nav.sponsors }}</a></li>
       <li><a href="#" class="scroll-link" data-target="contato">{{ t.nav.contact }}</a></li>
+      <li class="language-switcher-mobile-wrap">
+        <nav
+          class="language-switcher language-switcher-mobile"
+          aria-label="{{ t.ui.languageSwitcherLabel }}"
+        >
+          <a href="../pt/" lang="pt-BR" class="{% if locale == 'pt' %}active{% endif %}">PT</a>
+          <a href="../en/" lang="en" class="{% if locale == 'en' %}active{% endif %}">EN</a>
+          <a href="../de/" lang="de" class="{% if locale == 'de' %}active{% endif %}">DE</a>
+        </nav>
+      </li>
     </ul>
   </nav>
 </header>

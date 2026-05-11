@@ -112,6 +112,15 @@
     }
   }
 
+  .language-switcher-mobile-wrap {
+    display: none;
+  }
+
+  .language-switcher-mobile {
+    width: 100%;
+    justify-content: center;
+  }
+
   .btn-donate {
     display: flex;
     align-items: center;
@@ -258,8 +267,16 @@
       display: none;
     }
 
-    .language-switcher {
-      margin-left: auto;
+    .language-switcher-desktop {
+      display: none;
+    }
+
+    .language-switcher-mobile-wrap {
+      display: block;
+
+      .language-switcher-mobile {
+        display: inline-flex;
+      }
     }
 
     .btn-donate {
