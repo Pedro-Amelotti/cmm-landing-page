@@ -1,0 +1,36 @@
+<section class="hero pd" id="ajudar">
+  <div class="hero-bg">
+    <img
+      src="{{ '/assets/img/hero-bg.jpg' | url }}"
+      alt="{{ t.hero.backgroundAlt }}"
+      loading="eager"
+    />
+    <div class="overlay"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-badge">
+      <img src="{{ '/assets/img/icon-heart-red.svg' | url }}" alt="" />
+      {{ t.hero.badge }}
+    </div>
+
+    <h1 class="hero-title">
+      {{ t.hero.title }}<br />
+      <span>{{ t.hero.highlight }}</span>
+    </h1>
+
+    <p class="hero-text">{{ t.hero.text }}</p>
+
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary scroll-link" data-target="help">
+        <img src="{{ '/assets/img/icon-heart.svg' | url }}" alt="" />
+        {{ t.hero.primaryCta }}
+      </a>
+
+      <a href="#" class="btn-outline scroll-link" data-target="sobre">
+        {{ t.hero.secondaryCta }}
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>

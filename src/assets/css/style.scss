@@ -1,0 +1,14 @@
+/* Import all section SCSS files into one CSS build */
+@use "components/base";
+@use "components/header";
+@use "components/hero";
+@use "components/mission";
+@use "components/norteadores";
+@use "components/impact";
+@use "components/carrossel";
+@use "components/help";
+@use "components/modal";
+@use "components/contato";
+@use "components/footer";
+@use "components/colaboradores";
+@use "components/spacing";

@@ -1,0 +1,22 @@
+﻿{
+  "name": "Casa Menina Mulher",
+  "url": "https://pedro-amelotti.github.io/cmm-landing-page",
+  "defaultLocale": "pt",
+  "locales": {
+    "pt": {
+      "code": "pt-BR",
+      "path": "/pt/",
+      "label": "PT"
+    },
+    "en": {
+      "code": "en",
+      "path": "/en/",
+      "label": "EN"
+    },
+    "de": {
+      "code": "de",
+      "path": "/de/",
+      "label": "DE"
+    }
+  }
+}

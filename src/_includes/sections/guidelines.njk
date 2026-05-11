@@ -1,0 +1,71 @@
+<section class="norteadores pd" id="norteadores">
+  <div class="container">
+    <span class="section-tag">{{ t.guidelines.tag }}</span>
+    <h2 class="section-title">{{ t.guidelines.title }}</h2>
+    <p class="section-description">{{ t.guidelines.description }}</p>
+
+    <div class="cards">
+      {% for card in t.guidelines.cards %}
+      <article class="norteadores-card">
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.description }}</p>
+        <ul class="norteadores-list">
+          {% for item in card.items %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+        <div class="norteadores-actions">
+          <a
+            href="{{ card.primaryUrl }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="norteadores-btn-primary"
+          >
+            {{ card.primaryLabel }}
+          </a>
+          <button
+            type="button"
+            class="norteadores-btn-secondary btn-open-modal"
+            data-file="{{ ('/assets/data/modals/' ~ locale ~ '/' ~ card.secondaryModal ~ '.html') | url }}"
+          >
+            {{ card.secondaryLabel }}
+          </button>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="norteadores-eca-link">
+      <a
+        href="{{ t.guidelines.eca.url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="norteadores-link-download"
+      >
+        <span class="eca-badge">{{ t.guidelines.eca.badge }}</span>
+        <span class="eca-text">{{ t.guidelines.eca.text }}</span>
+      </a>
+    </div>
+
+    <div class="ods-area">
+      <span class="section-tag">{{ t.ods.tag }}</span>
+      <h3 class="ods-title">{{ t.ods.title }}</h3>
+      <p class="ods-intro">{{ t.ods.intro }}</p>
+
+      <div class="ods-alinhamento-grid">
+        {% for item in t.ods.cards %}
+        <article class="ods-card">
+          <img
+            src="{{ ('/assets/img/' ~ item.image) | url }}"
+            alt="{{ item.alt }}"
+            loading="lazy"
+          />
+          <p>{{ item.text }}</p>
+        </article>
+        {% endfor %}
+      </div>
+
+      <p class="ods-fechamento">{{ t.ods.closing }}</p>
+    </div>
+  </div>
+</section>

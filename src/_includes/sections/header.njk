@@ -1,0 +1,63 @@
+<header class="header">
+  <div class="container">
+    <div class="brand">
+      <div>
+        <img
+          src="{{ '/assets/img/favicon.png' | url }}"
+          alt="logo cmm"
+          class="icon"
+          id="svg"
+        />
+      </div>
+      <span class="title">CMM</span>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#" class="scroll-link" data-target="sobre">{{ t.nav.about }}</a></li>
+        <li>
+          <a href="#" class="scroll-link" data-target="norteadores">{{ t.nav.guidelines }}</a>
+        </li>
+        <li><a href="#" class="scroll-link" data-target="impacto">{{ t.nav.impact }}</a></li>
+        <li><a href="#" class="scroll-link" data-target="help">{{ t.nav.help }}</a></li>
+        <li><a href="#" class="scroll-link" data-target="contato">{{ t.nav.contact }}</a></li>
+      </ul>
+    </nav>
+
+    <nav class="language-switcher" aria-label="{{ t.ui.languageSwitcherLabel }}">
+      <a href="{{ '/pt/' | url }}" lang="pt-BR" class="{% if locale == 'pt' %}active{% endif %}">PT</a>
+      <a href="{{ '/en/' | url }}" lang="en" class="{% if locale == 'en' %}active{% endif %}">EN</a>
+      <a href="{{ '/de/' | url }}" lang="de" class="{% if locale == 'de' %}active{% endif %}">DE</a>
+    </nav>
+
+    <a href="#" class="btn-donate scroll-link" data-target="help">
+      <img src="{{ '/assets/img/icon-heart.svg' | url }}" alt="" />
+      {{ t.nav.donate }}
+    </a>
+
+    <button
+      class="btn-mobile"
+      id="btn-mobile"
+      aria-label="{{ t.ui.openMenu }}"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="menu-overlay" id="menu-overlay"></div>
+
+  <nav class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#" class="scroll-link" data-target="sobre">{{ t.nav.about }}</a></li>
+      <li><a href="#" class="scroll-link" data-target="norteadores">{{ t.nav.guidelines }}</a></li>
+      <li><a href="#" class="scroll-link" data-target="impacto">{{ t.nav.impact }}</a></li>
+      <li><a href="#" class="scroll-link" data-target="help">{{ t.nav.help }}</a></li>
+      <li><a href="#" class="scroll-link" data-target="colaboradores">{{ t.nav.sponsors }}</a></li>
+      <li><a href="#" class="scroll-link" data-target="contato">{{ t.nav.contact }}</a></li>
+    </ul>
+  </nav>
+</header>

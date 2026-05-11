@@ -1,0 +1,85 @@
+@use "colors" as *;
+
+.btn-open-modal {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: $color-black-a35;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  z-index: 2300;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-card {
+  background: $color-white;
+  border: 1px solid $color-border-soft-alt;
+  border-radius: 16px;
+  max-width: 620px;
+  width: 90%;
+  padding: 28px 24px;
+  position: relative;
+  box-shadow: 0 16px 44px $color-black-a25;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: $color-transparent;
+  border: none;
+  font-size: clamp(1.25rem, 2.3vw, 1.5rem);
+  line-height: 1;
+  cursor: pointer;
+  color: $color-text-primary;
+  padding: 6px;
+}
+
+.modal-close:hover {
+  color: $color-brand-primary-hover-alt;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: clamp(1.25rem, 2.3vw, 1.5rem);
+  color: $color-text-primary;
+}
+
+.modal-content p,
+.modal-content li {
+  color: $color-text-body;
+  line-height: 1.6;
+}
+
+.modal-content ul {
+  padding-left: 18px;
+  margin: 0 0 16px;
+}
+
+.modal-loading {
+  margin: 0;
+  color: $color-text-secondary;
+  font-weight: 600;
+}
+

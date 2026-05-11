@@ -1,0 +1,37 @@
+<section class="colaboradores pd" id="colaboradores">
+  <div class="container">
+    <h2 class="titulo">{{ t.sponsors.title }}</h2>
+    <p class="subtitulo">{{ t.sponsors.subtitle }}</p>
+
+    <div class="colab-wrapper">
+      <button
+        class="colab-btn prev"
+        id="colab-prev"
+        aria-label="{{ t.ui.scrollPrev }}"
+      >
+        &lsaquo;
+      </button>
+      <div class="colab-track" id="colab-track">
+        {% for sponsor in t.sponsors.items %}
+        <div class="colab-card">
+          <div class="avatar">
+            <img
+              src="{{ ('/assets/img/colaboradores/' ~ sponsor.image) | url }}"
+              alt="{{ sponsor.logoAlt }}"
+              loading="lazy"
+            />
+          </div>
+          <h3>{{ sponsor.name }}</h3>
+        </div>
+        {% endfor %}
+      </div>
+      <button
+        class="colab-btn next"
+        id="colab-next"
+        aria-label="{{ t.ui.scrollNext }}"
+      >
+        &rsaquo;
+      </button>
+    </div>
+  </div>
+</section>

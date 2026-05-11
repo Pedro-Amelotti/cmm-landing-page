@@ -1,0 +1,59 @@
+<footer class="footer pd">
+  <div class="container">
+    <div class="footer-col footer-col-brand">
+      <div class="footer-brand">
+        <img
+          src="{{ '/assets/img/favicon.png' | url }}"
+          alt="Logo CMM"
+          class="footer-logo"
+        />
+        <span class="footer-title">Casa Menina Mulher</span>
+      </div>
+      <div class="footer-map-real">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.371839022903!2d-34.89039102519065!3d-8.063501480573688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c650eff7ed%3A0x871c0f85a63d04d8!2sR.%20Le%C3%A3o%20Coroado%2C%2055%20-%20Boa%20Vista%2C%20Recife%20-%20PE%2C%2050060-250%2C%20Brasil!5e0!3m2!1spt-BR!2sbe!4v1764936353918!5m2!1spt-BR!2sbe"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <nav class="footer-col footer-nav">
+      <li><a href="#" class="scroll-link" data-target="sobre">{{ t.nav.about }}</a></li>
+      <li><a href="#" class="scroll-link" data-target="norteadores">{{ t.nav.guidelines }}</a></li>
+      <li><a href="#" class="scroll-link" data-target="impacto">{{ t.nav.impact }}</a></li>
+      <li><a href="#" class="scroll-link" data-target="help">{{ t.nav.help }}</a></li>
+      <li><a href="#" class="scroll-link" data-target="contato">{{ t.nav.contact }}</a></li>
+      <li>
+        <a href="{{ t.footer.policyUrl }}" target="_blank" rel="noopener noreferrer">
+          {{ t.footer.policyLabel }}
+        </a>
+      </li>
+
+      <div class="footer-social">
+        <a
+          href="https://www.instagram.com/casa_menina_mulher55/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img src="{{ '/assets/img/icon-instagram.svg' | url }}" alt="Instagram" />
+        </a>
+      </div>
+    </nav>
+
+    <div class="footer-col footer-actions">
+      <a href="#" class="footer-btn-primary scroll-link" data-target="help">
+        {{ t.footer.donateCta }}
+      </a>
+      <a href="#" class="footer-btn-secondary scroll-link" data-target="help">
+        {{ t.footer.helpCta }}
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-copy">{{ t.footer.copyright }}</div>
+</footer>

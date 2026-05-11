@@ -1,0 +1,62 @@
+{% set t = locales[locale] %}
+<!doctype html>
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ t.meta.title }}</title>
+    <meta name="description" content="{{ t.meta.description }}" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}/{{ locale }}/" />
+    <meta property="og:title" content="{{ t.meta.ogTitle }}" />
+    <meta property="og:description" content="{{ t.meta.ogDescription }}" />
+    <meta
+      property="og:image"
+      content="{{ site.url }}/assets/img/img-logo.webp"
+    />
+    <meta property="og:image:alt" content="{{ t.meta.ogImageAlt }}" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{ site.url }}/{{ locale }}/" />
+    <meta property="twitter:title" content="{{ t.meta.twitterTitle }}" />
+    <meta
+      property="twitter:description"
+      content="{{ t.meta.twitterDescription }}"
+    />
+    <meta
+      property="twitter:image"
+      content="{{ site.url }}/assets/img/img-logo.webp"
+    />
+
+    <link rel="canonical" href="{{ site.url }}/{{ locale }}/" />
+    <link rel="alternate" hreflang="pt-BR" href="{{ site.url }}/pt/" />
+    <link rel="alternate" hreflang="en" href="{{ site.url }}/en/" />
+    <link rel="alternate" hreflang="de" href="{{ site.url }}/de/" />
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}/pt/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="{{ '/assets/css/style.css' | url }}" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ '/assets/img/favicon.png' | url }}"
+    />
+  </head>
+  <body data-locale="{{ locale }}">
+    {{ content | safe }}
+
+    <script src="{{ '/assets/js/modal.js' | url }}"></script>
+    <script src="{{ '/assets/js/mobile-menu.js' | url }}"></script>
+    <script src="{{ '/assets/js/impact-counters.js' | url }}"></script>
+    <script src="{{ '/assets/js/carrossel.js' | url }}"></script>
+    <script src="{{ '/assets/js/scroll.js' | url }}"></script>
+    <script src="{{ '/assets/js/colaboradores.js' | url }}"></script>
+  </body>
+</html>

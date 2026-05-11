@@ -1,179 +1,104 @@
-# Casa Menina Mulher - Landing Page
+# Casa Menina Mulher — Eleventy i18n
 
-Landing page estatica institucional da Casa Menina Mulher.
+Landing page estática com internacionalização em build-time usando **Eleventy + Nunjucks**, com três versões:
 
-O projeto foi estruturado para facilitar manutencao de conteudo por arquivo (HTML/JSON) e manter o layout modular em SCSS.
-
-## Visao geral atual
-
-A pagina principal esta em `index.html` e contem:
-
-- Header com menu desktop e mobile
-- Hero principal
-- Secao Missao
-- Secao Norteadores Institucionais
-  - Politica de Salvaguarda
-  - Plano Municipal de Enfrentamento a Violencia e Exploracao Sexual de Criancas e Adolescentes (Recife)
-  - Destaque sutil do ECA (micro-callout de base legal)
-  - Grade de ODS 1 a 17 + banner ODS
-- Secao Nosso Impacto com contadores animados
-- Carrossel de imagens carregado via JSON
-- Secao Como Ajudar
-- Modal unico com conteudo remoto via `fetch()`
-- Secao Nossos Patrocinadores
-- Secao Contato
-- Footer com menu, CTAs e mapa incorporado
+- `/pt/` (pt-BR)
+- `/en/` (English)
+- `/de/` (Deutsch)
 
 ## Stack
 
-- HTML5
-- CSS compilado a partir de SCSS (`assets/css/style.scss`)
-- JavaScript vanilla (sem framework e sem bundler)
+- Eleventy (11ty)
+- Nunjucks
+- SCSS (Sass CLI)
+- JavaScript vanilla
+- GitHub Pages (deploy por GitHub Actions)
 
-## Estrutura de arquivos
+## Estrutura
 
-- `index.html`: pagina principal
-- `assets/css/style.scss`: entrada de estilos (importa os modulos em `assets/css/components/`)
-- `assets/css/style.css`: CSS compilado e usado no site
-- `assets/css/components/`: modulos de estilo por secao
-- `assets/js/`: scripts de comportamento da pagina
-- `assets/data/`: conteudos de modal e dados do carrossel
-- `assets/img/`: imagens, logos e icones
+```text
+.
+├── src/
+│   ├── _data/
+│   │   ├── site.json
+│   │   └── locales.json
+│   ├── _includes/
+│   │   ├── layouts/
+│   │   │   └── base.njk
+│   │   └── sections/
+│   ├── pt/index.njk
+│   ├── en/index.njk
+│   ├── de/index.njk
+│   ├── index.njk
+│   └── assets/
+├── .eleventy.js
+├── package.json
+└── .github/workflows/pages.yml
+```
 
-## Scripts e comportamentos
-
-### Navegacao e interacao
-
-- `assets/js/scroll.js`
-  - Faz scroll suave em links com classe `.scroll-link` usando `data-target`.
-- `assets/js/mobile-menu.js`
-  - Controla abrir/fechar menu mobile, overlay, estado ARIA e fechamento ao rolar/clicar fora.
-
-### Modal dinamico
-
-- `assets/js/modal.js`
-  - Abre modal para botoes `.btn-open-modal`
-  - Carrega conteudo externo com `fetch(filePath)`
-  - Fecha por botao `X` ou clique no overlay
-
-Arquivos hoje usados no modal:
-
-- `assets/data/doacao-financeira.html`
-- `assets/data/doacao-itens.html`
-- `assets/data/salvaguarda-reporte.html`
-
-### Impacto e carrosseis
-
-- `assets/js/impact-counters.js`
-  - Anima os numeros da secao de impacto quando a secao entra na viewport (IntersectionObserver).
-- `assets/js/carrossel.js`
-  - Carrega slides de `assets/data/carrossel.json`
-  - Monta cards dinamicamente
-  - Implementa autoplay, pausa no hover e loop com clones
-- `assets/js/colaboradores.js`
-  - Controla scroll horizontal dos patrocinadores
-  - Mostra/esconde setas por breakpoint e area rolavel
-
-## Como rodar localmente
-
-Importante: como ha `fetch()` para arquivos locais (`assets/data/*.html` e `carrossel.json`), abra com servidor HTTP local. Abrir o `index.html` direto por `file://` pode quebrar modal/carrossel.
-
-### Opcao 1 (Python)
+## Instalação e execução local
 
 ```bash
-python -m http.server 5500
+npm install
+npm run dev
 ```
 
-Depois acesse:
-
-`http://localhost:5500`
-
-### Opcao 2 (Node - sem instalar global)
+Build de produção:
 
 ```bash
-npx serve .
+npm run build
 ```
 
-## Fluxo de estilos (SCSS -> CSS)
+Saída gerada em `_site/`.
 
-Edite os modulos em `assets/css/components/` e/ou `assets/css/style.scss`.
+## Como funciona i18n
 
-Compile para `assets/css/style.css`:
+- Todas as strings de interface estão em `src/_data/locales.json`.
+- As páginas de idioma usam o mesmo conjunto de seções Nunjucks e apenas trocam `locale`.
+- Conteúdos dinâmicos também são por idioma:
+  - Modais: `src/assets/data/modals/{pt|en|de}/*.html`
+  - Carrossel: `src/assets/data/carrossel/{pt|en|de}.json`
 
-```bash
-npx sass assets/css/style.scss assets/css/style.css --style=compressed --source-map
-```
+## Adicionar novo idioma
 
-Modo watch:
+1. Adicione um novo bloco em `src/_data/locales.json`.
+2. Crie a página `src/{novo-locale}/index.njk`.
+3. Atualize `src/_data/site.json` com o novo locale.
+4. Adicione o link no seletor de idioma (`src/_includes/sections/header.njk`).
+5. Crie os modais e o JSON do carrossel para o novo locale.
+6. Atualize `hreflang` em `src/_includes/layouts/base.njk`.
 
-```bash
-npx sass assets/css/style.scss assets/css/style.css --style=compressed --source-map --watch
-```
+## GitHub Pages (Project Pages)
 
-## Guia de manutencao de conteudo
+Repositório alvo:
 
-### Secao Norteadores
+- `https://pedro-amelotti.github.io/cmm-landing-page/`
 
-Edite em `index.html`:
+O prefixo é injetado no CI:
 
-- textos dos cards
-- links de leitura (Drive/externos)
-- callout do ECA (`.norteadores-eca-link`)
+- `ELEVENTY_PATH_PREFIX=/cmm-landing-page/`
 
-Estilo relacionado:
+No ambiente local, o prefixo padrão é `/`.
 
-- `assets/css/components/_norteadores.scss`
+Configuração necessária no GitHub:
 
-### Conteudo dos modais
+1. `Settings > Pages`
+2. `Source: GitHub Actions`
 
-Edite os arquivos em `assets/data/`:
+O workflow em `.github/workflows/pages.yml` publica `_site/` automaticamente em push na branch `main`.
 
-- `doacao-financeira.html`
-- `doacao-itens.html`
-- `salvaguarda-reporte.html`
+## SEO internacional
 
-Para apontar um botao para outro conteudo, ajuste o atributo `data-file` no botao correspondente em `index.html`.
+O layout base já inclui:
 
-### Carrossel principal
+- `lang` por idioma
+- `title` e `description` traduzidos
+- Open Graph e Twitter traduzidos
+- `canonical`
+- `hreflang` (`pt-BR`, `en`, `de`, `x-default`)
 
-Edite `assets/data/carrossel.json`.
+## Observações de manutenção
 
-Formato esperado por item:
-
-```json
-{
-  "titulo": "Titulo do slide",
-  "descricao": "Descricao curta",
-  "imagem": "assets/img/carrossel/arquivo.jpg"
-}
-```
-
-### Patrocinadores
-
-Cards de patrocinadores estao direto no `index.html` (secao `#colaboradores`) e usam imagens em `assets/img/colaboradores/`.
-
-## Deploy
-
-Projeto 100% estatico.
-
-Pode publicar em:
-
-- GitHub Pages
-- Netlify
-- Vercel
-- Qualquer servidor HTTP estatico
-
-Checklist rapido antes de publicar:
-
-1. Compilar SCSS para atualizar `assets/css/style.css`
-2. Validar links externos (Drive, redes, ECA)
-3. Testar modal, carrossel e menu mobile
-4. Testar responsividade (mobile/desktop)
-5. Testar carregamento em ambiente HTTP (nao `file://`)
-
-## Observacoes do estado atual
-
-- Existem arquivos com texto usando encoding inconsistente (mojibake) em alguns conteudos legados de `assets/data/` e em mensagens de erro JS.
-- O carrossel JSON atual possui um item repetido (duplicado de "Oficina de Arte Educacao").
-- Nao ha `package.json` com scripts de build; os comandos de Sass sao executados manualmente via `npx`.
-
+- Não editar `_site/` manualmente.
+- Editar SCSS em `src/assets/css/components/`; o build gera `src/assets/css/style.css`.
+- Assets são estáticos e copiados por passthrough do Eleventy.
