@@ -144,10 +144,22 @@
       "tag": "Nosso Impacto",
       "title": "Números que transformam vidas",
       "stats": [
-        { "number": "500+", "label": "Meninas Acolhidas" },
-        { "number": "30+", "label": "Anos de Atuação" },
-        { "number": "200+", "label": "Voluntários Ativos" },
-        { "number": "95%", "label": "Reintegração Familiar" }
+        {
+          "number": "500+",
+          "label": "Meninas Acolhidas"
+        },
+        {
+          "number": "30+",
+          "label": "Anos de Atuação"
+        },
+        {
+          "number": "200+",
+          "label": "Voluntários Ativos"
+        },
+        {
+          "number": "95%",
+          "label": "Reintegração Familiar"
+        }
       ],
       "carouselTitle": "Nosso Trabalho em Imagens"
     },
@@ -261,7 +273,7 @@
     },
     "nav": {
       "about": "About",
-      "guidelines": "Guiding Principles",
+      "guidelines": "Institutional Guidelines",
       "impact": "Our Impact",
       "help": "How to Help",
       "sponsors": "Our Sponsors",
@@ -272,7 +284,7 @@
       "badge": "Civil Society Organization",
       "title": "Casa Menina Mulher",
       "highlight": "Transforming lives",
-      "text": "For more than three decades, we have welcomed and protected girls in vulnerable situations, providing education and knowledge for a dignified future.",
+      "text": "For more than three decades, we have welcomed and protected girls in vulnerable situations, providing education and learning opportunities for a dignified future.",
       "primaryCta": "Make a Donation",
       "secondaryCta": "Learn About Our Work",
       "backgroundAlt": "Abstract background"
@@ -289,7 +301,7 @@
         },
         {
           "title": "Protection",
-          "description": "We work on preventing violence against children and adolescents.",
+          "description": "We work to prevent violence against children and adolescents.",
           "iconAlt": "Protection icon"
         },
         {
@@ -313,7 +325,7 @@
           "title": "Safeguarding Policy",
           "description": "We adopt clear guidelines to prevent risks, protect children and adolescents, and direct the institutional response in situations of concern.",
           "items": [
-            "Comprehensive protection for children, adolescents, and vulnerable people.",
+            "Comprehensive protection for children, adolescents, and people in vulnerable situations.",
             "Prevention of abuse, exploitation, and all forms of violence.",
             "Mandatory conduct for staff, volunteers, and partners, with a response workflow.",
             "Action aligned with ECA (Law No. 8,069/1990)."
@@ -327,9 +339,9 @@
           "title": "Municipal Plan to Combat Sexual Violence and Exploitation of Children and Adolescents",
           "description": "Aligned with Recife's Municipal Plan (2024-2034), overseen by COMDICA, we strengthen cross-sector prevention, protection, and response actions against violence and sexual exploitation of children and adolescents.",
           "items": [
-            "Reference to COMDICA (Recife Municipal Council for the Rights of Children and Adolescents) as the social oversight body.",
-            "Coordination among social assistance, health, education, guardianship councils, public safety, and the justice system.",
-            "Identification, reception, and referral workflows to reduce revictimization and expand comprehensive protection.",
+            "Reference to COMDICA (Conselho Municipal dos Direitos da Crian?a e do Adolescente do Recife) as the social oversight body.",
+            "Coordination among social assistance, health, education, Conselho Tutelar, public safety, and the justice system.",
+            "Identification, intake, and referral workflows to reduce revictimization and strengthen comprehensive protection.",
             "Monitoring of goals, ongoing staff training, and social participation in addressing rights violations.",
             "Action aligned with ECA (Law No. 8,069/1990)."
           ],
@@ -348,22 +360,22 @@
     "ods": {
       "tag": "Agenda 2030",
       "title": "Our alignment with the Sustainable Development Goals",
-      "intro": "Casa Menina Mulher acts strategically and with commitment to the UN 2030 Agenda, directly contributing to SDG progress in contexts of high social vulnerability.",
+      "intro": "Casa Menina Mulher works strategically and is committed to the UN 2030 Agenda, directly contributing to progress on the SDGs in contexts of high social vulnerability.",
       "cards": [
         {
           "image": "SDG-3.svg",
           "alt": "SDG 3 - Good Health and Well-Being",
-          "text": "We promote comprehensive care and emotional strengthening for children and adolescents, especially those impacted by violence."
+          "text": "We promote comprehensive care and emotional well-being for children and adolescents, especially those affected by violence."
         },
         {
           "image": "SDG-5.svg",
           "alt": "SDG 5 - Gender Equality",
-          "text": "We work directly to confront sexual and gender-based violence, still an alarming reality in Brazil, with thousands of cases reported annually (SINAN and Disque 100)."
+          "text": "We work directly to address sexual and gender-based violence, still an alarming reality in Brazil, with thousands of cases reported every year (SINAN and Disque 100)."
         },
         {
           "image": "SDG-11.svg",
           "alt": "SDG 11 - Sustainable Cities and Communities",
-          "text": "Our work also impacts SDG 11 by strengthening protection networks and safe coexistence across local territories."
+          "text": "Our work also advances SDG 11 by strengthening protection networks and safe community life across local territories."
         },
         {
           "image": "SDG-16.svg",
@@ -373,19 +385,31 @@
         {
           "image": "SDG-17.svg",
           "alt": "SDG 17 - Partnerships for the Goals",
-          "text": "We build networked partnerships with civil society organizations, public authorities, and international bodies to amplify results and broaden the reach of actions."
+          "text": "We build partnerships with civil society organizations, public authorities, and international bodies, expanding impact and extending the reach of our actions."
         }
       ],
-      "closing": "Investing in Casa Menina Mulher means strengthening effective local responses with direct, measurable, and sustainable impact. By supporting our work, partners help transform realities, protect lives, and promote social justice."
+      "closing": "Investing in Casa Menina Mulher means strengthening effective local responses with direct, measurable, and sustainable impact. By supporting our work, partners help change realities, protect lives, and promote social justice."
     },
     "impact": {
       "tag": "Our Impact",
       "title": "Numbers that transform lives",
       "stats": [
-        { "number": "500+", "label": "Girls Welcomed" },
-        { "number": "30+", "label": "Years of Service" },
-        { "number": "200+", "label": "Active Volunteers" },
-        { "number": "95%", "label": "Family Reintegration" }
+        {
+          "number": "500+",
+          "label": "Girls Supported"
+        },
+        {
+          "number": "30+",
+          "label": "Years of Service"
+        },
+        {
+          "number": "200+",
+          "label": "Active Volunteers"
+        },
+        {
+          "number": "95%",
+          "label": "Family Reintegration"
+        }
       ],
       "carouselTitle": "Our Work in Images"
     },
@@ -396,7 +420,7 @@
       "cards": [
         {
           "title": "Financial Donation",
-          "description": "Your contribution helps maintain our shelter, education, and care programs for girls.",
+          "description": "Your contribution helps sustain our support, education, and care programs for girls.",
           "button": "Donate Now",
           "type": "modal",
           "modal": "doacao-financeira",
@@ -460,7 +484,7 @@
       "addressLabel": "Address",
       "addressLines": [
         "Rua Leão Coroado, 55 - Boa Vista",
-        "Recife - PE, ZIP 50.060-250"
+        "Recife - PE, CEP 50.060-250"
       ],
       "phoneLabel": "Phone",
       "phone": "+55 (81) 3231-0463",
@@ -518,7 +542,7 @@
     "mission": {
       "tag": "Unsere Mission",
       "title": "Ein Raum für Lernen und Hoffnung",
-      "description": "Casa Menina Mulher entstand aus dem Wunsch, einen Ort zu schaffen, an dem Mädchen in sozialer Vulnerabilität Würde und die Chance auf eine bessere Zukunft finden.",
+      "description": "Casa Menina Mulher entstand aus dem Wunsch, einen Ort zu schaffen, an dem Mädchen in sozial benachteiligten Lebenslagen Würde und die Chance auf eine bessere Zukunft finden.",
       "cards": [
         {
           "title": "Fürsorge",
@@ -558,22 +582,22 @@
           ],
           "primaryLabel": "Schutzrichtlinie lesen",
           "primaryUrl": "https://drive.google.com/file/d/1YWDwkU4pjzlMOAY3NJCvwQRRZWc7itlG/view?usp=sharing",
-          "secondaryLabel": "Wie man ein Anliegen meldet",
+          "secondaryLabel": "Wie Sie ein Anliegen melden",
           "secondaryModal": "salvaguarda-reporte"
         },
         {
           "title": "Kommunaler Plan zur Bekämpfung sexueller Gewalt und Ausbeutung von Kindern und Jugendlichen",
           "description": "In Abstimmung mit dem kommunalen Plan von Recife (2024-2034), koordiniert und überwacht durch COMDICA, stärken wir sektorübergreifende Präventions-, Schutz- und Reaktionsmaßnahmen gegen Gewalt und sexuelle Ausbeutung von Kindern und Jugendlichen.",
           "items": [
-            "Bezug auf COMDICA als Instanz der gesellschaftlichen Kontrolle des Plans.",
-            "Vernetzung von Sozialhilfe, Gesundheit, Bildung, Kinderschutzrat, öffentlicher Sicherheit und Justiz.",
-            "Erkennungs-, Aufnahme- und Weiterleitungsprozesse zur Verringerung von Retraumatisierung und für besseren Schutz.",
+            "Bezug auf COMDICA (Conselho Municipal dos Direitos da Crian?a e do Adolescente do Recife) als zust?ndige Instanz f?r die gesellschaftliche Aufsicht ?ber den Plan.",
+            "Vernetzung von Sozialhilfe, Gesundheit, Bildung, Conselho Tutelar, öffentlicher Sicherheit und Justiz.",
+            "Identifikations-, Aufnahme- und Weiterleitungsprozesse zur Verringerung von Retraumatisierung und zur Stärkung des umfassenden Schutzes.",
             "Monitoring von Zielen, kontinuierliche Fortbildung der Teams und gesellschaftliche Beteiligung.",
             "Ausrichtung am ECA (Gesetz Nr. 8.069/1990)."
           ],
           "primaryLabel": "COMDICA Recife aufrufen",
           "primaryUrl": "https://comdica.recife.pe.gov.br/",
-          "secondaryLabel": "Wie man ein Anliegen meldet",
+          "secondaryLabel": "Wie Sie ein Anliegen melden",
           "secondaryModal": "salvaguarda-reporte"
         }
       ],
@@ -586,7 +610,7 @@
     "ods": {
       "tag": "Agenda 2030",
       "title": "Unsere Ausrichtung an den Zielen für nachhaltige Entwicklung",
-      "intro": "Casa Menina Mulher handelt strategisch und engagiert im Sinne der UN-Agenda 2030 und trägt direkt zum Fortschritt der SDGs in Kontexten hoher sozialer Vulnerabilität bei.",
+      "intro": "Casa Menina Mulher handelt strategisch und engagiert im Sinne der UN-Agenda 2030 und trägt direkt zum Fortschritt der SDGs in Kontexten hoher sozialer Benachteiligung bei.",
       "cards": [
         {
           "image": "SDG-3.svg",
@@ -620,10 +644,22 @@
       "tag": "Unsere Wirkung",
       "title": "Zahlen, die Leben verändern",
       "stats": [
-        { "number": "500+", "label": "Aufgenommene Mädchen" },
-        { "number": "30+", "label": "Jahre Engagement" },
-        { "number": "200+", "label": "Aktive Freiwillige" },
-        { "number": "95%", "label": "Familiäre Reintegration" }
+        {
+          "number": "500+",
+          "label": "Aufgenommene Mädchen"
+        },
+        {
+          "number": "30+",
+          "label": "Jahre Engagement"
+        },
+        {
+          "number": "200+",
+          "label": "Aktive Freiwillige"
+        },
+        {
+          "number": "95%",
+          "label": "Familiäre Reintegration"
+        }
       ],
       "carouselTitle": "Unsere Arbeit in Bildern"
     },
@@ -634,7 +670,7 @@
       "cards": [
         {
           "title": "Geldspende",
-          "description": "Ihr Beitrag hilft, unsere Programme für Aufnahme, Bildung und Fürsorge aufrechtzuerhalten.",
+          "description": "Ihr Beitrag hilft, unsere Programme für Schutz, Bildung und Fürsorge aufrechtzuerhalten.",
           "button": "Jetzt spenden",
           "type": "modal",
           "modal": "doacao-financeira",
@@ -693,12 +729,12 @@
     },
     "contact": {
       "tag": "Kontakt",
-      "title": "Lassen Sie uns sprechen",
+      "title": "Lassen Sie uns ins Gespräch kommen",
       "description": "Haben Sie Fragen, möchten Sie mehr über unsere Arbeit erfahren oder uns unterstützen? Wir sind für Sie da.",
       "addressLabel": "Adresse",
       "addressLines": [
         "Rua Leão Coroado, 55 - Boa Vista",
-        "Recife - PE, PLZ 50.060-250"
+        "Recife - PE, CEP 50.060-250"
       ],
       "phoneLabel": "Telefon",
       "phone": "+55 (81) 3231-0463",
