@@ -23,11 +23,14 @@
         </button>
 
         <div
-          class="carrossel-track"
-          id="carrossel-track"
+          class="carrossel-swiper swiper"
+          id="carrossel-swiper"
           data-source="../assets/data/carrossel/{{ locale }}.json"
           data-error-message="{{ t.ui.carouselError }}"
-        ></div>
+        >
+          <div class="carrossel-track swiper-wrapper" id="carrossel-track"></div>
+          <div class="carrossel-pagination swiper-pagination"></div>
+        </div>
 
         <button class="carrossel-btn next" aria-label="{{ t.ui.scrollNext }}">
           &gt;

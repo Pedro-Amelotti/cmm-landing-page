@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "titulo": "Kunsttherapie-Workshop",
     "descricao": "In dieser Methode wird jede Jugendliche eingeladen, über die sichtbare Form hinauszublicken und zu entdecken, was sich hinter dem Bild zeigt. Es ist eine Übung in Kreativität und Selbstwertgefühl, bei der jedes Mädchen die eigene Fähigkeit erkennt, etwas Einfaches in etwas Schönes und Bedeutungsvolles zu verwandeln. Die Aktivität wurde von der Leiterin Leila Palmeira begleitet.",
@@ -6,12 +6,18 @@
   },
   {
     "titulo": "Kunstpädagogischer Workshop",
-    "descricao": "Der kunstpädagogische Workshop arbeitet mit Modelliermasse und bunten Farben und schafft durch kreatives Malen einen spielerischen Moment. Neben dem pädagogischen Wert stärkt das Format positive Entwicklungsprozesse bei Kindern und fördert Vorstellungskraft sowie Ausdruck. Die Aktivität wurde von der Leiterin Tereza Santoianni begleitet.",
+    "descricao": "Der kunstpädagogische Workshop arbeitet mit Modelliermasse und bunten Farben und schafft durch kreatives Malen einen spielerischen Moment. Neben dem pädagogischen Wert stärkt das Format positive Entwicklungsprozesse bei Kindern und fördert Vorstellungskraft sowie Ausdruck. Die Aktivität wurde von der Leiterin Micheline Cândida begleitet.",
     "imagem": "../assets/img/carrossel/carrossel2.jpg"
   },
   {
     "titulo": "Robotik-Workshop",
     "descricao": "Im Robotik-Workshop begannen die Jugendlichen von Casa Menina Mulher mit dem Lernen von Computerlogik anhand von Kartonbrettern und PET-Flaschendeckeln. So wurde eine konkrete Grundlage geschaffen, bevor die Konzepte auf einer digitalen Plattform angewendet wurden. Die Aktivität wurde von Lehrer Américo Barros begleitet.",
-    "imagem": "../assets/img/carrossel/carrossel3.jpg"
+    "imagem": "../assets/img/carrossel/carrossel3.jpg"  
+  },
+  {
+    "titulo": "Percussion-Workshop",
+    "descricao": "Der Percussion-Workshop stärkt Ausdruck, Disziplin und Teamarbeit durch Musik. In einem Kontext der Gewaltprävention schafft die Aktivität einen sicheren Raum für Zusammenleben, Zugehörigkeit und Zuhören, in dem Mädchen und Jugendliche Selbstvertrauen, Rhythmus, Konzentration und Kooperation entwickeln und Energie in Kunst, Kultur und Protagonismus verwandeln. Die Aktivität wurde von der Pädagogin Maria de Lourdes da Silva Neta begleitet.",
+    "imagem": "../assets/img/carrossel/carrossel4.jpeg"
   }
 ]
+

@@ -46,7 +46,7 @@
       "cards": [
         {
           "title": "Cuidado",
-          "description": "Cada criança recebe atenção individualizada.",
+          "description": "Cada criança/adolescente recebe atenção individualizada.",
           "iconAlt": "Ícone de cuidado"
         },
         {
@@ -146,7 +146,7 @@
       "stats": [
         {
           "number": "500+",
-          "label": "Meninas Acolhidas"
+          "label": "Crianças e adolescentes que tiveram suas trajetórias de vida impactadas"
         },
         {
           "number": "30+",
@@ -193,7 +193,7 @@
         },
         {
           "title": "Eventos e Parcerias",
-          "description": "Empresas, instituições e universidades podem se tornar parceiras e organizar eventos beneficentes.",
+          "description": "Empresas, instituições e universidades podem se tornar parceiras.",
           "button": "Seja Parceiro",
           "type": "scroll",
           "target": "contato",
@@ -204,22 +204,32 @@
     },
     "sponsors": {
       "title": "Nossos Patrocinadores",
-      "subtitle": "Conheça as empresas parceiras que apoiam e fortalecem nossa missão.",
+      "subtitle": "Conheça nossos parceiros que apoiam e fortalecem nossa missão.",
       "items": [
         {
-          "name": "Instituto Aurora",
-          "image": "Instituto Aurora.png",
-          "logoAlt": "Logo da empresa Instituto Aurora"
+          "name": "Aktionskreis Pater Beda",
+          "image": "logo-aktionskreis-89x89.png",
+          "logoAlt": "Logo da ONG Aktionskreis Pater Beda für Entwicklungsarbeit e.V."
         },
         {
-          "name": "VerdeVida Alimentos",
-          "image": "VerdeVida Alimentos.png",
-          "logoAlt": "Logo da empresa VerdeVida Alimentos"
+          "name": "The Freedom Fund",
+          "image": "logo-freedom-fund.svg",
+          "logoAlt": "Logo da ONG The Freedom Fund"
         },
         {
-          "name": "NovaTrilha Logística",
-          "image": "NovaTrilha Logística.png",
-          "logoAlt": "Logo da empresa NovaTrilha Logística"
+          "name": "Rede SoliVida",
+          "image": "logo-solivida-100x100.png",
+          "logoAlt": "Logo da ONG SoliVida"
+        },
+        {
+          "name": "CEDCA/PE",
+          "image": "logo-cedca-192x192.png",
+          "logoAlt": "Conselho Estadual de Defesa dos Direitos da Criança e do Adolescente de Pernambuco"
+        },
+        {
+          "name": "COMDICA Recife",
+          "image": "logo-comdica.png",
+          "logoAlt": "Logo do Conselho Municipal de Promoção e Defesa dos Direitos da Criança e do Adolescente da Cidade do Recife"
         }
       ]
     },
@@ -292,7 +302,7 @@
       "cards": [
         {
           "title": "Care",
-          "description": "Each child receives individualized attention.",
+          "description": "Each child/adolescent receives individualized attention.",
           "iconAlt": "Care icon"
         },
         {
@@ -392,7 +402,7 @@
       "stats": [
         {
           "number": "500+",
-          "label": "Girls Supported"
+          "label": "Children and adolescents whose life trajectories have been impacted"
         },
         {
           "number": "30+",
@@ -453,19 +463,29 @@
       "subtitle": "Meet the partner organizations that support and strengthen our mission.",
       "items": [
         {
-          "name": "Instituto Aurora",
-          "image": "Instituto Aurora.png",
-          "logoAlt": "Instituto Aurora company logo"
+          "name": "Aktionskreis Pater Beda",
+          "image": "logo-aktionskreis-89x89.png",
+          "logoAlt": "Logo of the NGO Aktionskreis Pater Beda für Entwicklungsarbeit e.V."
         },
         {
-          "name": "VerdeVida Alimentos",
-          "image": "VerdeVida Alimentos.png",
-          "logoAlt": "VerdeVida Alimentos company logo"
+          "name": "The Freedom Fund",
+          "image": "logo-freedom-fund.svg",
+          "logoAlt": "Logo of the NGO The Freedom Fund"
         },
         {
-          "name": "NovaTrilha Logística",
-          "image": "NovaTrilha Logística.png",
-          "logoAlt": "NovaTrilha Logística company logo"
+          "name": "Rede SoliVida",
+          "image": "logo-solivida-100x100.png",
+          "logoAlt": "Logo of the NGO SoliVida"
+        },
+        {
+          "name": "CEDCA/PE",
+          "image": "logo-cedca-192x192.png",
+          "logoAlt": "State Council for the Defense of the Rights of Children and Adolescents of Pernambuco"
+        },
+        {
+          "name": "COMDICA Recife",
+          "image": "logo-comdica.png",
+          "logoAlt": "Logo of the Municipal Council for the Promotion and Defense of the Rights of Children and Adolescents of the City of Recife"
         }
       ]
     },
@@ -538,7 +558,7 @@
       "cards": [
         {
           "title": "Fürsorge",
-          "description": "Jedes Kind erhält individuelle Begleitung.",
+          "description": "Jedes Kind/jeder Jugendliche erhält individuelle Begleitung.",
           "iconAlt": "Symbol für Fürsorge"
         },
         {
@@ -638,7 +658,7 @@
       "stats": [
         {
           "number": "500+",
-          "label": "Aufgenommene Mädchen"
+          "label": "Kinder und Jugendliche, deren Lebenswege positiv beeinflusst wurden"
         },
         {
           "number": "30+",
@@ -696,22 +716,32 @@
     },
     "sponsors": {
       "title": "Unsere Förderer",
-      "subtitle": "Lernen Sie die Partnerunternehmen kennen, die unsere Mission unterstützen und stärken.",
+      "subtitle": "Lernen Sie unsere Partner kennen, die unsere Mission unterstützen und stärken.",
       "items": [
         {
-          "name": "Instituto Aurora",
-          "image": "Instituto Aurora.png",
-          "logoAlt": "Logo der Firma Instituto Aurora"
+          "name": "Aktionskreis Pater Beda",
+          "image": "logo-aktionskreis-89x89.png",
+          "logoAlt": "Logo der NGO Aktionskreis Pater Beda für Entwicklungsarbeit e.V."
         },
         {
-          "name": "VerdeVida Alimentos",
-          "image": "VerdeVida Alimentos.png",
-          "logoAlt": "Logo der Firma VerdeVida Alimentos"
+          "name": "The Freedom Fund",
+          "image": "logo-freedom-fund.svg",
+          "logoAlt": "Logo der NGO The Freedom Fund"
         },
         {
-          "name": "NovaTrilha Logística",
-          "image": "NovaTrilha Logística.png",
-          "logoAlt": "Logo der Firma NovaTrilha Logística"
+          "name": "Rede SoliVida",
+          "image": "logo-solivida-100x100.png",
+          "logoAlt": "Logo der NGO SoliVida"
+        },
+        {
+          "name": "CEDCA/PE",
+          "image": "logo-cedca-192x192.png",
+          "logoAlt": "Staatlicher Rat zur Verteidigung der Rechte von Kindern und Jugendlichen in Pernambuco"
+        },
+        {
+          "name": "COMDICA Recife",
+          "image": "logo-comdica.png",
+          "logoAlt": "Logo des Städtischen Rates für Förderung und Verteidigung der Rechte von Kindern und Jugendlichen der Stadt Recife"
         }
       ]
     },

@@ -1,4 +1,4 @@
-@use "colors" as *;
+@use "colors"as *;
 
 // Carrossel de imagens
 .carrossel {
@@ -20,6 +20,36 @@
     justify-content: center;
   }
 
+  .carrossel-swiper {
+    width: 80%;
+    overflow: hidden;
+    padding-bottom: 56px;
+  }
+
+  .carrossel-track {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .carrossel-pagination {
+    bottom: 8px !important;
+
+    .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+      opacity: 1;
+      background: rgba($lilac-deep, 0.28);
+      border: 1px solid rgba($lilac-deep, 0.25);
+      transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $pink-vivid;
+      border-color: rgba($pink-vivid, 0.75);
+      transform: scale(1.08);
+    }
+  }
+
   .carrossel-btn {
     background: $color-white;
     border: 1px solid $color-border-soft;
@@ -36,12 +66,26 @@
     line-height: 1;
     padding: 0;
     box-shadow: var(--shadow-soft);
-    transition: 0.3s;
+    transition: background 0.3s ease, color 0.3s ease, opacity 0.3s ease;
 
     &:hover {
       background: $color-surface-soft-accent;
       color: $color-brand-primary;
     }
+
+    &.is-disabled,
+    &.swiper-button-disabled {
+      opacity: 0.42;
+      cursor: not-allowed;
+      background: rgba($color-white, 0.75);
+      color: rgba($color-brand-secondary, 0.7);
+    }
+
+    &.is-locked,
+    &.swiper-button-lock {
+      display: none;
+    }
+
     @media (max-width: 768px) {
       display: none;
     }
@@ -55,15 +99,6 @@
     margin-left: 20px;
   }
 
-  .carrossel-track {
-    display: flex;
-    gap: 28px;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    width: 80%;
-  }
-
   // fallback message if carousel fails to load
   .error-carrossel {
     color: $color-brand-danger;
@@ -73,7 +108,8 @@
   }
 
   .card {
-    min-width: 360px;
+    min-width: 0;
+    height: auto;
     background: $color-white;
     border: 1px solid $color-border-soft-alt;
     border-radius: 16px;
@@ -83,13 +119,14 @@
 
     img {
       width: 100%;
-      height: 220px;
+      height: auto;
+      max-height: 250px;
       object-fit: cover;
     }
 
     .card-content {
       padding: 20px;
-      text-align: left;
+      text-align: justify;
 
       h3 {
         font-size: clamp(1.0625rem, 1.9vw, 1.25rem);
@@ -104,7 +141,7 @@
     }
 
     &:hover {
-      transform: scale(1.03);
+      transform: scale(1.02);
       box-shadow: 0 12px 28px $color-black-a12;
     }
   }
@@ -125,21 +162,14 @@
       width: 100%;
     }
 
-    .carrossel-track {
+    .carrossel-swiper {
       width: 100%;
-      padding: 0 12px;
-      gap: 16px;
-      overflow-x: auto;
-      overflow-y: hidden;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
+      padding: 0 12px 52px;
     }
 
     .card {
-      min-width: 100%;
       scroll-snap-align: center;
       scroll-snap-stop: always;
     }
   }
 }
-
