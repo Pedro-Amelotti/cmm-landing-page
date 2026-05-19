@@ -137,8 +137,7 @@
           "alt": "ODS 17 - Parcerias e Meios de Implementação",
           "text": "Articulamos redes com organizações da sociedade civil, poder público e organismos internacionais, potencializando resultados e ampliando o alcance das ações."
         }
-      ],
-      "closing": "Investir na Casa Menina Mulher é fortalecer respostas locais efetivas, com impacto direto, mensurável e sustentável. Ao apoiar nossa atuação, parceiros contribuem para transformar realidades, proteger vidas e promover justiça social."
+      ]
     },
     "impact": {
       "tag": "Nosso Impacto",
@@ -230,6 +229,11 @@
           "name": "COMDICA Recife",
           "image": "logo-comdica.png",
           "logoAlt": "Logo do Conselho Municipal de Promoção e Defesa dos Direitos da Criança e do Adolescente da Cidade do Recife"
+        },
+        {
+          "name": "Fórum DCA/PE",
+          "image": "logo-dcape.svg",
+          "logoAlt": "Logo do Fórum dos Direitos da Criança e do Adolescente de Pernambuco"
         }
       ]
     },
@@ -393,8 +397,7 @@
           "alt": "SDG 17 - Partnerships for the Goals",
           "text": "We build partnerships with civil society organizations, public authorities, and international bodies, expanding impact and extending the reach of our actions."
         }
-      ],
-      "closing": "Investing in Casa Menina Mulher means strengthening effective local responses with direct, measurable, and sustainable impact. By supporting our work, partners help change realities, protect lives, and promote social justice."
+      ]
     },
     "impact": {
       "tag": "Our Impact",
@@ -486,6 +489,11 @@
           "name": "COMDICA Recife",
           "image": "logo-comdica.png",
           "logoAlt": "Logo of the Municipal Council for the Promotion and Defense of the Rights of Children and Adolescents of the City of Recife"
+        },
+        {
+          "name": "Forum DCA/PE",
+          "image": "logo-dcape.svg",
+          "logoAlt": "Logo of the Forum of the Rights of Children and Adolescents of Pernambuco"
         }
       ]
     },
@@ -649,8 +657,7 @@
           "alt": "SDG 17 - Partnerschaften zur Erreichung der Ziele",
           "text": "Wir vernetzen uns mit zivilgesellschaftlichen Organisationen, öffentlichen Stellen und internationalen Akteuren, um Wirkung und Reichweite zu erhöhen."
         }
-      ],
-      "closing": "In Casa Menina Mulher zu investieren bedeutet, wirksame lokale Antworten mit direkter, messbarer und nachhaltiger Wirkung zu stärken. Mit Ihrer Unterstützung tragen Partner dazu bei, Lebensrealitäten zu verändern, Leben zu schützen und soziale Gerechtigkeit zu fördern."
+      ]
     },
     "impact": {
       "tag": "Unsere Wirkung",
@@ -742,6 +749,11 @@
           "name": "COMDICA Recife",
           "image": "logo-comdica.png",
           "logoAlt": "Logo des Städtischen Rates für Förderung und Verteidigung der Rechte von Kindern und Jugendlichen der Stadt Recife"
+        },
+        {
+          "name": "Forum DCA/PE",
+          "image": "logo-dcape.svg",
+          "logoAlt": "Logo des Forums der Rechte von Kindern und Jugendlichen in Pernambuco"
         }
       ]
     },
