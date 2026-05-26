@@ -3,6 +3,7 @@ node_modules
 assets/css/style.css.map
 PLAN.md
 _site
+/.vscode
 
 # wrangler files
 .wrangler

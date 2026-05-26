@@ -10,6 +10,13 @@
   const source = swiperRoot.dataset.source || "../assets/data/carrossel/pt.json";
   const errorMessage =
     swiperRoot.dataset.errorMessage || "Unable to load images.";
+  const escapeHtml = (value = "") =>
+    String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
 
   fetch(source)
     .then((res) => {
@@ -22,17 +29,23 @@
       }
 
       track.innerHTML = data
-        .map(
-          (item) => `
+        .map((item) => {
+          const hasButton = item.buttonLabel && item.buttonUrl;
+          const buttonHtml = hasButton
+            ? `<a class="carrossel-link-btn" href="${escapeHtml(item.buttonUrl)}" target="_blank" rel="noreferrer noopener">${escapeHtml(item.buttonLabel)}</a>`
+            : "";
+
+          return `
       <div class="card swiper-slide">
-        <img src="${item.imagem}" alt="${item.titulo}" loading="lazy">
+        <img src="${escapeHtml(item.imagem)}" alt="${escapeHtml(item.titulo)}" loading="lazy">
         <div class="card-content">
-          <h3>${item.titulo}</h3>
-          <p>${item.descricao}</p>
+          <h3>${escapeHtml(item.titulo)}</h3>
+          <p>${escapeHtml(item.descricao)}</p>
+          ${buttonHtml}
         </div>
       </div>
-      `,
-        )
+      `;
+        })
         .join("");
 
       if (typeof Swiper === "undefined") {

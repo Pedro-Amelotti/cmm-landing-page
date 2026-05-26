@@ -1,5 +1,12 @@
 [
   {
+    "titulo": "Formação Cidadã em Brasília",
+    "descricao": "Apresentação sobre a atuação da Casa Menina Mulher no enfrentamento às violências contra crianças e adolescentes, com foco em formação cidadã, empoderamento feminino e protagonismo juvenil.",
+    "imagem": "../assets/img/carrossel/formacao-cidada-brasilia.jpg",
+    "buttonLabel": "Acessar apresentação",
+    "buttonUrl": "https://drive.google.com/file/d/1HGjmbAvU0irHQomSff8EPKxORR_xus8f/view?usp=sharing"
+  },
+  {
     "titulo": "Oficina de Arteterapia",
     "descricao": "Na técnica aplicada, cada adolescente é convidada a olhar além da forma aparente e descobrir o que surge por trás da imagem. É um exercício de criatividade e autoestima, onde cada menina reconhece suas próprias capacidades de transformar o simples em algo belo e cheio de significado. A atividade é conduzida pela facilitadora Leila Palmeira.",
     "imagem": "../assets/img/carrossel/carrossel1.jpg"
@@ -15,7 +22,7 @@
     "imagem": "../assets/img/carrossel/carrossel3.jpg"
   },
   {
-    "titulo": "Oficina de percussão",
+    "titulo": "Oficina de Percussão",
     "descricao": "A Oficina de Percussão fortalece a expressão, a disciplina e o trabalho em grupo por meio da música. Em um contexto de prevenção à violência, a atividade cria um espaço seguro de convivência, pertencimento e escuta, onde meninas e adolescentes desenvolvem confiança, ritmo, concentração e cooperação, transformando energia em arte, cultura e protagonismo. A atividade é conduzida pela educadora Maria de Lourdes da Silva Neta.",
     "imagem": "../assets/img/carrossel/carrossel4.jpeg"
   }

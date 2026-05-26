@@ -1,23 +1,29 @@
 ﻿[
   {
+    "titulo": "Bürgerbildung in Brasília",
+    "descricao": "Präsentation über die Arbeit von Casa Menina Mulher zur Bekämpfung von Gewalt gegen Kinder und Jugendliche mit Fokus auf Bürgerbildung, Empowerment von Mädchen und Jugendprotagonismus.",
+    "imagem": "../assets/img/carrossel/formacao-cidada-brasilia.jpg",
+    "buttonLabel": "Präsentation öffnen",
+    "buttonUrl": "https://drive.google.com/file/d/1HGjmbAvU0irHQomSff8EPKxORR_xus8f/view?usp=sharing"
+  },
+  {
     "titulo": "Kunsttherapie-Workshop",
-    "descricao": "In dieser Methode wird jede Jugendliche eingeladen, über die sichtbare Form hinauszublicken und zu entdecken, was sich hinter dem Bild zeigt. Es ist eine Übung in Kreativität und Selbstwertgefühl, bei der jedes Mädchen die eigene Fähigkeit erkennt, etwas Einfaches in etwas Schönes und Bedeutungsvolles zu verwandeln. Die Aktivität wurde von der Leiterin Leila Palmeira begleitet.",
+    "descricao": "In dieser Methode wird jede Jugendliche eingeladen, über die sichtbare Form hinauszublicken und zu entdecken, was sich hinter dem Bild zeigt. Es ist eine Übung in Kreativität und Selbstwertgefühl, bei der jedes Mädchen die eigene Fähigkeit erkennt, etwas Einfaches in etwas Schönes und Bedeutungsvolles zu verwandeln. Die Aktivität wird von der Leiterin Leila Palmeira begleitet.",
     "imagem": "../assets/img/carrossel/carrossel1.jpg"
   },
   {
     "titulo": "Kunstpädagogischer Workshop",
-    "descricao": "Der kunstpädagogische Workshop arbeitet mit Modelliermasse und bunten Farben und schafft durch kreatives Malen einen spielerischen Moment. Neben dem pädagogischen Wert stärkt das Format positive Entwicklungsprozesse bei Kindern und fördert Vorstellungskraft sowie Ausdruck. Die Aktivität wurde von der Leiterin Micheline Cândida begleitet.",
+    "descricao": "Der kunstpädagogische Workshop arbeitet mit Modelliermasse und bunten Farben und schafft durch kreatives Malen einen spielerischen Moment. Neben dem pädagogischen Wert stärkt das Format positive Entwicklungsprozesse bei Kindern und fördert Vorstellungskraft sowie Ausdruck. Die Aktivität wird von der Leiterin Micheline Cândida begleitet.",
     "imagem": "../assets/img/carrossel/carrossel2.jpg"
   },
   {
     "titulo": "Robotik-Workshop",
-    "descricao": "Im Robotik-Workshop begannen die Jugendlichen von Casa Menina Mulher mit dem Lernen von Computerlogik anhand von Kartonbrettern und PET-Flaschendeckeln. So wurde eine konkrete Grundlage geschaffen, bevor die Konzepte auf einer digitalen Plattform angewendet wurden. Die Aktivität wurde von Lehrer Américo Barros begleitet.",
+    "descricao": "Im Robotik-Workshop begannen die Jugendlichen von Casa Menina Mulher, Computerlogik mithilfe von Kartonbrettern und PET-Flaschendeckeln zu erlernen. So wurde eine konkrete Grundlage geschaffen, bevor die Konzepte auf einer digitalen Plattform angewendet wurden. Die Aktivität wird von Lehrer Américo Barros begleitet.",
     "imagem": "../assets/img/carrossel/carrossel3.jpg"  
   },
   {
     "titulo": "Percussion-Workshop",
-    "descricao": "Der Percussion-Workshop stärkt Ausdruck, Disziplin und Teamarbeit durch Musik. In einem Kontext der Gewaltprävention schafft die Aktivität einen sicheren Raum für Zusammenleben, Zugehörigkeit und Zuhören, in dem Mädchen und Jugendliche Selbstvertrauen, Rhythmus, Konzentration und Kooperation entwickeln und Energie in Kunst, Kultur und Protagonismus verwandeln. Die Aktivität wurde von der Pädagogin Maria de Lourdes da Silva Neta begleitet.",
+    "descricao": "Der Percussion-Workshop stärkt Ausdruck, Disziplin und Teamarbeit durch Musik. Im Kontext der Gewaltprävention schafft die Aktivität einen sicheren Raum für Gemeinschaft, Zugehörigkeit und aktives Zuhören, in dem Mädchen und Jugendliche Selbstvertrauen, Rhythmus, Konzentration und Kooperation entwickeln und Energie in Kunst, Kultur und Eigeninitiative verwandeln. Die Aktivität wird von der Pädagogin Maria de Lourdes da Silva Neta begleitet.",
     "imagem": "../assets/img/carrossel/carrossel4.jpeg"
   }
 ]
-

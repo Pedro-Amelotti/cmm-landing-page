@@ -1,11 +1,11 @@
 {
   "pt": {
     "meta": {
-      "title": "Casa Menina Mulher — Transformando vidas",
+      "title": "Casa Menina Mulher — Transformando Vidas",
       "description": "A Casa Menina Mulher acolhe, protege e oferece oportunidades para meninas em situação de vulnerabilidade. Conheça nosso trabalho e saiba como ajudar.",
-      "ogTitle": "Casa Menina Mulher — Transformando vidas",
+      "ogTitle": "Casa Menina Mulher — Transformando Vidas",
       "ogDescription": "Há mais de três décadas acolhemos meninas, oferecendo cuidado, educação e dignidade. Contribua para transformar vidas.",
-      "twitterTitle": "Casa Menina Mulher — Transformando vidas",
+      "twitterTitle": "Casa Menina Mulher — Transformando Vidas",
       "twitterDescription": "Conheça o trabalho da Casa Menina Mulher e saiba como ajudar a transformar vidas através do acolhimento e da educação.",
       "ogImageAlt": "Identidade visual da Casa Menina Mulher",
       "redirectTitle": "Redirecionando...",
@@ -33,7 +33,7 @@
     "hero": {
       "badge": "Organização da Sociedade Civil",
       "title": "Casa Menina Mulher",
-      "highlight": "Transformando vidas",
+      "highlight": "Transformando Vidas",
       "text": "Há mais de três décadas, acolhemos e protegemos meninas em situação de vulnerabilidade, oferecendo educação e conhecimento para um futuro digno.",
       "primaryCta": "Faça uma Doação",
       "secondaryCta": "Conheça Nosso Trabalho",
@@ -42,7 +42,7 @@
     "mission": {
       "tag": "Nossa Missão",
       "title": "Um espaço de aprendizagem e de esperança",
-      "description": "A Casa Menina Mulher nasceu do sonho de criar um espaço onde meninas em situação de vulnerabilidade social pudessem encontrar dignidade e a chance de construir um futuro com mais perspectivas.",
+      "description": "A Casa Menina Mulher nasceu do sonho de criar um espaço onde meninas em situação de vulnerabilidade social pudessem encontrar dignidade e a oportunidade de construir um futuro com mais perspectivas.",
       "cards": [
         {
           "title": "Cuidado",
@@ -109,7 +109,7 @@
     },
     "ods": {
       "tag": "Agenda 2030",
-      "title": "Nosso alinhamento com os Objetivos de Desenvolvimento Sustentável",
+      "title": "Nosso alinhamento com os Objetivos de Desenvolvimento Sustentável - ODS",
       "intro": "A Casa Menina Mulher atua de forma estratégica e comprometida com a Agenda 2030 da ONU, contribuindo diretamente para o avanço dos ODS em contextos de alta vulnerabilidade social.",
       "cards": [
         {
@@ -144,7 +144,7 @@
       "title": "Números que transformam vidas",
       "stats": [
         {
-          "number": "500+",
+          "number": "3000+",
           "label": "Crianças e adolescentes que tiveram suas trajetórias de vida impactadas"
         },
         {
@@ -202,8 +202,8 @@
       ]
     },
     "sponsors": {
-      "title": "Nossos Patrocinadores",
-      "subtitle": "Conheça nossos parceiros que apoiam e fortalecem nossa missão.",
+      "title": "Nossos Parceiros",
+      "subtitle": "Conheça Nossos Parceiros que Apoiam e Fortalecem Nossa Missão.",
       "items": [
         {
           "name": "Aktionskreis Pater Beda",
@@ -214,6 +214,11 @@
           "name": "The Freedom Fund",
           "image": "logo-freedom-fund.svg",
           "logoAlt": "Logo da ONG The Freedom Fund"
+        },
+        {
+          "name": "Der Brasilien-Frendeskreis Papenburg",
+          "image": "logo-papenburg.png",
+          "logoAlt": "Logo do Der Brasilien-Frendeskreis Papenburg"
         },
         {
           "name": "Rede SoliVida",
@@ -234,6 +239,11 @@
           "name": "Fórum DCA/PE",
           "image": "logo-dcape.svg",
           "logoAlt": "Logo do Fórum dos Direitos da Criança e do Adolescente de Pernambuco"
+        },
+        {
+          "name": "Fórum DCA/RE",
+          "image": "logo-forum-dcare.png",
+          "logoAlt": "Logo do Fórum Fórum dos Direitos da Criança e do Adolescente de Recife"
         }
       ]
     },
@@ -247,9 +257,9 @@
         "Recife - PE, CEP 50.060-250"
       ],
       "phoneLabel": "Telefone",
-      "phone": "+55 (81) 3231-0463",
+      "phone": "+55 (81) 3231-0463 (Fixo) | +55 (81) 99737-6207 (WhatsApp da Coordenação)",
       "emailLabel": "E-mail",
-      "email": "contato@casameninamulher.org.br"
+      "email": "cmm@casameninamulher.org.br | coordenacao.executiva@casameninamulher.org.br"
     },
     "footer": {
       "policyLabel": "Política de Salvaguarda",
@@ -306,7 +316,7 @@
       "cards": [
         {
           "title": "Care",
-          "description": "Each child/adolescent receives individualized attention.",
+          "description": "Children and adolescents receive individualized attention.",
           "iconAlt": "Care icon"
         },
         {
@@ -369,7 +379,7 @@
     },
     "ods": {
       "tag": "Agenda 2030",
-      "title": "Our alignment with the Sustainable Development Goals",
+      "title": "Our alignment with the Sustainable Development Goals (SDGs)",
       "intro": "Casa Menina Mulher works strategically and is committed to the UN 2030 Agenda, directly contributing to progress on the SDGs in contexts of high social vulnerability.",
       "cards": [
         {
@@ -404,8 +414,8 @@
       "title": "Numbers that transform lives",
       "stats": [
         {
-          "number": "500+",
-          "label": "Children and adolescents whose life trajectories have been impacted"
+          "number": "3000+",
+          "label": "Children and adolescents whose life paths have been impacted"
         },
         {
           "number": "30+",
@@ -452,7 +462,7 @@
         },
         {
           "title": "Events and Partnerships",
-          "description": "Companies, institutions, and universities can become partners and organize fundraising events.",
+          "description": "Companies, institutions, and universities can become partners.",
           "button": "Become a Partner",
           "type": "scroll",
           "target": "contato",
@@ -462,8 +472,8 @@
       ]
     },
     "sponsors": {
-      "title": "Our Sponsors",
-      "subtitle": "Meet the partner organizations that support and strengthen our mission.",
+      "title": "Our Partners",
+      "subtitle": "Meet the Partner Organizations that Support and Strengthen Our Mission.",
       "items": [
         {
           "name": "Aktionskreis Pater Beda",
@@ -474,6 +484,11 @@
           "name": "The Freedom Fund",
           "image": "logo-freedom-fund.svg",
           "logoAlt": "Logo of the NGO The Freedom Fund"
+        },
+        {
+          "name": "Der Brasilien-Frendeskreis Papenburg",
+          "image": "logo-papenburg.png",
+          "logoAlt": "Logo do Der Brasilien-Frendeskreis Papenburg"
         },
         {
           "name": "Rede SoliVida",
@@ -491,10 +506,15 @@
           "logoAlt": "Logo of the Municipal Council for the Promotion and Defense of the Rights of Children and Adolescents of the City of Recife"
         },
         {
-          "name": "Forum DCA/PE",
+          "name": "Fórum DCA/PE",
           "image": "logo-dcape.svg",
           "logoAlt": "Logo of the Forum of the Rights of Children and Adolescents of Pernambuco"
-        }
+        },
+        {
+          "name": "Fórum DCA/RE",
+          "image": "logo-forum-dcare.png",
+          "logoAlt": "Partner logo of Fórum Fórum dos Direitos da Criança e do Adolescente de Recife"
+        }        
       ]
     },
     "contact": {
@@ -507,9 +527,9 @@
         "Recife - PE, CEP 50.060-250"
       ],
       "phoneLabel": "Phone",
-      "phone": "+55 (81) 3231-0463",
+      "phone": "+55 (81) 3231-0463 (Landline) | +55 (81) 99737-6207 (Coordination WhatsApp)",
       "emailLabel": "Email",
-      "email": "contato@casameninamulher.org.br"
+      "email": "cmm@casameninamulher.org.br | coordenacao.executiva@casameninamulher.org.br"
     },
     "footer": {
       "policyLabel": "Safeguarding Policy",
@@ -566,7 +586,7 @@
       "cards": [
         {
           "title": "Fürsorge",
-          "description": "Jedes Kind/jeder Jugendliche erhält individuelle Begleitung.",
+          "description": "Kinder und Jugendliche erhalten individuelle Begleitung.",
           "iconAlt": "Symbol für Fürsorge"
         },
         {
@@ -629,7 +649,7 @@
     },
     "ods": {
       "tag": "Agenda 2030",
-      "title": "Unsere Ausrichtung an den Zielen für nachhaltige Entwicklung",
+      "title": "Unsere Ausrichtung an den Zielen für nachhaltige Entwicklung (SDGs)",
       "intro": "Casa Menina Mulher handelt strategisch und engagiert im Sinne der UN-Agenda 2030 und trägt direkt zum Fortschritt der SDGs in Kontexten hoher sozialer Benachteiligung bei.",
       "cards": [
         {
@@ -664,8 +684,8 @@
       "title": "Zahlen, die Leben verändern",
       "stats": [
         {
-          "number": "500+",
-          "label": "Kinder und Jugendliche, deren Lebenswege positiv beeinflusst wurden"
+          "number": "3000+",
+          "label": "Kinder und Jugendliche, deren Lebenswege beeinflusst wurden"
         },
         {
           "number": "30+",
@@ -712,7 +732,7 @@
         },
         {
           "title": "Veranstaltungen und Partnerschaften",
-          "description": "Unternehmen, Institutionen und Universitäten können Partner werden und Benefizveranstaltungen organisieren.",
+          "description": "Unternehmen, Institutionen und Universitäten können Partner werden.",
           "button": "Partner werden",
           "type": "scroll",
           "target": "contato",
@@ -722,8 +742,8 @@
       ]
     },
     "sponsors": {
-      "title": "Unsere Förderer",
-      "subtitle": "Lernen Sie unsere Partner kennen, die unsere Mission unterstützen und stärken.",
+      "title": "Unsere Partner",
+      "subtitle": "Lernen Sie Unsere Partner kennen, die Unsere Mission unterstützen und stärken.",
       "items": [
         {
           "name": "Aktionskreis Pater Beda",
@@ -734,6 +754,11 @@
           "name": "The Freedom Fund",
           "image": "logo-freedom-fund.svg",
           "logoAlt": "Logo der NGO The Freedom Fund"
+        },
+        {
+          "name": "Der Brasilien-Frendeskreis Papenburg",
+          "image": "logo-papenburg.png",
+          "logoAlt": "Logo do Der Brasilien-Frendeskreis Papenburg"
         },
         {
           "name": "Rede SoliVida",
@@ -751,9 +776,14 @@
           "logoAlt": "Logo des Städtischen Rates für Förderung und Verteidigung der Rechte von Kindern und Jugendlichen der Stadt Recife"
         },
         {
-          "name": "Forum DCA/PE",
+          "name": "Fórum DCA/PE",
           "image": "logo-dcape.svg",
           "logoAlt": "Logo des Forums der Rechte von Kindern und Jugendlichen in Pernambuco"
+        },
+        {
+          "name": "Fórum DCA/RE",
+          "image": "logo-forum-dcare.png",
+          "logoAlt": "Logo von Fórum dos Direitos da Criança e do Adolescente de Recife"
         }
       ]
     },
@@ -767,9 +797,9 @@
         "Recife - PE, CEP 50.060-250"
       ],
       "phoneLabel": "Telefon",
-      "phone": "+55 (81) 3231-0463",
+      "phone": "+55 (81) 3231-0463 (Festnetz) | +55 (81) 99737-6207 (WhatsApp der Koordination)",
       "emailLabel": "E-Mail",
-      "email": "contato@casameninamulher.org.br"
+      "email": "cmm@casameninamulher.org.br | coordenacao.executiva@casameninamulher.org.br"
     },
     "footer": {
       "policyLabel": "Schutzrichtlinie",
