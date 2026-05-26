@@ -1,4 +1,5 @@
 {% set t = locales[locale] %}
+{% set baseUrl = siteBaseUrl %}
 <!doctype html>
 <html lang="{{ lang }}">
   <head>
@@ -8,17 +9,17 @@
     <meta name="description" content="{{ t.meta.description }}" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ site.url }}/{{ locale }}/" />
+    <meta property="og:url" content="{{ baseUrl }}/{{ locale }}/" />
     <meta property="og:title" content="{{ t.meta.ogTitle }}" />
     <meta property="og:description" content="{{ t.meta.ogDescription }}" />
     <meta
       property="og:image"
-      content="{{ site.url }}/assets/img/img-logo.webp"
+      content="{{ baseUrl }}/assets/img/img-logo.webp"
     />
     <meta property="og:image:alt" content="{{ t.meta.ogImageAlt }}" />
 
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="{{ site.url }}/{{ locale }}/" />
+    <meta property="twitter:url" content="{{ baseUrl }}/{{ locale }}/" />
     <meta property="twitter:title" content="{{ t.meta.twitterTitle }}" />
     <meta
       property="twitter:description"
@@ -26,14 +27,14 @@
     />
     <meta
       property="twitter:image"
-      content="{{ site.url }}/assets/img/img-logo.webp"
+      content="{{ baseUrl }}/assets/img/img-logo.webp"
     />
 
-    <link rel="canonical" href="{{ site.url }}/{{ locale }}/" />
-    <link rel="alternate" hreflang="pt-BR" href="{{ site.url }}/pt/" />
-    <link rel="alternate" hreflang="en" href="{{ site.url }}/en/" />
-    <link rel="alternate" hreflang="de" href="{{ site.url }}/de/" />
-    <link rel="alternate" hreflang="x-default" href="{{ site.url }}/pt/" />
+    <link rel="canonical" href="{{ baseUrl }}/{{ locale }}/" />
+    <link rel="alternate" hreflang="pt-BR" href="{{ baseUrl }}/pt/" />
+    <link rel="alternate" hreflang="en" href="{{ baseUrl }}/en/" />
+    <link rel="alternate" hreflang="de" href="{{ baseUrl }}/de/" />
+    <link rel="alternate" hreflang="x-default" href="{{ baseUrl }}/pt/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

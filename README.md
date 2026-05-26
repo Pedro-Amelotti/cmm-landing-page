@@ -1,6 +1,6 @@
-# Casa Menina Mulher — Eleventy i18n
+# Casa Menina Mulher - Eleventy i18n
 
-Landing page estática com internacionalização em build-time usando **Eleventy + Nunjucks**, com três versões:
+Landing page estatica com internacionalizacao em build-time usando **Eleventy + Nunjucks**, com tres versoes:
 
 - `/pt/` (pt-BR)
 - `/en/` (English)
@@ -12,84 +12,84 @@ Landing page estática com internacionalização em build-time usando **Eleventy
 - Nunjucks
 - SCSS (Sass CLI)
 - JavaScript vanilla
-- GitHub Pages (deploy por GitHub Actions)
+- Cloudflare Pages
 
 ## Estrutura
 
 ```text
 .
-├── src/
-│   ├── _data/
-│   │   ├── site.json
-│   │   └── locales.json
-│   ├── _includes/
-│   │   ├── layouts/
-│   │   │   └── base.njk
-│   │   └── sections/
-│   ├── pt/index.njk
-│   ├── en/index.njk
-│   ├── de/index.njk
-│   ├── index.njk
-│   └── assets/
-├── .eleventy.js
-├── package.json
-└── .github/workflows/pages.yml
+|-- src/
+|   |-- _data/
+|   |   |-- site.json
+|   |   |-- siteBaseUrl.js
+|   |   `-- locales.json
+|   |-- _includes/
+|   |   |-- layouts/
+|   |   |   `-- base.njk
+|   |   `-- sections/
+|   |-- pt/index.njk
+|   |-- en/index.njk
+|   |-- de/index.njk
+|   |-- index.njk
+|   `-- assets/
+|-- .eleventy.js
+|-- wrangler.jsonc
+`-- package.json
 ```
 
-## Instalação e execução local
+## Instalacao e execucao local
 
 ```bash
 npm install
 npm run dev
 ```
 
-Build de produção:
+Build de producao:
 
 ```bash
 npm run build
 ```
 
-Saída gerada em `_site/`.
+Saida gerada em `_site/`.
 
 ## Como funciona i18n
 
-- Todas as strings de interface estão em `src/_data/locales.json`.
-- As páginas de idioma usam o mesmo conjunto de seções Nunjucks e apenas trocam `locale`.
-- Conteúdos dinâmicos também são por idioma:
-  - Modais: `src/assets/data/modals/{pt|en|de}/*.html`
-  - Carrossel: `src/assets/data/carrossel/{pt|en|de}.json`
+- Todas as strings de interface estao em `src/_data/locales.json`.
+- As paginas de idioma usam o mesmo conjunto de secoes Nunjucks e apenas trocam `locale`.
+- Conteudos dinamicos tambem sao por idioma:
+- Modais: `src/assets/data/modals/{pt|en|de}/*.html`
+- Carrossel: `src/assets/data/carrossel/{pt|en|de}.json`
 
 ## Adicionar novo idioma
 
 1. Adicione um novo bloco em `src/_data/locales.json`.
-2. Crie a página `src/{novo-locale}/index.njk`.
+2. Crie a pagina `src/{novo-locale}/index.njk`.
 3. Atualize `src/_data/site.json` com o novo locale.
 4. Adicione o link no seletor de idioma (`src/_includes/sections/header.njk`).
 5. Crie os modais e o JSON do carrossel para o novo locale.
 6. Atualize `hreflang` em `src/_includes/layouts/base.njk`.
 
-## GitHub Pages (Project Pages)
+## Cloudflare Pages
 
-Repositório alvo:
+Deploy recomendado:
 
-- `https://pedro-amelotti.github.io/cmm-landing-page/`
+- Build command: `npm run build`
+- Build output directory: `_site`
 
-O prefixo é injetado no CI:
+Variaveis de ambiente:
 
-- `ELEVENTY_PATH_PREFIX=/cmm-landing-page/`
+- `SITE_URL` (recomendado em producao): dominio canonico completo, por exemplo `https://seu-dominio.com`
+- `CF_PAGES_URL` (fallback automatico): usado quando `SITE_URL` nao estiver definido
 
-No ambiente local, o prefixo padrão é `/`.
+Resolucao de URL base para SEO:
 
-Configuração necessária no GitHub:
-
-1. `Settings > Pages`
-2. `Source: GitHub Actions`
-
-O workflow em `.github/workflows/pages.yml` publica `_site/` automaticamente em push na branch `main`.
+1. Usa `SITE_URL` quando definido.
+2. Senao, usa `CF_PAGES_URL`.
+3. Senao, fallback local para `http://localhost:8080`.
 
 ## SEO internacional
 
-O layout base já inclui:
+O layout base inclui:
 
 - `lang` por idioma
 - `title` e `description` traduzidos
@@ -97,8 +97,8 @@ O layout base já inclui:
 - `canonical`
 - `hreflang` (`pt-BR`, `en`, `de`, `x-default`)
 
-## Observações de manutenção
+## Observacoes de manutencao
 
-- Não editar `_site/` manualmente.
+- Nao editar `_site/` manualmente.
 - Editar SCSS em `src/assets/css/components/`; o build gera `src/assets/css/style.css`.
-- Assets são estáticos e copiados por passthrough do Eleventy.
+- Assets sao estaticos e copiados por passthrough do Eleventy.
